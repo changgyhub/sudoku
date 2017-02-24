@@ -2,6 +2,8 @@
 
 
 import time
+import queue
+import functools
 
 import constraint
 import constraintnetwork
@@ -21,7 +23,7 @@ set the heuristics in the main.py file when reading the parameters as the
 primary heuristics to use and then break ties within the functions you
 implementIt follows similarly to the other heuristics and chekcs
 '''
-VariableSelectionHeuristic = {'None': 0, 'MRV': 1, 'Degree': 2}
+VariableSelectionHeuristic = {'None': 0, 'MRV': 1, 'DH': 2}
 # ValueSelectionHeuristic = {'None': 0, 'LeastConstrainingValue': 1}
 ValueSelectionHeuristic = {'None': 0, 'LCV': 1}
 ConsistencyCheck = {'None': 0, 'ForwardChecking': 1,
@@ -112,24 +114,75 @@ class BTSolver:
         return True
 
     def nakedTriple(self):
-        """
-         Implement nakedTriple.
-         can uncomment comments for verbose progress reports
-        """
+        """NakedTriple Checking."""
         pass
 
     def forwardChecking(self):
-        """
-             Implement forward checking.
-         can uncomment comments for verbose progress reports
-        """
-        pass
+        """Forward checking."""
+        for v in self.network.variables:
+            if v.isAssigned():
+                for vOther in self.network.getNeighborsOfVariable(v):
+                    if v.getAssignment() == vOther.getAssignment():
+                        return False
+                    vOther.removeValueFromDomain(v.getAssignment())
+                    if vOther.domain.size() == 0:
+                        return False
+        return True
 
     def arcConsistency(self):
-        """
-            TODO: Implement Maintaining Arc Consistency.
-        """
-        pass
+        """Maintaining Arc Consistency."""
+        worklist = queue.Queue()
+        for v in self.network.variables:
+            if v.isAssigned():
+                for vOther in self.network.getNeighborsOfVariable(v):
+                    worklist.put((v, vOther))
+                    worklist.put((vOther, v))
+
+        def arcReduce(x, y):
+            """Reduce arc used in arcConsistency algorithm."""
+            change = False
+            for vx in x.Values():
+                allow = False
+                for vy in y.Values():
+                    if vx != vy:
+                        allow = True
+                        break
+                if not allow:
+                    x.removeValueFromDomain(vx)
+                    change = True
+            return change
+
+        while not worklist.empty():
+            x, y = worklist.get()
+            if arcReduce(x, y):
+                if x.domain.size() == 0:
+                    return False
+                else:
+                    for z in self.network.getNeighborsOfVariable(x):
+                        if z != y:
+                            worklist.put((x, z))
+                            worklist.put((z, x))
+        return True
+
+        # for v in self.network.variables:
+        #     if v.isAssigned():
+        #         # this is identitcal to using a arc-reduce function
+        #         for vOther in self.network.getNeighborsOfVariable(v):
+        #             if v.getAssignment() == vOther.getAssignment():
+        #                 return False
+        #             vOther.removeValueFromDomain(v.getAssignment())
+        #             if vOther.domain.size() == 0:
+        #                 return False
+        #         # this is identitcal to processing the queue
+        #         for vOther in self.network.variables:
+        #             if vOther.isAssigned():
+        #                 for vOtherOther in self.network.getNeighborsOfVariable(vOther):
+        #                     if vOther.getAssignment() == vOtherOther.getAssignment():
+        #                         return False
+        #                     vOtherOther.removeValueFromDomain(vOther.getAssignment())
+        #                     if vOtherOther.domain.size() == 0:
+        #                         return False
+        # return True
 
     def selectNextVariable(self):
         """
@@ -159,20 +212,28 @@ class BTSolver:
         return None
 
     def getMRV(self):
-        """
-            TODO: Implement MRV heuristic
-            @return variable with minimum remaining values that isn't assigned,
-                    null if all variables are assigned.
-        """
-        pass
+        """MRV heuristic."""
+        var = None
+        mrv = float('inf')
+        for v in self.network.variables:
+            if not v.isAssigned():
+                if v.domain.size() < mrv:
+                    var = v
+                    mrv = v.domain.size()
+        return var
 
     def getDegree(self):
-        """
-            TODO: Implement Degree heuristic
-            @return variable constrained by the most unassigned variables,
-                    null if all variables are assigned.
-        """
-        pass
+        """Degree heuristic."""
+        var = None
+        mnv = float('-inf')
+        for v in self.network.variables:
+            if not v.isAssigned():
+                neigh = self.network.getNeighborsOfVariable(v)
+                numMnv = sum([1 for i in neigh if not i.isAssigned()])
+                if numMnv > mnv:
+                    var = v
+                    mdv = numMnv
+        return var
 
     def getNextValues(self, v):
         """
@@ -198,10 +259,21 @@ class BTSolver:
         return sorted(values)
 
     def getValuesLCVOrder(self, v):
-        """
-            TODO: LCV heuristic
-        """
-        pass
+        """LCV heuristic."""
+        values = v.domain.values
+
+        def compareLCV(v1,v2):
+            """compare LCV of two variables"""
+            numConstraintV1 = 0
+            numConstraintV2 = 0
+            for neigh in self.network.getNeighborsOfVariable(v):
+                if neigh.domain.contains(v1):
+                    numConstraintV1 += 1
+                if neigh.domain.contains(v2):
+                    numConstraintV2 += 1
+            return numConstraintV1 - numConstraintV2
+
+        return sorted(values, key = functools.cmp_to_key(compareLCV))
 
     def success(self):
         """ Called when solver finds a solution """
@@ -216,10 +288,10 @@ class BTSolver:
     def solve(self):
         """ Method to start the solver """
         self.startTime = time.time()
-        # try:
-        self.solveLevel(0)
-        # except:
-        # print("Error with variable selection heuristic.")
+        try:
+            self.solveLevel(0)
+        except VariableSelectionException:
+            print("Error with variable selection heuristic.")
         self.endTime = time.time()
         # trail.masterTrailVariable.trailStack = []
         self.trail.trailStack = []

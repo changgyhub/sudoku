@@ -84,7 +84,6 @@ def main():
        you can add the appropriate lines to this conditional clause'''
     if len(sys.argv) < 4:
         raise ValueError("Program did not received enough correct argument.")
-    # no options detected or say BT
     elif len(sys.argv) == 4 or sys.argv[4] == 'BT':
         print("Default option tokens detected: Backtracking Search (BT)")
     elif sys.argv[4] == 'FC':
@@ -93,8 +92,6 @@ def main():
             btsolver.ConsistencyCheck['ForwardChecking'])
     else:
         print("Default option tokens detected: something else ...")
-
-    # uncomment once you have implemented the appropriate heuristics
 
     if 'FC' in tokens:
         solver.setConsistencyChecks(

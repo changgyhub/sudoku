@@ -56,7 +56,6 @@ def GameBoardToConstraintNetwork(gb):
     board = gb.board
     variables = []
     value = 0
-
     for i in range(gb.N):
         for j in range(gb.N):
             value = board[i][j]
@@ -72,49 +71,49 @@ def GameBoardToConstraintNetwork(gb):
             block = int(((floor(i / gb.p) * gb.p) + floor(j / gb.q)))
             variables.append(variable.Variable(domain, i, j, block))
 
-        rows = dict()
-        cols = dict()
-        blocks = dict()
+    rows = dict()
+    cols = dict()
+    blocks = dict()
 
-        for v in variables:
-            row = v.row
-            col = v.col
-            block = v.block
+    for v in variables:
+        row = v.row
+        col = v.col
+        block = v.block
 
-            if not (row in rows.keys()):
-                rows[row] = []
-            if not (col in cols.keys()):
-                cols[col] = []
-            if not (block in blocks.keys()):
-                blocks[block] = []
+        if not (row in rows.keys()):
+            rows[row] = []
+        if not (col in cols.keys()):
+            cols[col] = []
+        if not (block in blocks.keys()):
+            blocks[block] = []
 
-            rows[row].append(v)
-            cols[col].append(v)
-            blocks[block].append(v)
+        rows[row].append(v)
+        cols[col].append(v)
+        blocks[block].append(v)
 
-        cn = constraintnetwork.ConstraintNetwork()
-        for v in variables:
-            cn.addVariable(v)
+    cn = constraintnetwork.ConstraintNetwork()
+    for v in variables:
+        cn.addVariable(v)
 
-        for e in rows:
-            c = constraint.Constraint()
-            for v in rows[e]:
-                c.addVariable(v)
-            cn.addConstraint(c)
+    for e in rows:
+        c = constraint.Constraint()
+        for v in rows[e]:
+            c.addVariable(v)
+        cn.addConstraint(c)
 
-        for e in cols:
-            c = constraint.Constraint()
-            for v in cols[e]:
-                c.addVariable(v)
-            cn.addConstraint(c)
+    for e in cols:
+        c = constraint.Constraint()
+        for v in cols[e]:
+            c.addVariable(v)
+        cn.addConstraint(c)
 
-        for e in blocks:
-            c = constraint.Constraint()
-            for v in blocks[e]:
-                c.addVariable(v)
-            cn.addConstraint(c)
+    for e in blocks:
+        c = constraint.Constraint()
+        for v in blocks[e]:
+            c.addVariable(v)
+        cn.addConstraint(c)
 
-        return cn
+    return cn
 
 
 def ConstraintNetworkToGameBoard(cn, n, p, q):
