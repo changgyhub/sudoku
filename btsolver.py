@@ -115,7 +115,6 @@ class BTSolver:
         return True
 
     def nakedTriple(self):
-        """NakedTriple Checking."""
         # build list of houses
         # e.g. for N=9, house length = 27, houses[0:8]are the row houses,
         # 9:17 are the column houses, and 18:26 are the block houses
@@ -127,12 +126,29 @@ class BTSolver:
             houses[i.col+colhouseoffset].append(i)
             houses[i.block+blockhouseoffset].append(i)
 
+        for i in self.network.variables:
+            if i.isAssigned():
+                for otherrow in houses[i.row]:
+                    if i != otherrow and not otherrow.isAssigned():
+                        if i.getAssignment() in otherrow.domain.values:
+                            otherrow.domain.values.remove(i.getAssignment())
+                for othercol in houses[i.col+colhouseoffset]:
+                    if i != othercol and not othercol.isAssigned():
+                        if i.getAssignment() in othercol.domain.values:
+                            othercol.domain.values.remove(i.getAssignment())
+                for otherblock in houses[i.block+blockhouseoffset]:
+                    if i != otherblock and not otherblock.isAssigned():
+                        if i.getAssignment() in otherblock.domain.values:
+                            otherblock.domain.values.remove(i.getAssignment())
+
         # eliminate the candidates in other cells in the same house
         def eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates):
             for cell in house:
                 if(vi!=cell and vj!=cell and vk!=cell):
                     for can in candidates:
                         if(can in cell.domain.values):
+                            if cell.isAssigned():
+                                return False
                             cell.domain.values.remove(can)
                             # print("eliminate ", cell)
 
@@ -161,23 +177,21 @@ class BTSolver:
                            len(vi.domain.values) <= 3 and \
                            len(vj.domain.values) <= 3 and \
                            len(vk.domain.values) <= 3:
+                            # print(self.gameboard)
+                            # print(vi)
+                            # print(vj)
+                            # print(vk)
                             candidates = set(vi.domain.values)
                             candidates.update(vj.domain.values)
                             candidates.update(vk.domain.values)
-                            if len(candidates) == 3:
+                            if(len(candidates) == 3):
                                 lumplist = list(vi.domain.values)
                                 lumplist.extend(vj.domain.values)
                                 lumplist.extend(vk.domain.values)
-                                if occureMoreThanTwoTimes(candidates,lumplist):
-                                    change = True
-                                    # print(self.gameboard)
-                                    # print(hindex)
-                                    # print(vi)
-                                    # print(vj)
-                                    # print(vk)
-                                    eliminateOtherCellsInTheSameHouse(
-                                                    house,vi,vj,vk,candidates)
-        return change
+                                if(occureMoreThanTwoTimes(candidates,lumplist)):
+                                    eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
+        return True
+
 
     def forwardChecking(self):
         """Forward checking."""

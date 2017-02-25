@@ -111,7 +111,6 @@ def GameBoardToConstraintNetwork(gb):
         for v in blocks[e]:
             c.addVariable(v)
         cn.addConstraint(c)
-
     return cn
 
 
