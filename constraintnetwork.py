@@ -1,12 +1,6 @@
 """Constraint Network of CSP."""
 
 
-import constraint
-import variable
-
-
-# import assignment
-
 class ConstraintNetwork:
     def __init__(self):
         """
