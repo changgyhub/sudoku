@@ -85,30 +85,30 @@ def main():
         print("Default option tokens detected: Backtracking Search (BT)")
 
     if 'FC' in tokens:
-        print("FC tokens detected: Forward Checking (FC)")
+        print("FC/ACP token detected: Forward Checking (FC)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['ForwardChecking'])
     elif 'ACP' in tokens:
-        print("ACP tokens detected: Arc Consistency (ACP)")
+        print("FC/ACP token detected: Arc Consistency (ACP)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['ArcConsistency'])
 
     if 'MRV' in tokens:
-        print("MRV tokens detected: Minimum Remaining Values (MRV)")
+        print("MRV/DH token detected: Minimum Remaining Values (MRV)")
         solver.setVariableSelectionHeuristic(
             btsolver.VariableSelectionHeuristic['MRV'])
     elif 'DH' in tokens:
-        print("DH tokens detected: Degree Heuristic (DH)")
+        print("MRV/DH token detected: Degree Heuristic (DH)")
         solver.setVariableSelectionHeuristic(
             btsolver.VariableSelectionHeuristic['DH'])
 
     if 'LCV' in tokens:
-        print("LCV tokens detected: Least Constraining Value (LCV)")
+        print("LCV token detected: Least Constraining Value (LCV)")
         solver.setValueSelectionHeuristic(
             btsolver.ValueSelectionHeuristic['LCV'])
 
     if 'NKT' in tokens:
-        print("NKT tokens detected: Naked Triple (NKT)")
+        print("NKT token detected: Naked Triple (NKT)")
         solver.setConsistencyChecks(btsolver.ConsistencyCheck['NKT'])
 
     isTimeOut = False
