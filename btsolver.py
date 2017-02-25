@@ -12,6 +12,7 @@ import filereader
 import gameboard
 import trail
 import variable
+import collections
 
 # dictionary mapping heuristic to number
 '''
@@ -115,7 +116,61 @@ class BTSolver:
 
     def nakedTriple(self):
         """NakedTriple Checking."""
-        pass
+        # build list of houses
+        # e.g. for N=9, house length = 27, houses[0:8]are the row houses, 9:17 are the column houses, and 18:26 are the block houses
+        houses = [[] for x in range(self.gameboard.N*3)]
+        colhouseoffset = self.gameboard.N
+        blockhouseoffset = self.gameboard.N*2
+        for i in self.network.variables:
+            houses[i.row].append(i)
+            houses[i.col+colhouseoffset].append(i)
+            houses[i.block+blockhouseoffset].append(i)
+
+        # eliminate the candidates in other cells in the same house
+        def eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates):
+            for cell in house:
+                if(vi!=cell and vj!=cell and vk!=cell):
+                    for can in candidates:
+                        if(can in cell.domain.values):
+                            cell.domain.values.remove(can)
+                            # print("eliminate ", cell)
+
+
+        # each candidate occur more than two times but less than or equal to three times in the combined list, of which three cells are included
+        # e.g. (2,9)  (2,9)  (2,6,9)  are not nakedtriple
+        def occureMoreThanTwoTimes(candidates,lumplist):
+            for candit in candidates:
+                if lumplist.count(candit) < 2 or lumplist.count(candit) > 3:
+                    return False
+            return True
+
+
+        change = False
+        for hindex, house in enumerate(houses):
+            for iindex in range(len(house)):
+                for jindex in range(iindex+1,len(house)):
+                    for kindex in range(jindex+1, len(house)):
+                        vi = house[iindex]
+                        vj = house[jindex]
+                        vk = house[kindex]
+                        if(not vi.isAssigned() and not vj.isAssigned() and not vk.isAssigned()
+                           and len(vi.domain.values) <= 3 and len(vj.domain.values) <= 3 and len(vk.domain.values) <= 3):
+                            candidates = set(vi.domain.values)
+                            candidates.update(vj.domain.values)
+                            candidates.update(vk.domain.values)
+                            if(len(candidates) == 3):
+                                lumplist = list(vi.domain.values)
+                                lumplist.extend(vj.domain.values)
+                                lumplist.extend(vk.domain.values)
+                                if(occureMoreThanTwoTimes(candidates,lumplist)):
+                                    change = True
+                                    # print(self.gameboard)
+                                    # print(hindex)
+                                    # print(vi)
+                                    # print(vj)
+                                    # print(vk)
+                                    eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
+        return change
 
     def forwardChecking(self):
         """Forward checking."""

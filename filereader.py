@@ -41,7 +41,6 @@ def SudokuFileReader(filePath):
                         # print(type(num)
                         tempLine.append(ODOMETERTOINT[n])
                     board.append(tempLine)
-
             return gameboard.GameBoard(N, p, q, board)
 
 # --------- HELPER FUNTION ---------

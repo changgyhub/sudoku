@@ -113,6 +113,7 @@ class Variable:
         # "print node stats"
         output = ""
         output += " Name: " + self.name
+        output += " Row " + str(self.row) + " Col "+ str(self.col)+ " BLock "+str(self.block)
         output += " domain: {"
         for i in self.domain.values:
             output += str(i) + ","
