@@ -184,12 +184,13 @@ class BTSolver:
                             candidates = set(vi.domain.values)
                             candidates.update(vj.domain.values)
                             candidates.update(vk.domain.values)
-                            if(len(candidates) == 3):
+                            if len(candidates) == 3:
                                 lumplist = list(vi.domain.values)
                                 lumplist.extend(vj.domain.values)
                                 lumplist.extend(vk.domain.values)
-                                if(occureMoreThanTwoTimes(candidates,lumplist)):
-                                    eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
+                                if occureMoreThanTwoTimes(candidates,lumplist):
+                                    eliminateOtherCellsInTheSameHouse(
+                                                    house,vi,vj,vk,candidates)
         return True
 
 
