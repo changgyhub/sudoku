@@ -117,7 +117,8 @@ class BTSolver:
     def nakedTriple(self):
         """NakedTriple Checking."""
         # build list of houses
-        # e.g. for N=9, house length = 27, houses[0:8]are the row houses, 9:17 are the column houses, and 18:26 are the block houses
+        # e.g. for N=9, house length = 27, houses[0:8]are the row houses,
+        # 9:17 are the column houses, and 18:26 are the block houses
         houses = [[] for x in range(self.gameboard.N*3)]
         colhouseoffset = self.gameboard.N
         blockhouseoffset = self.gameboard.N*2
@@ -136,7 +137,8 @@ class BTSolver:
                             # print("eliminate ", cell)
 
 
-        # each candidate occur more than two times but less than or equal to three times in the combined list, of which three cells are included
+        # each candidate occur more than two times but less than or equal to
+        # three times in the combined list, of which three cells are included
         # e.g. (2,9)  (2,9)  (2,6,9)  are not nakedtriple
         def occureMoreThanTwoTimes(candidates,lumplist):
             for candit in candidates:
@@ -153,23 +155,28 @@ class BTSolver:
                         vi = house[iindex]
                         vj = house[jindex]
                         vk = house[kindex]
-                        if(not vi.isAssigned() and not vj.isAssigned() and not vk.isAssigned()
-                           and len(vi.domain.values) <= 3 and len(vj.domain.values) <= 3 and len(vk.domain.values) <= 3):
+                        if not vi.isAssigned() and \
+                           not vj.isAssigned() and \
+                           not vk.isAssigned() and \
+                           len(vi.domain.values) <= 3 and \
+                           len(vj.domain.values) <= 3 and \
+                           len(vk.domain.values) <= 3:
                             candidates = set(vi.domain.values)
                             candidates.update(vj.domain.values)
                             candidates.update(vk.domain.values)
-                            if(len(candidates) == 3):
+                            if len(candidates) == 3:
                                 lumplist = list(vi.domain.values)
                                 lumplist.extend(vj.domain.values)
                                 lumplist.extend(vk.domain.values)
-                                if(occureMoreThanTwoTimes(candidates,lumplist)):
+                                if occureMoreThanTwoTimes(candidates,lumplist):
                                     change = True
                                     # print(self.gameboard)
                                     # print(hindex)
                                     # print(vi)
                                     # print(vj)
                                     # print(vk)
-                                    eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
+                                    eliminateOtherCellsInTheSameHouse(
+                                                    house,vi,vj,vk,candidates)
         return change
 
     def forwardChecking(self):
@@ -389,7 +396,6 @@ class BTSolver:
             self.trail.placeTrailMarker()
 
             # check a value
-            # print("-->CALL v.updateDomain(domain.Domain(i)) to start to test next value.")
             v.updateDomain(domain.Domain(i))
             self.numAssignments += 1
 

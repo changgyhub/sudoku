@@ -2,10 +2,7 @@
 
 import sys
 import signal
-import gameboard
 import filereader
-import constraint
-import constraintnetwork
 import btsolver
 import time
 

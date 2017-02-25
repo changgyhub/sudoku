@@ -1,9 +1,6 @@
 """Constraint of CSP."""
 
 
-import variable
-
-
 class Constraint:
 
     def __init__(self):

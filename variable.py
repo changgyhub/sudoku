@@ -1,3 +1,6 @@
+"""Variable for CSP."""
+
+
 import trail
 import domain
 
@@ -49,10 +52,7 @@ class Variable:
         self.domain.modified = mod
 
     def getAssignment(self):
-        """
-            Return the value currently assigned to the IntVariable.
-            Return 0 if IntVariable is unassigned, Assignment otherwise.
-        """
+        """Return the value currently assigned to the IntVariable, 0 if no."""
         if not self.isAssigned():
             return 0
         else:
@@ -73,30 +73,20 @@ class Variable:
     #     self.setDomain(domain.Domain(val))
 
     def updateDomain(self, d):
-        """
-            Used for Backtracking.
-            Adds the changed domain to the Trail.
-            @param d new domain
-        """
+        """Add the changed domain to the Trail (Used for Backtracking)."""
         self.methodModifiesDomain()
         if self.domain != d:
             self.domain = d
             self.modified = True
 
     def setDomain(self, d):
-        """
-            Perform a change to the domain without changing the Trail.
-            @param d new domain
-        """
+        """Change to a new domain without changing the Trail."""
         if self.domain != d:
             self.domain = d
             self.modified = True
 
     def removeValueFromDomain(self, val):
-        """
-            Remove a single value from the domain of V.
-            @param val value to remove
-        """
+        """Remove a single value from the domain of V."""
         self.methodModifiesDomain()
         self.domain.remove(val)
         self.modified = self.domain.isModified()
@@ -113,7 +103,8 @@ class Variable:
         # "print node stats"
         output = ""
         output += " Name: " + self.name
-        output += " Row " + str(self.row) + " Col "+ str(self.col)+ " BLock "+str(self.block)
+        output += " Row " + str(self.row) + " Col " + str(self.col) + \
+                  " BLock " + str(self.block)
         output += " domain: {"
         for i in self.domain.values:
             output += str(i) + ","
