@@ -111,8 +111,6 @@ def main():
         solver.setValueSelectionHeuristic(
             btsolver.ValueSelectionHeuristic['LCV'])
 
-
-
     isTimeOut = False
     signal.signal(signal.SIGALRM, signal_handler)
     signal.alarm(int(sys.argv[3]))
