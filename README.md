@@ -1,4 +1,4 @@
-# sudoku
+# Sudoku
 A scalable sudoku solver, can be generalized to a solver for all constraint satisfaction problems.
 
 ## Author
