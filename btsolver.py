@@ -190,7 +190,8 @@ class BTSolver:
                                 lumplist.extend(vj.domain.values)
                                 lumplist.extend(vk.domain.values)
                                 if occureMoreThanTwoTimes(candidates,lumplist):
-                                    return eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
+                                    return eliminateOtherCellsInTheSameHouse(
+                                                     house,vi,vj,vk,candidates)
         return True
 
 
@@ -240,26 +241,6 @@ class BTSolver:
                             worklist.put((x, z))
                             worklist.put((z, x))
         return True
-
-        # for v in self.network.variables:
-        #     if v.isAssigned():
-        #         # this is identitcal to using a arc-reduce function
-        #         for vOther in self.network.getNeighborsOfVariable(v):
-        #             if v.getAssignment() == vOther.getAssignment():
-        #                 return False
-        #             vOther.removeValueFromDomain(v.getAssignment())
-        #             if vOther.domain.size() == 0:
-        #                 return False
-        #         # this is identitcal to processing the queue
-        #         for vOther in self.network.variables:
-        #             if vOther.isAssigned():
-        #                 for vOtherOther in self.network.getNeighborsOfVariable(vOther):
-        #                     if vOther.getAssignment() == vOtherOther.getAssignment():
-        #                         return False
-        #                     vOtherOther.removeValueFromDomain(vOther.getAssignment())
-        #                     if vOtherOther.domain.size() == 0:
-        #                         return False
-        # return True
 
     def selectNextVariable(self):
         """
