@@ -8,7 +8,7 @@ Rimoun Ghaly
 
 ## Usage
 ```
-python3 main.py <input> <output> <timeout> <tokens>
+python main.py <input> <output> <timeout> <tokens>
 ```
 
 1. `<input>`: Raw input file of sudoku problems, see `/ExampleSudokuFiles` for samples. We support different size of board, and upperCase letters.
