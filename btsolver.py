@@ -142,6 +142,7 @@ class BTSolver:
                             otherblock.domain.values.remove(i.getAssignment())
 
         # eliminate the candidates in other cells in the same house
+        # return false if inconsistent assignment is found
         def eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates):
             for cell in house:
                 if(vi!=cell and vj!=cell and vk!=cell):
@@ -157,6 +158,7 @@ class BTSolver:
         # each candidate occur more than two times but less than or equal to
         # three times in the combined list, of which three cells are included
         # e.g. (2,9)  (2,9)  (2,6,9)  are not nakedtriple
+        
         def occureMoreThanTwoTimes(candidates,lumplist):
             for candit in candidates:
                 if lumplist.count(candit) < 2 or lumplist.count(candit) > 3:
@@ -164,7 +166,7 @@ class BTSolver:
             return True
 
 
-        change = False
+        # return false is inconsistency is found, otherwise loop is continued
         for hindex, house in enumerate(houses):
             for iindex in range(len(house)):
                 for jindex in range(iindex+1,len(house)):
@@ -190,7 +192,9 @@ class BTSolver:
                                 lumplist.extend(vj.domain.values)
                                 lumplist.extend(vk.domain.values)
                                 if occureMoreThanTwoTimes(candidates,lumplist):
-                                    return eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
+                                    if not eliminateOtherCellsInTheSameHouse(house,
+                                    	vi,vj,vk,candidates):
+                                    	return False
         return True
 
 
