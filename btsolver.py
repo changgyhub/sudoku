@@ -151,6 +151,7 @@ class BTSolver:
                                 return False
                             cell.domain.values.remove(can)
                             # print("eliminate ", cell)
+            return True
 
 
         # each candidate occur more than two times but less than or equal to
@@ -189,8 +190,7 @@ class BTSolver:
                                 lumplist.extend(vj.domain.values)
                                 lumplist.extend(vk.domain.values)
                                 if occureMoreThanTwoTimes(candidates,lumplist):
-                                    eliminateOtherCellsInTheSameHouse(
-                                                    house,vi,vj,vk,candidates)
+                                    return eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates)
         return True
 
 
