@@ -2,9 +2,9 @@
 A scalable sudoku solver, can be generalized to a solver for all constraint satisfaction problems.
 
 ## Author
-[Chang Gao](http://hk.linkedin.com/in/irsisyphus "linkedin")<br>
+[Chang Gao](http://www.linkedin.com/in/irsisyphus "linkedin")<br>
 [Bruce Tan](http://halfer53.github.io/ "homepage")<br>
-Rimoun Ghaly
+[Rimoun Ghaly](https://www.linkedin.com/in/rimoun-ghaly-41287b107/ "linkedin")<br>
 
 ## Usage
 ```
