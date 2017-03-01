@@ -29,7 +29,7 @@ VariableSelectionHeuristic = {'None': 0, 'MRV': 1, 'DH': 2}
 # ValueSelectionHeuristic = {'None': 0, 'LeastConstrainingValue': 1}
 ValueSelectionHeuristic = {'None': 0, 'LCV': 1}
 ConsistencyCheck = {'None': 0, 'ForwardChecking': 1,
-                    'ArcConsistency': 2, 'NKT': 3, 'NKD':4}
+                    'ArcConsistency': 2, 'NKD': 3, 'NKT':4}
 
 
 class BTSolver:
@@ -109,9 +109,9 @@ class BTSolver:
         elif self.cChecks == 2:
             return self.arcConsistency()
         elif self.cChecks == 3:
-            return self.nakedTriple()
-        elif self.cChecks == 4:
             return self.nakedDouble()
+        elif self.cChecks == 4:
+            return self.nakedTriple()
         else:
             return self.assignmentsCheck()
 
@@ -136,8 +136,9 @@ class BTSolver:
             for i in self.network.variables:
                 if i.isAssigned():
                     neighbours = list(self.houses[i.row])
-                    neighbours.extend(self.houses[i.col+self.colhouseoffset])
-                    neighbours.extend(self.houses[i.block+self.blockhouseoffset])
+                    neighbours.extend(self.houses[i.col + self.colhouseoffset])
+                    neighbours.extend(self.houses[i.block + \
+                                      self.blockhouseoffset])
                     for other in neighbours:
                         if i != other and not other.isAssigned():
                             if i.getAssignment() in other.domain.values:
@@ -147,30 +148,30 @@ class BTSolver:
         # return false if inconsistent assignment is found
         def eliminateOtherCellsInTheSameHouse(house,zones,candidates):
             for cell in house:
-                if(cell not in zones):
+                if cell not in zones:
                     for can in candidates:
-                        if(can in cell.domain.values):
+                        if can in cell.domain.values:
                             if cell.isAssigned():
                                 return False
                             cell.domain.values.remove(can)
                             # print("eliminate ", cell)
             return True
 
-
         # each candidate occur more than two times but less than or equal to
         # three times in the combined list, of which three cells are included
         # e.g. (2,9)  (2,9)  (2,6,9)  are not nakedtriple
-        
+
         def occureMoreThanTwoTimes(candidates,lumplist,r):
             for candit in candidates:
                 if lumplist.count(candit) < 2 or lumplist.count(candit) > r:
                     return False
             return True
 
-        
+
         # return all the legal permutations given constraint r
         # N.B. the order does not matter
-        # the maximum number of permutations is n!/(n-r)!*r!, where n is the size of M*N grid, and r is the constraint
+        # the maximum number of permutations is n!/(n-r)!*r!,
+        # where n is the size of M*N grid, and r is the constraint
         # Note that illegal permutations are eliminated by checkPermutations()
         def permutations(iterable, r):
             pool = tuple(iterable)
@@ -182,26 +183,23 @@ class BTSolver:
                     if toContinue:
                         # for i in indices:
                         #     print(pool[i])
-                        yield tuple(pool[i] for i in indices),candidates
+                        yield tuple(pool[i] for i in indices), candidates
 
-        # return false is the current permutation (indices) is not a naked candidate
-        # otherwise return true
+        # return if the current permutation (indices) is not a naked candidate
         def checkPermutations(pool,indices,r):
             lumplist = []
             candidates = set()
             for i in indices:
                 cell = pool[i]
-                if cell.isAssigned() or \
-                len(cell.domain.values) > r:
-                    return False,None
+                if cell.isAssigned() or len(cell.domain.values) > r:
+                    return False, None
                 lumplist.extend(cell.domain.values)
                 candidates.update(cell.domain.values)
             if len(candidates) != r:
-                return False,None
+                return False, None
             if not occureMoreThanTwoTimes(candidates,lumplist,r):
-                return False,None
-            return True,candidates
-            
+                return False, None
+            return True, candidates
 
         # start searching naked candidates
         searchAllPotentialCandidates();
@@ -209,46 +207,16 @@ class BTSolver:
         for hindex, house in enumerate(self.houses):
             for combination,candidates in permutations(house,r):
                 if not eliminateOtherCellsInTheSameHouse(
-                    house,combination,candidates):
+                    house, combination, candidates):
                     return False
-                # for j in i:
-                #     print(j)
 
         return True
-        # for hindex, house in enumerate(self.houses):
-        #     for iindex in range(len(house)):
-        #         for jindex in range(iindex+1,len(house)):
-        #             for kindex in range(jindex+1, len(house)):
-        #                 count += 1
-        #                 vi = house[iindex]
-        #                 vj = house[jindex]
-        #                 vk = house[kindex]
-        #                 if not vi.isAssigned() and \
-        #                    not vj.isAssigned() and \
-        #                    not vk.isAssigned() and \
-        #                    len(vi.domain.values) <= 3 and \
-        #                    len(vj.domain.values) <= 3 and \
-        #                    len(vk.domain.values) <= 3:
-        #                     candidates = set(vi.domain.values)
-        #                     candidates.update(vj.domain.values)
-        #                     candidates.update(vk.domain.values)
-        #                     if len(candidates) == 3:
-        #                         lumplist = list(vi.domain.values)
-        #                         lumplist.extend(vj.domain.values)
-        #                         lumplist.extend(vk.domain.values)
-        #                         if occureMoreThanTwoTimes(candidates,lumplist,3):
-        #                             if not eliminateOtherCellsInTheSameHouse(
-        #                             	house,[vi,vj,vk],candidates):
-        #                             	return False
-        # return True
-
-
-
-    def nakedTriple(self):
-        return self.nakedCandidate(3)
 
     def nakedDouble(self):
         return self.nakedCandidate(2)
+
+    def nakedTriple(self):
+        return self.nakedCandidate(3)
 
     def forwardChecking(self):
         """Forward checking."""
@@ -408,6 +376,7 @@ class BTSolver:
         self.endTime = time.time()
         # trail.masterTrailVariable.trailStack = []
         self.trail.trailStack = []
+        return self.endTime - self.startTime
 
     def solveLevel(self, level):
         """

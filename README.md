@@ -19,7 +19,7 @@ python main.py <input> <output> <timeout> <tokens>
 
 4. `<tokens>`: Backtracking methods to use, we support:
  * `BT`: Default backtracking.
- * `FC`, `ACP`, `NKT`: Consistency checking methods to use. `FC` for Forward Checking, `ACP` for Arc Consistency, and `NKT` for Naked Triple. Cannot be used at the same time.
+ * `FC`, `ACP`, `NKD`, `NKT`: Consistency checking methods to use. `FC` for Forward Checking, `ACP` for Arc Consistency, `NKD` for Naked Double, and `NKT` for Naked Triple. Cannot be used at the same time.
  * `MRV`, `DH`: Variable selection heuristic to use. `MRV` for Minimum Remaining Values, and `DH` for Degree Heuristic. Cannot be used at the same time.
  * `LCV`: Value selection heuristic to use. `LCV` for Least Constraining Value.
 
@@ -37,3 +37,9 @@ M N P Q
   - Q is the number of columns in each block
 
 EXAMPLE: ```25 9 3 3```
+
+## Default Testing
+For default test on all solver options, you can simply type
+```
+python main.py
+```

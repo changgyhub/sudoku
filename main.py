@@ -1,5 +1,6 @@
 """Main for Sudoku Solver."""
 
+import os
 import sys
 import signal
 import filereader
@@ -59,6 +60,12 @@ def main():
     # Check command-line arguments.
     print('Python version:', sys.version)
 
+    if len(sys.argv) < 4:
+        print("Program did not received enough correct argument.")
+        print("Start Preset Testing.")
+        test()
+        return
+
     # GB = gameboard.GameBoard(
     #      12,3,4,[[0 for j in range(12)] for i in range(12)])
     # print(GB)
@@ -69,37 +76,28 @@ def main():
     # cn = filereader.GameBoardToConstraintNetwork(sudokudata)
     # print(cn)
     solver = btsolver.BTSolver(sudokudata)
-
-    # three examples of how you would change the various aspects of solver
-    # solver.setConsistencyChecks(btsolver.ConsistencyCheck['None'])
-    # solver.setValueSelectionHeuristic(btsolver.ValueSelectionHeuristic['None'])
-    # solver.setVariableSelectionHeuristic(btsolver.VariableSelectionHeuristic['None'])
     tokens = sys.argv[4:]
     solver.setTokens(tokens)
 
-    '''once you have implemented more heuristics,
-       you can add the appropriate lines to this conditional clause'''
-    if len(sys.argv) < 4:
-        raise ValueError("Program did not received enough correct argument.")
-    elif len(sys.argv) == 4 or sys.argv[4] == 'BT':
+    if len(sys.argv) == 4 or sys.argv[4] == 'BT':
         print("Default option tokens detected: Backtracking Search (BT)")
 
     if 'FC' in tokens:
-        print("FC/ACP/NKT/NKD token detected: Forward Checking (FC)")
+        print("FC/ACP/NKD/NKT token detected: Forward Checking (FC)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['ForwardChecking'])
     elif 'ACP' in tokens:
-        print("FC/ACP/NKT/NKD token detected: Arc Consistency (ACP)")
+        print("FC/ACP/NKD/NKT token detected: Arc Consistency (ACP)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['ArcConsistency'])
-    elif 'NKT' in tokens:
-        print("FC/ACP/NKT/NKD token detected: Naked Triple (NKT)")
-        solver.setConsistencyChecks(
-            btsolver.ConsistencyCheck['NKT'])
     elif 'NKD' in tokens:
-        print("FC/ACP/NKT/NKD token detected: Naked Double (NKD)")
+        print("FC/ACP/NKD/NKT token detected: Naked Double (NKD)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['NKD'])
+    elif 'NKT' in tokens:
+        print("FC/ACP/NKD/NKT token detected: Naked Triple (NKT)")
+        solver.setConsistencyChecks(
+            btsolver.ConsistencyCheck['NKT'])
 
     if 'MRV' in tokens:
         print("MRV/DH token detected: Minimum Remaining Values (MRV)")
@@ -129,6 +127,33 @@ def main():
 
     with open(sys.argv[2], "w") as outfile:
         outfile.write(printSolverStats(solver, TOTAL_START, isTimeOut))
+
+    # return solver.endTime - solver.startTime
+
+
+def test():
+    for root, dirs, files in os.walk("ExampleSudokuFiles/"):
+        for name in files:
+            if name == 'PE1.txt':
+            # if name.endswith('.txt'):
+                sudokudata = filereader.SudokuFileReader(
+                                            "ExampleSudokuFiles/" + name)
+                for ConsisChk in [None, 'ForwardChecking',
+                                  'ArcConsistency', 'NKD', 'NKT']:
+                    for VarH in [None, 'MRV', 'DH']:
+                        for ValH in [None, 'LCV']:
+                            solver = btsolver.BTSolver(sudokudata)
+                            if ConsisChk is not None:
+                                solver.setConsistencyChecks(
+                                    btsolver.ConsistencyCheck[ConsisChk])
+                            if VarH is not None:
+                                solver.setVariableSelectionHeuristic(
+                                     btsolver.VariableSelectionHeuristic[VarH])
+                            if ValH is not None:
+                                solver.setValueSelectionHeuristic(
+                                    btsolver.ValueSelectionHeuristic[ValH])
+                            print(name, ConsisChk, VarH, ValH,
+                                  solver.solve(), 's')
 
 
 if __name__ == '__main__':
