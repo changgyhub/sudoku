@@ -85,17 +85,21 @@ def main():
         print("Default option tokens detected: Backtracking Search (BT)")
 
     if 'FC' in tokens:
-        print("FC/ACP/NKT token detected: Forward Checking (FC)")
+        print("FC/ACP/NKT/NKD token detected: Forward Checking (FC)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['ForwardChecking'])
     elif 'ACP' in tokens:
-        print("FC/ACP/NKT token detected: Arc Consistency (ACP)")
+        print("FC/ACP/NKT/NKD token detected: Arc Consistency (ACP)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['ArcConsistency'])
     elif 'NKT' in tokens:
-        print("FC/ACP/NKT token detected: Naked Triple (NKT)")
+        print("FC/ACP/NKT/NKD token detected: Naked Triple (NKT)")
         solver.setConsistencyChecks(
             btsolver.ConsistencyCheck['NKT'])
+    elif 'NKD' in tokens:
+        print("FC/ACP/NKT/NKD token detected: Naked Double (NKD)")
+        solver.setConsistencyChecks(
+            btsolver.ConsistencyCheck['NKD'])
 
     if 'MRV' in tokens:
         print("MRV/DH token detected: Minimum Remaining Values (MRV)")

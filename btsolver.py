@@ -13,6 +13,7 @@ import gameboard
 import trail
 import variable
 import collections
+import itertools
 
 # dictionary mapping heuristic to number
 '''
@@ -28,7 +29,7 @@ VariableSelectionHeuristic = {'None': 0, 'MRV': 1, 'DH': 2}
 # ValueSelectionHeuristic = {'None': 0, 'LeastConstrainingValue': 1}
 ValueSelectionHeuristic = {'None': 0, 'LCV': 1}
 ConsistencyCheck = {'None': 0, 'ForwardChecking': 1,
-                    'ArcConsistency': 2, 'NKT': 3}
+                    'ArcConsistency': 2, 'NKT': 3, 'NKD':4}
 
 
 class BTSolver:
@@ -59,6 +60,17 @@ class BTSolver:
         self.cChecks = 0
         # self.runCheckOnce = False
         self.tokens = []  # tokens(heuristics to use)
+
+        # build list of houses
+        # e.g. for N=9, house length = 27, houses[0:8]are the row houses,
+        # 9:17 are the column houses, and 18:26 are the block houses
+        self.houses = [[] for x in range(self.gameboard.N*3)]
+        self.colhouseoffset = self.gameboard.N
+        self.blockhouseoffset = self.gameboard.N*2
+        for i in self.network.variables:
+            self.houses[i.row].append(i)
+            self.houses[i.col+self.colhouseoffset].append(i)
+            self.houses[i.block+self.blockhouseoffset].append(i)
 
     # --------- Modifiers Method ---------
 
@@ -98,6 +110,8 @@ class BTSolver:
             return self.arcConsistency()
         elif self.cChecks == 3:
             return self.nakedTriple()
+        elif self.cChecks == 4:
+            return self.nakedDouble()
         else:
             return self.assignmentsCheck()
 
@@ -114,38 +128,26 @@ class BTSolver:
                         return False
         return True
 
-    def nakedTriple(self):
-        # build list of houses
-        # e.g. for N=9, house length = 27, houses[0:8]are the row houses,
-        # 9:17 are the column houses, and 18:26 are the block houses
-        houses = [[] for x in range(self.gameboard.N*3)]
-        colhouseoffset = self.gameboard.N
-        blockhouseoffset = self.gameboard.N*2
-        for i in self.network.variables:
-            houses[i.row].append(i)
-            houses[i.col+colhouseoffset].append(i)
-            houses[i.block+blockhouseoffset].append(i)
+    def nakedCandidate(self,r):
 
-        for i in self.network.variables:
-            if i.isAssigned():
-                for otherrow in houses[i.row]:
-                    if i != otherrow and not otherrow.isAssigned():
-                        if i.getAssignment() in otherrow.domain.values:
-                            otherrow.domain.values.remove(i.getAssignment())
-                for othercol in houses[i.col+colhouseoffset]:
-                    if i != othercol and not othercol.isAssigned():
-                        if i.getAssignment() in othercol.domain.values:
-                            othercol.domain.values.remove(i.getAssignment())
-                for otherblock in houses[i.block+blockhouseoffset]:
-                    if i != otherblock and not otherblock.isAssigned():
-                        if i.getAssignment() in otherblock.domain.values:
-                            otherblock.domain.values.remove(i.getAssignment())
+        # if there is an assigned cell
+        # eliminate all possible candidates in the same row, column and block
+        def searchAllPotentialCandidates():
+            for i in self.network.variables:
+                if i.isAssigned():
+                    neighbours = list(self.houses[i.row])
+                    neighbours.extend(self.houses[i.col+self.colhouseoffset])
+                    neighbours.extend(self.houses[i.block+self.blockhouseoffset])
+                    for other in neighbours:
+                        if i != other and not other.isAssigned():
+                            if i.getAssignment() in other.domain.values:
+                                other.domain.values.remove(i.getAssignment())
 
         # eliminate the candidates in other cells in the same house
         # return false if inconsistent assignment is found
-        def eliminateOtherCellsInTheSameHouse(house,vi,vj,vk,candidates):
+        def eliminateOtherCellsInTheSameHouse(house,zones,candidates):
             for cell in house:
-                if(vi!=cell and vj!=cell and vk!=cell):
+                if(cell not in zones):
                     for can in candidates:
                         if(can in cell.domain.values):
                             if cell.isAssigned():
@@ -159,44 +161,94 @@ class BTSolver:
         # three times in the combined list, of which three cells are included
         # e.g. (2,9)  (2,9)  (2,6,9)  are not nakedtriple
         
-        def occureMoreThanTwoTimes(candidates,lumplist):
+        def occureMoreThanTwoTimes(candidates,lumplist,r):
             for candit in candidates:
-                if lumplist.count(candit) < 2 or lumplist.count(candit) > 3:
+                if lumplist.count(candit) < 2 or lumplist.count(candit) > r:
                     return False
             return True
 
+        
+        # return all the legal permutations given constraint r
+        # N.B. the order does not matter
+        # the maximum number of permutations is n!/(n-r)!*r!, where n is the size of M*N grid, and r is the constraint
+        # Note that illegal permutations are eliminated by checkPermutations()
+        def permutations(iterable, r):
+            pool = tuple(iterable)
+            n = len(pool)
+            it = itertools.combinations(range(n), r)
+            for indices in it:
+                if len(set(indices)) == r:
+                    toContinue,candidates = checkPermutations(pool,indices,r)
+                    if toContinue:
+                        # for i in indices:
+                        #     print(pool[i])
+                        yield tuple(pool[i] for i in indices),candidates
 
-        # return false is inconsistency is found, otherwise loop is continued
-        for hindex, house in enumerate(houses):
-            for iindex in range(len(house)):
-                for jindex in range(iindex+1,len(house)):
-                    for kindex in range(jindex+1, len(house)):
-                        vi = house[iindex]
-                        vj = house[jindex]
-                        vk = house[kindex]
-                        if not vi.isAssigned() and \
-                           not vj.isAssigned() and \
-                           not vk.isAssigned() and \
-                           len(vi.domain.values) <= 3 and \
-                           len(vj.domain.values) <= 3 and \
-                           len(vk.domain.values) <= 3:
-                            # print(self.gameboard)
-                            # print(vi)
-                            # print(vj)
-                            # print(vk)
-                            candidates = set(vi.domain.values)
-                            candidates.update(vj.domain.values)
-                            candidates.update(vk.domain.values)
-                            if len(candidates) == 3:
-                                lumplist = list(vi.domain.values)
-                                lumplist.extend(vj.domain.values)
-                                lumplist.extend(vk.domain.values)
-                                if occureMoreThanTwoTimes(candidates,lumplist):
-                                    if not eliminateOtherCellsInTheSameHouse(
-                                    	house,vi,vj,vk,candidates):
-                                    	return False
+        # return false is the current permutation (indices) is not a naked candidate
+        # otherwise return true
+        def checkPermutations(pool,indices,r):
+            lumplist = []
+            candidates = set()
+            for i in indices:
+                cell = pool[i]
+                if cell.isAssigned() or \
+                len(cell.domain.values) > r:
+                    return False,None
+                lumplist.extend(cell.domain.values)
+                candidates.update(cell.domain.values)
+            if len(candidates) != r:
+                return False,None
+            if not occureMoreThanTwoTimes(candidates,lumplist,r):
+                return False,None
+            return True,candidates
+            
+
+        # start searching naked candidates
+        searchAllPotentialCandidates();
+
+        for hindex, house in enumerate(self.houses):
+            for combination,candidates in permutations(house,r):
+                if not eliminateOtherCellsInTheSameHouse(
+                    house,combination,candidates):
+                    return False
+                # for j in i:
+                #     print(j)
+
         return True
+        # for hindex, house in enumerate(self.houses):
+        #     for iindex in range(len(house)):
+        #         for jindex in range(iindex+1,len(house)):
+        #             for kindex in range(jindex+1, len(house)):
+        #                 count += 1
+        #                 vi = house[iindex]
+        #                 vj = house[jindex]
+        #                 vk = house[kindex]
+        #                 if not vi.isAssigned() and \
+        #                    not vj.isAssigned() and \
+        #                    not vk.isAssigned() and \
+        #                    len(vi.domain.values) <= 3 and \
+        #                    len(vj.domain.values) <= 3 and \
+        #                    len(vk.domain.values) <= 3:
+        #                     candidates = set(vi.domain.values)
+        #                     candidates.update(vj.domain.values)
+        #                     candidates.update(vk.domain.values)
+        #                     if len(candidates) == 3:
+        #                         lumplist = list(vi.domain.values)
+        #                         lumplist.extend(vj.domain.values)
+        #                         lumplist.extend(vk.domain.values)
+        #                         if occureMoreThanTwoTimes(candidates,lumplist,3):
+        #                             if not eliminateOtherCellsInTheSameHouse(
+        #                             	house,[vi,vj,vk],candidates):
+        #                             	return False
+        # return True
 
+
+
+    def nakedTriple(self):
+        return self.nakedCandidate(3)
+
+    def nakedDouble(self):
+        return self.nakedCandidate(2)
 
     def forwardChecking(self):
         """Forward checking."""
