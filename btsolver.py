@@ -129,7 +129,7 @@ class BTSolver:
         return True
 
     def nakedCandidate(self,r):
-
+            
         # if there is an assigned cell
         # eliminate all possible candidates in the same row, column and block
         def searchAllPotentialCandidates():
@@ -142,7 +142,8 @@ class BTSolver:
                     for other in neighbours:
                         if i != other and not other.isAssigned():
                             if i.getAssignment() in other.domain.values:
-                                other.domain.values.remove(i.getAssignment())
+                                # other.domain.values.remove(i.getAssignment())
+                                other.removeValueFromDomain(i.getAssignment())
 
         # eliminate the candidates in other cells in the same house
         # return false if inconsistent assignment is found
@@ -151,11 +152,14 @@ class BTSolver:
                 if cell not in zones:
                     for can in candidates:
                         if can in cell.domain.values:
-                            if cell.isAssigned():
-                                return False
-                            cell.domain.values.remove(can)
+                            # if cell.isAssigned():
+                            #     return False
+                            cell.removeValueFromDomain(can)
                             # print("eliminate ", cell)
-            return True
+
+            # return True
+            return self.assignmentsCheck()
+
 
         # each candidate occur more than two times but less than or equal to
         # three times in the combined list, of which three cells are included

@@ -114,8 +114,8 @@ def main():
             btsolver.ValueSelectionHeuristic['LCV'])
 
     isTimeOut = False
-    signal.signal(signal.SIGALRM, signal_handler)
-    signal.alarm(int(sys.argv[3]))
+    # signal.signal(signal.SIGALRM, signal_handler)
+    # signal.alarm(int(sys.argv[3]))
     try:
         solver.solve()
     except IndexError:
