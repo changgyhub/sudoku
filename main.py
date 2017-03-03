@@ -14,6 +14,37 @@ def signal_handler(signum, frame):
 
 
 def printSolverStats(solverObj, totalStart, isTimeOut):
+
+    def getHouseString(hindex):
+        if hindex >= solverObj.blockhouseoffset:
+            return "Block " + str(hindex- solverObj.blockhouseoffset+1)
+        elif hindex >= solverObj.colhouseoffset:
+            return "Column "+str(hindex- solverObj.colhouseoffset+1)
+        else:
+            return "Row " + str(hindex+1)
+
+    def checkCorrectness():
+        n = solverObj.gameboard.N
+        targetval = (n*(n+1))/2
+        for hindex,house in enumerate(solverObj.houses):
+            dic = {}
+            sum = 0
+            for cell in house:
+                if cell.isAssigned():
+                    val = cell.getAssignment()
+                    sum+=val
+                    if dic.get(val) == 1:
+                        return "Duplicate value "+str(val)+ " at "+getHouseString(hindex)
+                    else:
+                        dic[val] = 1
+                else:
+                   return " Value is not assigned at "+cell
+            if sum != targetval:
+                return "Inconsistent Value at "+getHouseString(hindex)
+                
+        return "Correct Result"
+
+
     output = "TOTAL_START=" + str(time.asctime(time.localtime(totalStart)))
 
     if solverObj.preprocessing_startTime != 0:
@@ -41,6 +72,8 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
     else:
         output += "\nSTATUS=error"
 
+
+
     # print(self.gameboard.board)
     output += "\nSOLUTION=("
     for i in solverObj.gameboard.board:
@@ -52,6 +85,9 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
     output += "\nCOUNT_NODES=" + str(solverObj.numAssignments)
     output += "\nCOUNT_DEADENDS=" + str(solverObj.numBacktracks)
     output += "\n" + str(solverObj.gameboard)
+
+    output += "\n"+checkCorrectness()
+    output += "\n"
 
     return output
 

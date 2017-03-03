@@ -145,6 +145,19 @@ class BTSolver:
                                 # other.domain.values.remove(i.getAssignment())
                                 other.removeValueFromDomain(i.getAssignment())
 
+
+        # check if the current house is consistent
+        def isConsistent(houses):
+            dic = {}
+            for cell in house:
+                if cell.isAssigned():
+                    val = cell.getAssignment()
+                    if dic.get(val) == 1:
+                        return False
+                    else:
+                        dic[val] = 1
+            return True
+
         # eliminate the candidates in other cells in the same house
         # return false if inconsistent assignment is found
         def eliminateOtherCellsInTheSameHouse(house,zones,candidates):
@@ -157,8 +170,6 @@ class BTSolver:
                             cell.removeValueFromDomain(can)
                             # print("eliminate ", cell)
 
-            # return True
-            return self.assignmentsCheck()
 
 
         # each candidate occur more than two times but less than or equal to
@@ -210,8 +221,9 @@ class BTSolver:
 
         for hindex, house in enumerate(self.houses):
             for combination,candidates in permutations(house,r):
-                if not eliminateOtherCellsInTheSameHouse(
-                    house, combination, candidates):
+                eliminateOtherCellsInTheSameHouse(house, 
+                    combination, candidates)
+            if not isConsistent(house):
                     return False
 
         return True
