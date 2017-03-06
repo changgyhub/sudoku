@@ -2,10 +2,10 @@
 
 import os
 import sys
-import signal
 import filereader
 import btsolver
 import time
+from itertools import permutations
 
 
 def signal_handler(signum, frame):
@@ -17,33 +17,32 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
 
     def getHouseString(hindex):
         if hindex >= solverObj.blockhouseoffset:
-            return "Block " + str(hindex- solverObj.blockhouseoffset+1)
+            return "Block " + str(hindex - solverObj.blockhouseoffset + 1)
         elif hindex >= solverObj.colhouseoffset:
-            return "Column "+str(hindex- solverObj.colhouseoffset+1)
+            return "Column "+str(hindex - solverObj.colhouseoffset + 1)
         else:
-            return "Row " + str(hindex+1)
+            return "Row " + str(hindex + 1)
 
     def checkCorrectness():
         n = solverObj.gameboard.N
         targetval = (n*(n+1))/2
-        for hindex,house in enumerate(solverObj.houses):
+        for hindex, house in enumerate(solverObj.houses):
             dic = {}
             sum = 0
             for cell in house:
                 if cell.isAssigned():
                     val = cell.getAssignment()
-                    sum+=val
+                    sum += val
                     if dic.get(val) == 1:
-                        return "Duplicate value "+str(val)+ " at "+getHouseString(hindex)
+                        return "Duplicate value " + str(val) +\
+                               " at " + getHouseString(hindex)
                     else:
                         dic[val] = 1
                 else:
-                   return " Value is not assigned at "+cell
+                    return " Value is not assigned at " + cell
             if sum != targetval:
-                return "Inconsistent Value at "+getHouseString(hindex)
-                
+                return "Inconsistent Value at " + getHouseString(hindex)
         return "Correct Result"
-
 
     output = "TOTAL_START=" + str(time.asctime(time.localtime(totalStart)))
 
@@ -72,8 +71,6 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
     else:
         output += "\nSTATUS=error"
 
-
-
     # print(self.gameboard.board)
     output += "\nSOLUTION=("
     for i in solverObj.gameboard.board:
@@ -87,7 +84,6 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
     output += "\n" + str(solverObj.gameboard)
 
     output += "\n"+checkCorrectness()
-    output += "\n"
 
     return output
 
@@ -118,36 +114,35 @@ def main():
     if len(sys.argv) == 4 or sys.argv[4] == 'BT':
         print("Default option tokens detected: Backtracking Search (BT)")
 
-    if 'FC' in tokens:
-        print("FC/ACP/NKD/NKT token detected: Forward Checking (FC)")
-        solver.setConsistencyChecks(
-            btsolver.ConsistencyCheck['ForwardChecking'])
-    elif 'ACP' in tokens:
-        print("FC/ACP/NKD/NKT token detected: Arc Consistency (ACP)")
-        solver.setConsistencyChecks(
-            btsolver.ConsistencyCheck['ArcConsistency'])
-    elif 'NKD' in tokens:
-        print("FC/ACP/NKD/NKT token detected: Naked Double (NKD)")
-        solver.setConsistencyChecks(
-            btsolver.ConsistencyCheck['NKD'])
-    elif 'NKT' in tokens:
-        print("FC/ACP/NKD/NKT token detected: Naked Triple (NKT)")
-        solver.setConsistencyChecks(
-            btsolver.ConsistencyCheck['NKT'])
-
-    if 'MRV' in tokens:
-        print("MRV/DH token detected: Minimum Remaining Values (MRV)")
-        solver.setVariableSelectionHeuristic(
-            btsolver.VariableSelectionHeuristic['MRV'])
-    elif 'DH' in tokens:
-        print("MRV/DH token detected: Degree Heuristic (DH)")
-        solver.setVariableSelectionHeuristic(
-            btsolver.VariableSelectionHeuristic['DH'])
-
-    if 'LCV' in tokens:
-        print("LCV token detected: Least Constraining Value (LCV)")
-        solver.setValueSelectionHeuristic(
-            btsolver.ValueSelectionHeuristic['LCV'])
+    for method in tokens:
+        if method == 'FC':
+            print("FC/ACP/NKD/NKT token detected: Forward Checking (FC)")
+            solver.setConsistencyChecks(
+                btsolver.ConsistencyCheck['ForwardChecking'])
+        elif method == 'ACP':
+            print("FC/ACP/NKD/NKT token detected: Arc Consistency (ACP)")
+            solver.setConsistencyChecks(
+                btsolver.ConsistencyCheck['ArcConsistency'])
+        elif method == 'NKD':
+            print("FC/ACP/NKD/NKT token detected: Naked Double (NKD)")
+            solver.setConsistencyChecks(
+                btsolver.ConsistencyCheck['NKD'])
+        elif method == 'NKT':
+            print("FC/ACP/NKD/NKT token detected: Naked Triple (NKT)")
+            solver.setConsistencyChecks(
+                btsolver.ConsistencyCheck['NKT'])
+        elif method == 'MRV':
+            print("MRV/DH token detected: Minimum Remaining Values (MRV)")
+            solver.setVariableSelectionHeuristic(
+                btsolver.VariableSelectionHeuristic['MRV'])
+        elif method == 'DH':
+            print("MRV/DH token detected: Degree Heuristic (DH)")
+            solver.setVariableSelectionHeuristic(
+                btsolver.VariableSelectionHeuristic['DH'])
+        elif method == 'LCV':
+            print("LCV token detected: Least Constraining Value (LCV)")
+            solver.setValueSelectionHeuristic(
+                btsolver.ValueSelectionHeuristic['LCV'])
 
     isTimeOut = False
     # signal.signal(signal.SIGALRM, signal_handler)
@@ -168,28 +163,33 @@ def main():
 
 
 def test():
+    consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
         for name in files:
-            if name == 'PE1.txt':
-            # if name.endswith('.txt'):
+            if name.endswith('.txt'):
                 sudokudata = filereader.SudokuFileReader(
                                             "ExampleSudokuFiles/" + name)
-                for ConsisChk in [None, 'ForwardChecking',
-                                  'ArcConsistency', 'NKD', 'NKT']:
-                    for VarH in [None, 'MRV', 'DH']:
-                        for ValH in [None, 'LCV']:
-                            solver = btsolver.BTSolver(sudokudata)
-                            if ConsisChk is not None:
-                                solver.setConsistencyChecks(
-                                    btsolver.ConsistencyCheck[ConsisChk])
-                            if VarH is not None:
+                for consisNum in range(16):
+                    consisChk = []
+                    consisBits = "{0:04b}".format(consisNum)
+                    for bit, consisBit in enumerate(consisBits):
+                        if consisBit == '1':
+                            consisChk.append(consisList[bit])
+                    if not consisChk:
+                        consisChk = ['None']
+                    for consisChkPermute in permutations(consisChk):
+                        for VarH in ['None', 'MRV', 'DH']:
+                            for ValH in ['None', 'LCV']:
+                                solver = btsolver.BTSolver(sudokudata)
+                                for consis in consisChk:
+                                    solver.setConsistencyChecks(
+                                         btsolver.ConsistencyCheck[consis])
                                 solver.setVariableSelectionHeuristic(
-                                     btsolver.VariableSelectionHeuristic[VarH])
-                            if ValH is not None:
+                                    btsolver.VariableSelectionHeuristic[VarH])
                                 solver.setValueSelectionHeuristic(
                                     btsolver.ValueSelectionHeuristic[ValH])
-                            print(name, ConsisChk, VarH, ValH,
-                                  solver.solve(), 's')
+                                print(name, consisChkPermute, VarH, ValH,
+                                      solver.solve(), 's')
 
 
 if __name__ == '__main__':

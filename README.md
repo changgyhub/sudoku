@@ -19,8 +19,8 @@ python main.py <input> <output> <timeout> <tokens>
 
 4. `<tokens>`: Backtracking methods to use, we support:
  * `BT`: Default backtracking.
- * `FC`, `ACP`, `NKD`, `NKT`: Consistency checking methods to use. `FC` for Forward Checking, `ACP` for Arc Consistency, `NKD` for Naked Double, and `NKT` for Naked Triple. Cannot be used at the same time.
- * `MRV`, `DH`: Variable selection heuristic to use. `MRV` for Minimum Remaining Values, and `DH` for Degree Heuristic. Cannot be used at the same time.
+ * `FC`, `ACP`, `NKD`, `NKT`: Consistency checking methods to use. `FC` for Forward Checking, `ACP` for Arc Consistency, `NKD` for Naked Double, and `NKT` for Naked Triple. If multiple methods are set, they will be considered in order.
+ * `MRV`, `DH`: Variable selection heuristic to use. `MRV` for Minimum Remaining Values, and `DH` for Degree Heuristic. We only support one heuristic at the same time.
  * `LCV`: Value selection heuristic to use. `LCV` for Least Constraining Value.
 
 ## Generate a new Sudoku puzzle

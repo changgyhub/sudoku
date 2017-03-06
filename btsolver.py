@@ -57,7 +57,7 @@ class BTSolver:
         self.valHeuristics = 0
         # refers to which consistency check will be run(0 for backtracking, 1
         # for forward checking, 2 for arc consistency)
-        self.cChecks = 0
+        self.cChecks = []
         # self.runCheckOnce = False
         self.tokens = []  # tokens(heuristics to use)
 
@@ -88,7 +88,7 @@ class BTSolver:
 
     def setConsistencyChecks(self, cc):
         """Modify the consistency check."""
-        self.cChecks = cc
+        self.cChecks.append(cc)
 
     # --------- Accessors Method ---------
     def getSolution(self):
@@ -102,18 +102,19 @@ class BTSolver:
     def checkConsistency(self):
         """which consistency check to run but it is up to you when implementing
         the heuristics to break ties using the other heuristics passed in。"""
-        if self.cChecks == 0:
-            return self.assignmentsCheck()
-        elif self.cChecks == 1:
-            return self.forwardChecking()
-        elif self.cChecks == 2:
-            return self.arcConsistency()
-        elif self.cChecks == 3:
-            return self.nakedDouble()
-        elif self.cChecks == 4:
-            return self.nakedTriple()
-        else:
-            return self.assignmentsCheck()
+        allchecked = self.assignmentsCheck()
+        for method in self.cChecks:
+            if not allchecked:
+                break
+            if method == 1:
+                allchecked = allchecked and self.forwardChecking()
+            elif method == 2:
+                allchecked = allchecked and self.arcConsistency()
+            elif method == 3:
+                allchecked = allchecked and self.nakedDouble()
+            elif method == 4:
+                allchecked = allchecked and self.nakedTriple()
+        return allchecked
 
     def assignmentsCheck(self):
         """
@@ -129,7 +130,7 @@ class BTSolver:
         return True
 
     def nakedCandidate(self,r):
-            
+
         # if there is an assigned cell
         # eliminate all possible candidates in the same row, column and block
         def searchAllPotentialCandidates():
@@ -221,7 +222,7 @@ class BTSolver:
 
         for hindex, house in enumerate(self.houses):
             for combination,candidates in permutations(house,r):
-                eliminateOtherCellsInTheSameHouse(house, 
+                eliminateOtherCellsInTheSameHouse(house,
                     combination, candidates)
             if not isConsistent(house):
                     return False
