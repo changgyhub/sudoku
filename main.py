@@ -165,11 +165,18 @@ def main():
 
 
 def test():
-    numTest = 20
+    """Test Function for Solver."""
+    numTest = 20      # number of tests for each configuration
+    difficulty = 'E'  # E - easy, M - medium, H - high
+    timeout = 60      # set timeout to exit, will display 'infs'
+
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
+    outfile = open('P' + difficulty + 'log.txt', 'w+')
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
-        for name in [x for x in files if x.startswith('PE')]:
-            print('Start Testing', name)
+        for name in [x for x in files if x.startswith('P' + difficulty)]:
+            logline = 'Start Testing ' + name
+            outfile.write(logline+'\n')
+            print(logline)
             data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
             timeHeap = []
             for consisNum in range(16):
@@ -194,7 +201,7 @@ def test():
                                 solver.setValueSelectionHeuristic(
                                     btsolver.ValueSelectionHeuristic[ValH])
                                 signal.signal(signal.SIGALRM, signal_handler)
-                                signal.alarm(60)  # set timeout to be 1 min
+                                signal.alarm(timeout)
                                 try:
                                     avgtime += float(solver.solve())
                                     signal.alarm(0)  # cancel alarm
@@ -208,7 +215,10 @@ def test():
                             heappush(timeHeap, (avgtime, tokenList))
             while timeHeap:
                 avgtime, tokens = heappop(timeHeap)
-                print(tokens, 'avg time:', avgtime, 's')
+                logline = str(tokens) + ' avg time: ' + str(avgtime) + 's'
+                outfile.write(logline+'\n')
+                print(logline)
+    outfile.close()
 
 
 if __name__ == '__main__':
