@@ -4,6 +4,7 @@ import os
 import sys
 import filereader
 import btsolver
+import signal
 import time
 from itertools import permutations
 from heapq import heappush, heappop
@@ -146,8 +147,8 @@ def main():
                 btsolver.ValueSelectionHeuristic['LCV'])
 
     isTimeOut = False
-    # signal.signal(signal.SIGALRM, signal_handler)
-    # signal.alarm(int(sys.argv[3]))
+    signal.signal(signal.SIGALRM, signal_handler)
+    signal.alarm(int(sys.argv[3]))
     try:
         solver.solve()
     except IndexError:
@@ -192,11 +193,7 @@ def test():
                                     btsolver.VariableSelectionHeuristic[VarH])
                                 solver.setValueSelectionHeuristic(
                                     btsolver.ValueSelectionHeuristic[ValH])
-                                try:
-                                    avgtime += float(solver.solve())
-                                except IndexError:
-                                    avgtime = float('inf')
-                                    break
+                                avgtime += float(solver.solve())
                             avgtime /= numTest
                             tokenList = [x for x in consisChkPermute] +\
                                         [VarH] + [ValH]
