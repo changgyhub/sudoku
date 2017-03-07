@@ -7,7 +7,7 @@ A scalable sudoku solver, can be generalized to a solver for all constraint sati
 [Rimoun Ghaly](https://www.linkedin.com/in/rimoun-ghaly-41287b107/ "linkedin")<br>
 
 ## Usage
-```
+```Bash
 python main.py <input> <output> <timeout> <tokens>
 ```
 
@@ -24,7 +24,7 @@ python main.py <input> <output> <timeout> <tokens>
  * `LCV`: Value selection heuristic to use. `LCV` for Least Constraining Value.
 
 ## Generate a new Sudoku puzzle
- ```
+```Bash
 python problem_generator.py <input> <output>
 ```
 
@@ -40,6 +40,6 @@ EXAMPLE: ```25 9 3 3```
 
 ## Default Testing
 For default test on all solver options, you can simply type
-```
+```Bash
 python main.py
 ```
