@@ -168,7 +168,7 @@ def test():
     """Test Function for Solver."""
     numTest = 20      # number of tests for each configuration
     difficulty = 'E'  # E - easy, M - medium, H - high
-    timeout = 60      # set timeout to exit, will display 'infs'
+    timeout = 120      # set timeout to exit, will display 'infs'
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     outfile = open('P' + difficulty + 'log.txt', 'w+')

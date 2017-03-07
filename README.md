@@ -43,3 +43,4 @@ For default test on all solver options, you can simply type
 ```Bash
 python main.py
 ```
+You may customize your test in main.test()
