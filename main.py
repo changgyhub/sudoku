@@ -192,7 +192,11 @@ def test():
                                     btsolver.VariableSelectionHeuristic[VarH])
                                 solver.setValueSelectionHeuristic(
                                     btsolver.ValueSelectionHeuristic[ValH])
-                                avgtime += float(solver.solve())
+                                try:
+                                    avgtime += float(solver.solve())
+                                except IndexError:
+                                    avgtime = float('inf')
+                                    break
                             avgtime /= numTest
                             tokenList = [x for x in consisChkPermute] +\
                                         [VarH] + [ValH]
