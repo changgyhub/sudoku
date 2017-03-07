@@ -6,6 +6,7 @@ import filereader
 import btsolver
 import time
 from itertools import permutations
+from heapq import heappush, heappop
 
 
 def signal_handler(signum, frame):
@@ -163,24 +164,27 @@ def main():
 
 
 def test():
+    numTest = 20
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
-        for name in files:
-            if name.endswith('.txt'):
-                sudokudata = filereader.SudokuFileReader(
-                                            "ExampleSudokuFiles/" + name)
-                for consisNum in range(16):
-                    consisChk = []
-                    consisBits = "{0:04b}".format(consisNum)
-                    for bit, consisBit in enumerate(consisBits):
-                        if consisBit == '1':
-                            consisChk.append(consisList[bit])
-                    if not consisChk:
-                        consisChk = ['None']
-                    for consisChkPermute in permutations(consisChk):
-                        for VarH in ['None', 'MRV', 'DH']:
-                            for ValH in ['None', 'LCV']:
-                                solver = btsolver.BTSolver(sudokudata)
+        for name in [x for x in files if x.endswith('.txt')]:
+            print('Start Testing', name)
+            data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
+            timeHeap = []
+            for consisNum in range(16):
+                consisChk = []
+                consisBits = "{0:04b}".format(consisNum)
+                for bit, consisBit in enumerate(consisBits):
+                    if consisBit == '1':
+                        consisChk.append(consisList[bit])
+                if not consisChk:
+                    consisChk = ['None']
+                for consisChkPermute in permutations(consisChk):
+                    for VarH in ['None', 'MRV', 'DH']:
+                        for ValH in ['None', 'LCV']:
+                            avgtime = 0
+                            for i in range(numTest):
+                                solver = btsolver.BTSolver(data)
                                 for consis in consisChk:
                                     solver.setConsistencyChecks(
                                          btsolver.ConsistencyCheck[consis])
@@ -188,8 +192,14 @@ def test():
                                     btsolver.VariableSelectionHeuristic[VarH])
                                 solver.setValueSelectionHeuristic(
                                     btsolver.ValueSelectionHeuristic[ValH])
-                                print(name, consisChkPermute, VarH, ValH,
-                                      solver.solve(), 's')
+                                avgtime += float(solver.solve())
+                            avgtime /= numTest
+                            tokenList = [x for x in consisChkPermute] +\
+                                        [VarH] + [ValH]
+                            heappush(timeHeap, (avgtime, tokenList))
+            while timeHeap:
+                avgtime, tokens = heappop(timeHeap)
+                print(tokens, 'avg time:', avgtime, 's')
 
 
 if __name__ == '__main__':
