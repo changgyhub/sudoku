@@ -1,6 +1,6 @@
-# import copy
-import variable
-import domain
+"""Trail of CSP."""
+
+
 import copy
 
 
@@ -8,8 +8,8 @@ class Trail:
 
     def __init__(self):
         """
-            Represent the trail of changes made.
-            This allows backtracking to occur.
+        Represent the trail of changes made.
+        This allows backtracking to occur.
         """
         self.trailStack = []
         self.trailMarker = []
@@ -21,17 +21,15 @@ class Trail:
     # --------- Modified Method ---------
     def placeTrailMarker(self):
         """
-            Place a marker at the current point in the trail.
-            Each time undo is called,
-            the latest marker is popped and the trail。
+        Place a marker at the current point in the trail.
+        Each time undo is called,
+        the latest marker is popped and the trail
         """
         self.trailMarker.append(len(self.trailStack))
         # print("self.trailMarker: " + str(self.trailMarker))
 
     def push(self, v):
-        """
-            Adds a deep copy of a variable and its domain onto the trail.
-        """
+        """Add a deep copy of a variable and its domain onto the trail."""
         # print("v in push--> " + str(v))
         domainCopy = copy.deepcopy(v.domain)
         # v Variable and its deepcopy backup domain onto the trail
@@ -47,8 +45,8 @@ class Trail:
 
     def undo(self):
         """
-            Pop changes pushed onto the trail until reaches the latest marker.
-            Also pops the latest marker.
+        Pop changes pushed onto the trail until reaches the latest marker.
+        Also pops the latest marker.
         """
         targetSize = self.trailMarker.pop(
         )  # targetSize target position on the trail to backtrack to
@@ -64,6 +62,7 @@ class Trail:
         output += "\ntrailMarker: " + str(self.trailMarker)
         return output
 
-# Trail follows the singleton design pattern. A single class/object ever
-# created.
+
+# Trail follows the singleton design pattern.
+# A single class/object ever created.
 masterTrailVariable = Trail()

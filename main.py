@@ -151,7 +151,7 @@ def main():
     signal.alarm(int(sys.argv[3]))
     try:
         solver.solve()
-    except IndexError:
+    except Exception:
         isTimeOut = True
         solver.endTime = time.time()
         print("Timed out by " + sys.argv[3] + " seconds !!!")
@@ -168,7 +168,7 @@ def test():
     numTest = 20
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
-        for name in [x for x in files if x.endswith('.txt')]:
+        for name in [x for x in files if x.startswith('PE')]:
             print('Start Testing', name)
             data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
             timeHeap = []
@@ -193,8 +193,16 @@ def test():
                                     btsolver.VariableSelectionHeuristic[VarH])
                                 solver.setValueSelectionHeuristic(
                                     btsolver.ValueSelectionHeuristic[ValH])
-                                avgtime += float(solver.solve())
-                            avgtime /= numTest
+                                signal.signal(signal.SIGALRM, signal_handler)
+                                signal.alarm(60)  # set timeout to be 1 min
+                                try:
+                                    avgtime += float(solver.solve())
+                                    signal.alarm(0)  # cancel alarm
+                                except Exception:
+                                    avgtime = float('inf')
+                                    break
+                                if i == numTest - 1:
+                                    avgtime /= numTest
                             tokenList = [x for x in consisChkPermute] +\
                                         [VarH] + [ValH]
                             heappush(timeHeap, (avgtime, tokenList))

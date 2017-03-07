@@ -5,31 +5,16 @@ import time
 import queue
 import functools
 
-import constraint
-import constraintnetwork
 import domain
 import filereader
-import gameboard
 import trail
-import variable
-import collections
 import itertools
 
 # dictionary mapping heuristic to number
-'''
-for example, to set the variable selection heuristic to MRV, you would say,
-self.setVariableSelectionHeuristic(VariableSelectionHeuristic
-['MinimumRemainingValue']) this is needed when you have more than one heuristic
-to break ties or use one over the other in precedence. you can also manually
-set the heuristics in the main.py file when reading the parameters as the
-primary heuristics to use and then break ties within the functions you
-implementIt follows similarly to the other heuristics and chekcs
-'''
 VariableSelectionHeuristic = {'None': 0, 'MRV': 1, 'DH': 2}
-# ValueSelectionHeuristic = {'None': 0, 'LeastConstrainingValue': 1}
 ValueSelectionHeuristic = {'None': 0, 'LCV': 1}
-ConsistencyCheck = {'None': 0, 'ForwardChecking': 1,
-                    'ArcConsistency': 2, 'NKD': 3, 'NKT':4}
+ConsistencyCheck = {'None': 0, 'ForwardChecking': 1, 'ArcConsistency': 2,
+                    'NKD': 3, 'NKT': 4}
 
 
 class BTSolver:
@@ -100,8 +85,10 @@ class BTSolver:
 
     # --------- Helper Method ---------
     def checkConsistency(self):
-        """which consistency check to run but it is up to you when implementing
-        the heuristics to break ties using the other heuristics passed in。"""
+        """
+        Choose which consistency checking method(s) to run.
+        The methods are run in declared order.
+        """
         allchecked = self.assignmentsCheck()
         for method in self.cChecks:
             if not allchecked:
@@ -118,9 +105,9 @@ class BTSolver:
 
     def assignmentsCheck(self):
         """
-            default consistency check. Ensures no two variables are assigned to
-            the same value.
-            @return true if consistent, false otherwise.
+        Default consistency check.
+        Ensures no two variables are assigned to the same value.
+        @return true if consistent, false otherwise.
         """
         for v in self.network.variables:
             if v.isAssigned():
@@ -129,7 +116,7 @@ class BTSolver:
                         return False
         return True
 
-    def nakedCandidate(self,r):
+    def nakedCandidate(self, r):
 
         # if there is an assigned cell
         # eliminate all possible candidates in the same row, column and block
@@ -138,14 +125,13 @@ class BTSolver:
                 if i.isAssigned():
                     neighbours = list(self.houses[i.row])
                     neighbours.extend(self.houses[i.col + self.colhouseoffset])
-                    neighbours.extend(self.houses[i.block + \
+                    neighbours.extend(self.houses[i.block +
                                       self.blockhouseoffset])
                     for other in neighbours:
                         if i != other and not other.isAssigned():
                             if i.getAssignment() in other.domain.values:
                                 # other.domain.values.remove(i.getAssignment())
                                 other.removeValueFromDomain(i.getAssignment())
-
 
         # check if the current house is consistent
         def isConsistent(houses):
@@ -161,7 +147,7 @@ class BTSolver:
 
         # eliminate the candidates in other cells in the same house
         # return false if inconsistent assignment is found
-        def eliminateOtherCellsInTheSameHouse(house,zones,candidates):
+        def eliminateOtherCellsInTheSameHouse(house, zones, candidates):
             for cell in house:
                 if cell not in zones:
                     for can in candidates:
@@ -171,18 +157,15 @@ class BTSolver:
                             cell.removeValueFromDomain(can)
                             # print("eliminate ", cell)
 
-
-
         # each candidate occur more than two times but less than or equal to
         # three times in the combined list, of which three cells are included
         # e.g. (2,9)  (2,9)  (2,6,9)  are not nakedtriple
 
-        def occureMoreThanTwoTimes(candidates,lumplist,r):
+        def occureMoreThanTwoTimes(candidates, lumplist, r):
             for candit in candidates:
                 if lumplist.count(candit) < 2 or lumplist.count(candit) > r:
                     return False
             return True
-
 
         # return all the legal permutations given constraint r
         # N.B. the order does not matter
@@ -195,14 +178,15 @@ class BTSolver:
             it = itertools.combinations(range(n), r)
             for indices in it:
                 if len(set(indices)) == r:
-                    toContinue,candidates = checkPermutations(pool,indices,r)
+                    toContinue, candidates = checkPermutations(
+                                                pool, indices, r)
                     if toContinue:
                         # for i in indices:
                         #     print(pool[i])
                         yield tuple(pool[i] for i in indices), candidates
 
         # return if the current permutation (indices) is not a naked candidate
-        def checkPermutations(pool,indices,r):
+        def checkPermutations(pool, indices, r):
             lumplist = []
             candidates = set()
             for i in indices:
@@ -213,17 +197,17 @@ class BTSolver:
                 candidates.update(cell.domain.values)
             if len(candidates) != r:
                 return False, None
-            if not occureMoreThanTwoTimes(candidates,lumplist,r):
+            if not occureMoreThanTwoTimes(candidates, lumplist, r):
                 return False, None
             return True, candidates
 
         # start searching naked candidates
-        searchAllPotentialCandidates();
+        searchAllPotentialCandidates()
 
         for hindex, house in enumerate(self.houses):
-            for combination,candidates in permutations(house,r):
+            for combination, candidates in permutations(house, r):
                 eliminateOtherCellsInTheSameHouse(house,
-                    combination, candidates)
+                                                  combination, candidates)
             if not isConsistent(house):
                     return False
 
@@ -284,9 +268,9 @@ class BTSolver:
 
     def selectNextVariable(self):
         """
-            Selects the next variable to check.
-            @return next variable to check. null if there are no more variables
-                    to check.
+        Select the next variable to check.
+        @return next variable to check. null if there are no more variables
+                to check.
         """
         if self.varHeuristics == 0:
             return self.getfirstUnassignedVariable()
@@ -299,10 +283,10 @@ class BTSolver:
 
     def getfirstUnassignedVariable(self):
         """
-            default next variable selection heuristic. Selects the first
-            unassigned variable.
-            @return first unassigned variable. null if no variables are
-                    unassigned.
+        Default next variable selection heuristic.
+        Selects the first unassigned variable.
+        @return first unassigned variable. null if no variables are
+                unassigned.
         """
         for v in self.network.variables:
             if not v.isAssigned():
@@ -330,15 +314,16 @@ class BTSolver:
                 numMnv = sum([1 for i in neigh if not i.isAssigned()])
                 if numMnv > mnv:
                     var = v
-                    mdv = numMnv
+                    mnv = numMnv
         return var
 
     def getNextValues(self, v):
         """
-            Value Selection Heuristics. Orders the values in the domain of the
-            variable passed as a parameter and returns them as a list.
-            @return List of values in the domain of a variable in a specified
-                    order.
+        Value Selection Heuristics.
+        Orders the values in the domain of the variable passed as a
+        parameter and returns them as a list.
+        @return List of values in the domain of a variable in a specified
+                order.
         """
         if self.valHeuristics == 0:
             return self.getValuesInOrder(v)
@@ -349,9 +334,9 @@ class BTSolver:
 
     def getValuesInOrder(self, v):
         """
-            Default value ordering.
-            @param v Variable whose values need to be ordered
-            @return values ordered by lowest to highest.
+        Default value ordering.
+        @param v Variable whose values need to be ordered
+        @return values ordered by lowest to highest.
         """
         values = v.domain.values
         return sorted(values)
@@ -360,8 +345,8 @@ class BTSolver:
         """LCV heuristic."""
         values = v.domain.values
 
-        def compareLCV(v1,v2):
-            """compare LCV of two variables"""
+        def compareLCV(v1, v2):
+            """Compare LCV of two variables."""
             numConstraintV1 = 0
             numConstraintV2 = 0
             for neigh in self.network.getNeighborsOfVariable(v):
@@ -371,10 +356,10 @@ class BTSolver:
                     numConstraintV2 += 1
             return numConstraintV1 - numConstraintV2
 
-        return sorted(values, key = functools.cmp_to_key(compareLCV))
+        return sorted(values, key=functools.cmp_to_key(compareLCV))
 
     def success(self):
-        """ Called when solver finds a solution """
+        """Called when solver finds a solution."""
         self.hassolution = True
         self.gameboard = \
             filereader.ConstraintNetworkToGameBoard(self.network,
@@ -384,12 +369,9 @@ class BTSolver:
 
     # --------- Solver Method ---------
     def solve(self):
-        """ Method to start the solver """
+        """Method to start the solver."""
         self.startTime = time.time()
-        try:
-            self.solveLevel(0)
-        except VariableSelectionException:
-            print("Error with variable selection heuristic.")
+        self.solveLevel(0)
         self.endTime = time.time()
         # trail.masterTrailVariable.trailStack = []
         self.trail.trailStack = []
@@ -397,11 +379,10 @@ class BTSolver:
 
     def solveLevel(self, level):
         """
-            Solver Level
-            @param level How deep the solver is in its recursion.
-            @throws VariableSelectionException
-                contains some comments that can be uncommented for more
-                in depth analysis
+        Solver Level.
+        @param level How deep the solver is in its recursion.
+            contains some comments that can be uncommented for more
+            in depth analysis
         """
         # print("=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=")
         # print("BEFORE ANY SOLVE LEVEL START")

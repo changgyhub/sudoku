@@ -41,11 +41,11 @@ class Constraint:
     # --------- Modifiers Method ---------
     def propagateConstraint(self):
         """
-            Propagate the notequal constraint.
-            Attempt to propagate the notequal constraint through the variables
-            in the constraint. If it fails to do so, the propagation stops
-            midway and does not reset the changes to the domains of the
-            variables made so far.
+        Propagate the notequal constraint.
+        Attempt to propagate the notequal constraint through the variables
+        in the constraint. If it fails to do so, the propagation stops
+        midway and does not reset the changes to the domains of the
+        variables made so far.
         """
         # compares assignments and determines if the assigment breaks the
         # constraints

@@ -56,16 +56,18 @@ class ConstraintNetwork:
 
     def getModifiedConstraints(self):
         """
-            Return the constraints containing variables whose domains were
-            modified since the last call to this method.
+        Return modified constraints.
 
-            After getting the constraints, it will reset each variable to
-            unmodified.
+        Specificallt, return the constraints containing variables whose
+        domains were modified since the last call to this method.
 
-            Note* The first call to this method returns the constraints
-            containing the initialized variables.
+        After getting the constraints, it will reset each variable to
+        unmodified.
 
-            @return ArrayList of modified constraints
+        Note* The first call to this method returns the constraints
+        containing the initialized variables.
+
+        @return ArrayList of modified constraints
         """
         mConstraints = []
         for c in self.constraints:
