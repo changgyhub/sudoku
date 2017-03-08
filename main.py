@@ -170,7 +170,7 @@ def test():
     timeout = 120      # set timeout to exit, will display 'infs'
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
-    outfile = open('P' + difficulty + 'log.txt', 'w+')
+    outfile = open('log/P' + difficulty + '.txt', 'w+')
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
         for name in [x for x in files if x.startswith('P' + difficulty)]:
             logline = 'Start Testing ' + name
