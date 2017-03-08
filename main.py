@@ -222,6 +222,7 @@ def test():
                                     avgtime /= numTest
                             tokenList = [x for x in consisChkPermute] +\
                                         [VarH] + [ValH]
+                            print(str(tokenList) + ' avg time: ' + str(avgtime) + 's')
                             heappush(timeHeap, (avgtime, tokenList))
             while timeHeap:
                 avgtime, tokens = heappop(timeHeap)
