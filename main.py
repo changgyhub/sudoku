@@ -57,8 +57,6 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
         output += "\nPREPROCESSING_START=0"
         output += "\nPREPROCESSING_DONE=0"
 
-    # print(str(solverObj.endTime) +'              '+ str(solverObj.startTime))
-    # solverObj.startTime = solverObj.endTime - 1
     output += "\nSEARCH_START=" + \
         str(time.asctime(time.localtime(solverObj.startTime)))
     output += "\nSEARCH_DONE=" + \
@@ -73,7 +71,6 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
     else:
         output += "\nSTATUS=error"
 
-    # print(self.gameboard.board)
     output += "\nSOLUTION=("
     for i in solverObj.gameboard.board:
         for j in i:
@@ -85,7 +82,10 @@ def printSolverStats(solverObj, totalStart, isTimeOut):
     output += "\nCOUNT_DEADENDS=" + str(solverObj.numBacktracks)
     output += "\n" + str(solverObj.gameboard)
 
-    output += "\n"+checkCorrectness()
+    if not isTimeOut:
+        output += "\n"+checkCorrectness()
+    else:
+        output += "\nCorrectness Unchecked Due to Exception."
 
     return output
 
@@ -151,6 +151,7 @@ def main():
     signal.alarm(int(sys.argv[3]))
     try:
         solver.solve()
+        signal.alarm(0)  # cancel alarm
     except Exception:
         isTimeOut = True
         solver.endTime = time.time()
@@ -160,8 +161,6 @@ def main():
 
     with open(sys.argv[2], "w") as outfile:
         outfile.write(printSolverStats(solver, TOTAL_START, isTimeOut))
-
-    # return solver.endTime - solver.startTime
 
 
 def test():
