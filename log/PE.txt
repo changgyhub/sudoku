@@ -1,0 +1,1955 @@
+Start Testing PE1.txt
+['NKD', 'MRV', 'LCV'] avg time: 0.02489725351333618s
+['NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.026251578330993654s
+['NKT', 'NKD', 'None', 'LCV'] avg time: 0.026330769062042236s
+['NKD', 'NKT', 'None', 'LCV'] avg time: 0.02656710147857666s
+['NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.02660341262817383s
+['NKD', 'None', 'LCV'] avg time: 0.02771146297454834s
+['NKD', 'MRV', 'None'] avg time: 0.027826142311096192s
+['NKD', 'None', 'None'] avg time: 0.027897167205810546s
+['NKD', 'NKT', 'None', 'None'] avg time: 0.028600168228149415s
+['NKD', 'NKT', 'MRV', 'None'] avg time: 0.02860211133956909s
+['NKT', 'NKD', 'None', 'None'] avg time: 0.028612244129180908s
+['NKT', 'NKD', 'MRV', 'None'] avg time: 0.028626012802124023s
+['NKT', 'None', 'None'] avg time: 0.028718435764312746s
+['NKT', 'None', 'LCV'] avg time: 0.029967737197875977s
+['NKT', 'MRV', 'LCV'] avg time: 0.031223857402801515s
+['NKD', 'DH', 'LCV'] avg time: 0.034191465377807616s
+['NKD', 'NKT', 'DH', 'LCV'] avg time: 0.034271419048309326s
+['NKT', 'MRV', 'None'] avg time: 0.034852230548858644s
+['ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.034984397888183597s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03498860597610474s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03506447076797485s
+['NKT', 'NKD', 'DH', 'LCV'] avg time: 0.03513702154159546s
+['ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.03518586158752442s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.035364508628845215s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03569689989089966s
+['ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.035867702960968015s
+['ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03619526624679566s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03660781383514404s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.03671438694000244s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.036952197551727295s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.03699603080749512s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03712141513824463s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03720687627792359s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.0372276782989502s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.037392282485961915s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03759955167770386s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.037681758403778076s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.037740325927734374s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.03780187368392944s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.037806248664855956s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.037813782691955566s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.03783179521560669s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.0378530740737915s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.037873804569244385s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03789893388748169s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03790501356124878s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03791099786758423s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.03791910409927368s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.03793647289276123s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.037952327728271486s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03802868127822876s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.038042855262756345s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.038116073608398436s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03823720216751099s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.03826507329940796s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.03828400373458862s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.03828551769256592s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.03828825950622559s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.03839700222015381s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.03847049474716187s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.03847370147705078s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03859257698059082s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.03860538005828858s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03861533403396607s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.03865470886230469s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03874485492706299s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.03876515626907349s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.038811111450195314s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.038824605941772464s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03888436555862427s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.038998734951019284s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.03903396129608154s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03910773992538452s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.039114415645599365s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.03955212831497192s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03955539464950562s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.0395796537399292s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.03962284326553345s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.03963117599487305s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.039727783203125s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.039729726314544675s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.03975542783737183s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.03981286287307739s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.03982435464859009s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.03986947536468506s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03989535570144653s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.03992072343826294s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03994797468185425s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.039951515197753903s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.039952993392944336s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.039955174922943114s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03998667001724243s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.0399996280670166s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.04000016450881958s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.040000641345977785s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.040006160736083984s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.04006025791168213s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.04010132551193237s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.04017401933670044s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.04018579721450806s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.04018714427947998s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.040200221538543704s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.04020888805389404s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.040212607383728026s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.04021297693252564s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.04022074937820434s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.04026440382003784s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.04026451110839844s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.04028055667877197s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.0403092622756958s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.040313351154327395s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.040313875675201415s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.04033463001251221s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.040388965606689455s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.04040360450744629s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.04040838479995727s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04043159484863281s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.040440261363983154s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.04044487476348877s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.0404515266418457s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.040457737445831296s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.04050570726394653s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.04051162004470825s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.04056258201599121s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.040570199489593506s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.04057458639144897s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.040600717067718506s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.040626037120819095s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.04064302444458008s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04064664840698242s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.040646815299987794s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.04065955877304077s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.0406794548034668s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.040694594383239746s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.040701425075531004s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.04070501327514649s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.04072445631027222s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.04073580503463745s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.040739130973815915s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04077435731887817s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.04077726602554321s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.04081572294235229s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.04082710742950439s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.04089123010635376s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.040967345237731934s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.040973973274230954s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.04100313186645508s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.04100856781005859s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.041032052040100096s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.04103983640670776s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.04105076789855957s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.04108067750930786s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.04109058380126953s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.04109071493148804s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.04114004373550415s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.04117848873138428s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.04118270874023437s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.04120635986328125s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.041209709644317624s
+['NKT', 'DH', 'LCV'] avg time: 0.041274738311767575s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.04127954244613648s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.04129005670547485s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.04130939245223999s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.041327619552612306s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.041376471519470215s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04137675762176514s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.041581225395202634s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.04158861637115478s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.04168061017990112s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.04172524213790894s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.04180828332901001s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.041943907737731934s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.04471297264099121s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.044769573211669925s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.04505443572998047s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.04505865573883057s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.04510111808776855s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.045155000686645505s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.045288801193237305s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.045510637760162356s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.04568042755126953s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.0458640456199646s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.046045005321502686s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.04666340351104736s
+['ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.04737827777862549s
+['ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.04744652509689331s
+['ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.04781885147094726s
+['ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.04911985397338867s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.049397754669189456s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.049757742881774904s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.04986404180526734s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05013604164123535s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.050204896926879884s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.050253331661224365s
+['NKD', 'NKT', 'DH', 'None'] avg time: 0.05028271675109863s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.050286602973937986s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.05033215284347534s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.05034403800964356s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.05036572217941284s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.050468599796295165s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.050530636310577394s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.0505601167678833s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.05061190128326416s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.05067733526229858s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.050678932666778566s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.05069808959960938s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05070894956588745s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.05072145462036133s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.05083717107772827s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05086692571640015s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.050951361656188965s
+['NKT', 'NKD', 'DH', 'None'] avg time: 0.0509651780128479s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.05098152160644531s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.05099198818206787s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.051109778881073s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.05114370584487915s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.051185858249664304s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.05133432149887085s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.05141134262084961s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.05152562856674194s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.05160355567932129s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.05162686109542847s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.05163283348083496s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.05178121328353882s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.0522269606590271s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.052239739894866945s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.052248799800872804s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05225049257278443s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05236333608627319s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.052566695213317874s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.05256886482238769s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.05259850025177002s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.05269726514816284s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.052794229984283444s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.05283740758895874s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.052910876274108884s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.05297505855560303s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.05298922061920166s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.05299588441848755s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.05311605930328369s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.05311957597732544s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.05312265157699585s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.053128290176391604s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.05316448211669922s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.05317227840423584s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.05318074226379395s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.05321892499923706s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.05327228307723999s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.053303194046020505s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.0533061146736145s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.05336529016494751s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.053402721881866455s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.053405261039733885s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.053526782989501955s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05354906320571899s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0535588264465332s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.05359747409820557s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.05360034704208374s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.053634262084960936s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.05373305082321167s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.05373461246490478s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.05379240512847901s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.05380346775054932s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.05382084846496582s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.05397791862487793s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.05400419235229492s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.05418206453323364s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.0541936993598938s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05425037145614624s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05428283214569092s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.05431498289108276s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.05433237552642822s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.05445289611816406s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.05453248023986816s
+['NKD', 'DH', 'None'] avg time: 0.05940024852752686s
+['NKT', 'DH', 'None'] avg time: 0.06123541593551636s
+['ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.062794029712677s
+['NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.06297739744186401s
+['ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.06308319568634033s
+['NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.0643354058265686s
+['NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.0659289836883545s
+['ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.06602696180343628s
+['ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.06629793643951416s
+['NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06681022644042969s
+['ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.0690392255783081s
+['NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.0695623517036438s
+['ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.07064381837844849s
+['NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.07147244215011597s
+['NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07512869834899902s
+['ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.07583764791488648s
+['NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.0764991283416748s
+['ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.07651668787002563s
+['NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.07710866928100586s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07764074802398682s
+['ArcConsistency', 'MRV', 'None'] avg time: 0.07777047157287598s
+['ArcConsistency', 'None', 'LCV'] avg time: 0.07812323570251464s
+['ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.0781407117843628s
+['ArcConsistency', 'MRV', 'LCV'] avg time: 0.07814403772354125s
+['ArcConsistency', 'None', 'None'] avg time: 0.0782281994819641s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.0782808542251587s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07940161228179932s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.07987741231918336s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.0799442172050476s
+['ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.08002159595489503s
+['NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.0800656795501709s
+['NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.0801706075668335s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.08022429943084716s
+['NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.08047351837158204s
+['ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.08054919242858886s
+['NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08070632219314575s
+['ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.08076153993606568s
+['ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.08082839250564575s
+['ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.08117885589599609s
+['ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.0812377691268921s
+['NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.08127586841583252s
+['NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.08173904418945313s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.08175058364868164s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.08177410364151001s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.08181211948394776s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.08192402124404907s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.08196709156036378s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.08200029134750367s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.0821570873260498s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.08222523927688599s
+['ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.08225506544113159s
+['NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.08227696418762206s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.08228098154067993s
+['NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08238588571548462s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.08261858224868775s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.08283894062042237s
+['ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.08283897638320922s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.08287904262542725s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.08304833173751831s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.08314740657806396s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.08347001075744628s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.083489990234375s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.08355129957199096s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.08358443975448608s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.0836830735206604s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.08385039567947387s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08397302627563477s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08414533138275146s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.08425315618515014s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.08519258499145507s
+['ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.09196350574493409s
+['NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09294770956039429s
+['ForwardChecking', 'DH', 'None'] avg time: 0.09950838088989258s
+['ForwardChecking', 'None', 'None'] avg time: 0.10353989601135254s
+['ForwardChecking', 'None', 'LCV'] avg time: 0.10882993936538696s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.1090240240097046s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.10928781032562256s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.10945321321487426s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.1095535159111023s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.11028916835784912s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.11063457727432251s
+['ForwardChecking', 'DH', 'LCV'] avg time: 0.11078484058380127s
+['ForwardChecking', 'MRV', 'LCV'] avg time: 0.1115270972251892s
+['NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.11232300996780395s
+['ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.11271910667419434s
+['ArcConsistency', 'DH', 'LCV'] avg time: 0.11316980123519897s
+['ArcConsistency', 'DH', 'None'] avg time: 0.11332480907440186s
+['ForwardChecking', 'MRV', 'None'] avg time: 0.11342916488647461s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.11381347179412842s
+['ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.11417418718338013s
+['NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11428261995315551s
+['ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.11440436840057373s
+['NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11470922231674194s
+['NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.11480816602706909s
+['ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.1148149847984314s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.116277015209198s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11634175777435303s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.1163445234298706s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.11646400690078736s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11693116426467895s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.11696186065673828s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.11696677207946778s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.11708946228027343s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.11805117130279541s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.11834262609481812s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.1184733271598816s
+['ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.14177623987197877s
+['NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.141945481300354s
+['ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.14940617084503174s
+['NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.1505450963973999s
+['None', 'MRV', 'LCV'] avg time: 1.223721206188202s
+['None', 'None', 'LCV'] avg time: 1.2754259347915649s
+['None', 'MRV', 'None'] avg time: 1.3369731426239013s
+['None', 'None', 'None'] avg time: 1.3544302463531495s
+['None', 'DH', 'LCV'] avg time: infs
+['None', 'DH', 'None'] avg time: infs
+Start Testing PE2.txt
+['NKT', 'NKD', 'DH', 'LCV'] avg time: 0.02847466468811035s
+['NKD', 'NKT', 'DH', 'LCV'] avg time: 0.028530406951904296s
+['NKD', 'NKT', 'DH', 'None'] avg time: 0.03348320722579956s
+['NKT', 'NKD', 'DH', 'None'] avg time: 0.03386809825897217s
+['NKD', 'None', 'LCV'] avg time: 0.03674135208129883s
+['NKD', 'None', 'None'] avg time: 0.03711700439453125s
+['NKT', 'NKD', 'None', 'None'] avg time: 0.038063442707061766s
+['NKD', 'NKT', 'None', 'None'] avg time: 0.03830727338790894s
+['NKD', 'NKT', 'None', 'LCV'] avg time: 0.040671467781066895s
+['NKT', 'MRV', 'None'] avg time: 0.04119695425033569s
+['NKT', 'None', 'None'] avg time: 0.04134305715560913s
+['NKT', 'NKD', 'None', 'LCV'] avg time: 0.04149296283721924s
+['NKD', 'NKT', 'MRV', 'None'] avg time: 0.04157078266143799s
+['NKT', 'NKD', 'MRV', 'None'] avg time: 0.04187270402908325s
+['NKD', 'MRV', 'None'] avg time: 0.04225625991821289s
+['NKT', 'MRV', 'LCV'] avg time: 0.046544992923736574s
+['NKD', 'MRV', 'LCV'] avg time: 0.04666764736175537s
+['NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.04670480489730835s
+['NKT', 'None', 'LCV'] avg time: 0.04683574438095093s
+['NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.04739898443222046s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0680711030960083s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.06808551549911498s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.06837027072906494s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06837671995162964s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.06876331567764282s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.0690960168838501s
+['ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.07380137443542481s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.07397555112838745s
+['ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.07401210069656372s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.07414237260818482s
+['NKT', 'DH', 'LCV'] avg time: 0.07800827026367188s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.0780632734298706s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.07817742824554444s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.07835065126419068s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.07858088016510009s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.0788019061088562s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.07895443439483643s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.07899091243743897s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.0790284514427185s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.07912695407867432s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.07914438247680664s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.07958745956420898s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.07998597621917725s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08028339147567749s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.08035498857498169s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08119513988494872s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08129849433898925s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.08131401538848877s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08144975900650024s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.08172169923782349s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.08205248117446899s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.08230643272399903s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08242212533950806s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.08273922204971314s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.08287789821624755s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.08294987678527832s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.0829764723777771s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.08306819200515747s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.08315660953521728s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.08328899145126342s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08335992097854614s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.08341755867004394s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.08356406688690185s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.08356775045394897s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.08357760906219483s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.08372892141342163s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08377835750579835s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.08379991054534912s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.08383291959762573s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08388862609863282s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.08394842147827149s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.08395580053329468s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.08399641513824463s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.08399858474731445s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.08399884700775147s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.08403542041778564s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.08405987024307252s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.08413169384002686s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08424969911575317s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.08428196907043457s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.08437494039535523s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.08439520597457886s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.08446307182312011s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.0844846487045288s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08449996709823608s
+['NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.08453637361526489s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.08461915254592896s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.08471213579177857s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08489475250244141s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.08489590883255005s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.08489959239959717s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.08491241931915283s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.08502844572067261s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.08510563373565674s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.08519619703292847s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08540619611740112s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.08546367883682252s
+['ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.08547484874725342s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08548146486282349s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.08558549880981445s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.08559383153915405s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.08561528921127319s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.08562175035476685s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08564573526382446s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.08582214117050171s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.08598026037216186s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.08609755039215088s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08613487482070922s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.08616305589675903s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.08627457618713379s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.08633674383163452s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.08641891479492188s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.08729984760284423s
+['NKT', 'DH', 'None'] avg time: 0.0879408836364746s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.08845374584197999s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.08900631666183471s
+['NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.0901601791381836s
+['ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.09095100164413453s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.09135133028030396s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.09172691106796264s
+['NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.09365681409835816s
+['NKD', 'DH', 'LCV'] avg time: 0.09427037239074706s
+['ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.09480711221694946s
+['ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.09492498636245728s
+['NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.09494850635528565s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.09752922058105469s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09763349294662475s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.0979299545288086s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.09794834852218628s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09836302995681763s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.0983954906463623s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.09844785928726196s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.09857292175292968s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09885948896408081s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09897289276123047s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.09898788928985595s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.09905803203582764s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.09908146858215332s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.09911510944366456s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.09917901754379273s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.09919556379318237s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.09935318231582642s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.09948524236679077s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0995794415473938s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.09961310625076295s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.0998448371887207s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.09996473789215088s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.10008083581924439s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.10014338493347168s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.10031050443649292s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.10036334991455079s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.10039324760437011s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.1005964994430542s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.1006849765777588s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.10072028636932373s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.10081615447998046s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.10100215673446655s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.10105286836624146s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.10107604265213013s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.10119600296020508s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.1014480710029602s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.10150586366653443s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.1016233205795288s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.10164203643798828s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.1019281029701233s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.10248410701751709s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.10493074655532837s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.10621789693832398s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.10640559196472169s
+['NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.10646237134933471s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.10672519207000733s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.10703468322753906s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.10717766284942627s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.10742728710174561s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.10779125690460205s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.10779269933700561s
+['ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.10786019563674927s
+['NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.10794953107833863s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.10821729898452759s
+['ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.10848472118377686s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.10872784852981568s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.1091007113456726s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.10947728157043457s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.10954511165618896s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.10954973697662354s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.10960514545440674s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.10974215269088745s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.10984838008880615s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.10996050834655761s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.11000525951385498s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.11001087427139282s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.11003574132919311s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.11018598079681396s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.1102475643157959s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.11027365922927856s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.1103083610534668s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.11046304702758789s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.11051023006439209s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.1105191469192505s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.11053889989852905s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11072778701782227s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.11100924015045166s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.11101948022842408s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.1111614465713501s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.11119328737258911s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.11125758886337281s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11129378080368042s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.11132138967514038s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.11136358976364136s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.1113999366760254s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.1114378809928894s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.11160749197006226s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11162406206130981s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11176705360412598s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.11180686950683594s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.11200050115585328s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.11205124855041504s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.11227020025253295s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11228171586990357s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.11238046884536743s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.11254942417144775s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.11264002323150635s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11269805431365967s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.11274850368499756s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.11279675960540772s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.11280879974365235s
+['NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11281430721282959s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.11300262212753295s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.11366053819656372s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.1141202688217163s
+['ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.11446764469146728s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.11580791473388671s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.12076385021209717s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.12077394723892212s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.12163761854171753s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.1216461181640625s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.12184488773345947s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.12198057174682617s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.12223560810089111s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.12258427143096924s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.12275264263153077s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.12276759147644042s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.1231537938117981s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.12322074174880981s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.12328428030014038s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.12331061363220215s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.12455686330795288s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.12470303773880005s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.12475590705871582s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.12479976415634156s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.12519978284835814s
+['ArcConsistency', 'MRV', 'None'] avg time: 0.12938956022262574s
+['ArcConsistency', 'None', 'None'] avg time: 0.12975128889083862s
+['ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.13230637311935425s
+['NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.13237354755401612s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.13255612850189208s
+['NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.13326141834259034s
+['ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.133645761013031s
+['NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.13413068056106567s
+['ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.1343533754348755s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.1346834659576416s
+['NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.1347237706184387s
+['ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.13509743213653563s
+['NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.1353393316268921s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.13540985584259033s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.13560218811035157s
+['ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.1358068346977234s
+['ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.13646856546401978s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.13695932626724244s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.1369956374168396s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.1371191620826721s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.13734687566757203s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.13744558095932008s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.13749709129333496s
+['NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.13753312826156616s
+['ForwardChecking', 'None', 'None'] avg time: 0.1376604199409485s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.13793444633483887s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.1380729079246521s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.13818609714508057s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.1382705330848694s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.1389807105064392s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.1391230583190918s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.1393904447555542s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.13943538665771485s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.13959885835647584s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.14006258249282838s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.14022196531295777s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.14042190313339234s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.1405816435813904s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.1408200144767761s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.1409326195716858s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.1411725401878357s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.14145153760910034s
+['ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.14149149656295776s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.14157402515411377s
+['NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.14159018993377687s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.14198354482650757s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.14200669527053833s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.14212578535079956s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.14228347539901734s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.1423563241958618s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.14236140251159668s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.14262838363647462s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.1431589126586914s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.14328961372375487s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.1439352512359619s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.14409877061843873s
+['ForwardChecking', 'MRV', 'None'] avg time: 0.14416565895080566s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.14441862106323242s
+['ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.14463044404983522s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.1446936845779419s
+['ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.14488794803619384s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.14526963233947754s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.14626266956329345s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.14626797437667846s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.14719549417495728s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.1472475528717041s
+['NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.1472759246826172s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.1473020315170288s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.14742348194122315s
+['NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.14771044254302979s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.14787302017211915s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.1483561873435974s
+['ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.14855010509490968s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.1496938109397888s
+['ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.1500675082206726s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.15097275972366334s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.15171232223510742s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.1518472909927368s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.15200231075286866s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.15229681730270386s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.15255199670791625s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.15285654067993165s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.15304079055786132s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.15313118696212769s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.15326467752456666s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.15362969636917115s
+['NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.1571072220802307s
+['ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.15882749557495118s
+['NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.16178151369094848s
+['ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.16276299953460693s
+['NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.1636712908744812s
+['ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.1637237548828125s
+['ArcConsistency', 'MRV', 'LCV'] avg time: 0.1672750473022461s
+['ArcConsistency', 'None', 'LCV'] avg time: 0.16953818798065184s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.17271121740341186s
+['ArcConsistency', 'DH', 'LCV'] avg time: 0.1738843083381653s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.1764127254486084s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.17700177431106567s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.17884762287139894s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.18095738887786866s
+['ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.18576366901397706s
+['NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.1882346272468567s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.18953558206558227s
+['ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.1931409239768982s
+['NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.1938035488128662s
+['ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.21602482795715333s
+['NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.21721692085266114s
+['NKD', 'DH', 'None'] avg time: 0.22637115716934203s
+['ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.23137364387512208s
+['ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.23346190452575682s
+['NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.2336634397506714s
+['ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.23543958663940429s
+['ForwardChecking', 'MRV', 'LCV'] avg time: 0.23936246633529662s
+['ArcConsistency', 'DH', 'None'] avg time: 0.24285515546798705s
+['ForwardChecking', 'None', 'LCV'] avg time: 0.2553120493888855s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.2650928974151611s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.2661706805229187s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.2670956254005432s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.26751320362091063s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.26769630908966063s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.26865822076797485s
+['NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.274115788936615s
+['ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.27455151081085205s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.3037586331367493s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.30553746223449707s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.3064203977584839s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.30666502714157107s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.3070867657661438s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.3073809742927551s
+['ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.3408591628074646s
+['ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.34722075462341306s
+['ForwardChecking', 'DH', 'LCV'] avg time: 0.35521209239959717s
+['ForwardChecking', 'DH', 'None'] avg time: 0.6573953866958618s
+['None', 'None', 'LCV'] avg time: 1.5373993396759034s
+['None', 'MRV', 'LCV'] avg time: 1.5855773091316223s
+['None', 'None', 'None'] avg time: 1.6047706365585328s
+['None', 'MRV', 'None'] avg time: 1.6109909772872926s
+['None', 'DH', 'LCV'] avg time: infs
+['None', 'DH', 'None'] avg time: infs
+Start Testing PE3.txt
+['NKD', 'NKT', 'DH', 'LCV'] avg time: 0.07114561796188354s
+['NKT', 'NKD', 'DH', 'LCV'] avg time: 0.07307144403457641s
+['NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.07657513618469239s
+['NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.07919262647628784s
+['NKD', 'NKT', 'MRV', 'None'] avg time: 0.08245745897293091s
+['NKT', 'NKD', 'MRV', 'None'] avg time: 0.08291828632354736s
+['NKT', 'NKD', 'None', 'LCV'] avg time: 0.09117546081542968s
+['NKD', 'NKT', 'None', 'LCV'] avg time: 0.091815984249115s
+['NKD', 'MRV', 'LCV'] avg time: 0.09185670614242554s
+['NKD', 'NKT', 'None', 'None'] avg time: 0.09602544307708741s
+['NKT', 'NKD', 'None', 'None'] avg time: 0.09719697237014771s
+['NKD', 'NKT', 'DH', 'None'] avg time: 0.09921915531158447s
+['NKT', 'NKD', 'DH', 'None'] avg time: 0.10040347576141358s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.10366003513336182s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.10388507843017578s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.10439207553863525s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.10513651371002197s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.10546783208847046s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.10604839324951172s
+['NKD', 'DH', 'LCV'] avg time: 0.1078497290611267s
+['NKT', 'MRV', 'LCV'] avg time: 0.11110339164733887s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.11331855058670044s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.11338770389556885s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.11348352432250977s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.11349965333938598s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.11366827487945556s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.11390793323516846s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11391719579696655s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.11398288011550903s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.11407303810119629s
+['NKD', 'MRV', 'None'] avg time: 0.11409903764724731s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.1141048789024353s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11416149139404297s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.11453191041946412s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.11454112529754638s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11458297967910766s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.11464629173278809s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.11490418910980224s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.1151057243347168s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.1151418924331665s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.1152696967124939s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11540136337280274s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.11629886627197265s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.11679503917694092s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.1169097900390625s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.11702851057052613s
+['NKT', 'MRV', 'None'] avg time: 0.11902066469192504s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.12362639904022217s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.12370938062667847s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.12422925233840942s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.12425264120101928s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.12467578649520875s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.12482529878616333s
+['NKD', 'None', 'LCV'] avg time: 0.12895163297653198s
+['NKD', 'None', 'None'] avg time: 0.13551523685455322s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.1473226547241211s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.14766710996627808s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.1477866291999817s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.14782193899154664s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.14791533946990967s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.14792754650115966s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.14823979139328003s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.14842675924301146s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.14843448400497436s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.1485568881034851s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.1489635705947876s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.1491923451423645s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.149258291721344s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.1492753028869629s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.1493419885635376s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.14955538511276245s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.14974792003631593s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.15017765760421753s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.15018593072891234s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.15021979808807373s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.15024166107177733s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.15027915239334105s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.1505713105201721s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.1506709098815918s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.15068480968475342s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.15072559118270873s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.1507940411567688s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.15106872320175171s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.15162824392318724s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.15378265380859374s
+['NKT', 'None', 'None'] avg time: 0.16010323762893677s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.1699967861175537s
+['NKT', 'None', 'LCV'] avg time: 0.17034021615982056s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.17074673175811766s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.17085665464401245s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.17099751234054567s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.17171411514282225s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.17234234809875487s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.18670047521591188s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.18701807260513306s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.18740875720977784s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.18781431913375854s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.18866364955902098s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.18874838352203369s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.19399996995925903s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.19419293403625487s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.1944586992263794s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.19461679458618164s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.1946542739868164s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.19481242895126344s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.1949029564857483s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.1952419638633728s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.1954050898551941s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.19549633264541627s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.1956038236618042s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.19587854146957398s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.1958974242210388s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.1958978772163391s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.1959187388420105s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.19611647129058837s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.1964680075645447s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.19717172384262086s
+['NKD', 'DH', 'None'] avg time: 0.19721680879592896s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.1986050009727478s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.19915040731430053s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.19919763803482055s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.19929791688919068s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.19943580627441407s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.20062495470046998s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.2054239869117737s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.20559366941452026s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.20738171339035033s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.20808556079864501s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.20878546237945556s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.20915080308914186s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.2096087098121643s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.2122776985168457s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.21284861564636232s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.21300911903381348s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.21324388980865477s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.2136830449104309s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.2137778878211975s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.21389305591583252s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.2141360640525818s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.21454234123229982s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.21470507383346557s
+['ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.21546528339385987s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.2154742956161499s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.21561466455459594s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.21574348211288452s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.21583011150360107s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.21585975885391234s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.21587297916412354s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.2160289168357849s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.21623399257659912s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.21640418767929076s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.21657925844192505s
+['NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.21677788496017455s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.21684117317199708s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.21687480211257934s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.2169865846633911s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.21717013120651246s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.2173067331314087s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.2175074815750122s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.21768780946731567s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.2177993655204773s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2180164337158203s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.21818505525588988s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.2184175968170166s
+['NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.2187163233757019s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.22051596641540527s
+['ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.22109644412994384s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.22186033725738524s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.22530624866485596s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.22635830640792848s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.2368547201156616s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.2380257725715637s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.23804961442947387s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.23885265588760377s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.23903063535690308s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.2392060399055481s
+['ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.23959387540817262s
+['NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.23961763381958007s
+['NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2459342360496521s
+['ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.2500517249107361s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.25339441299438475s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.2539883017539978s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.25417715311050415s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.2546776294708252s
+['NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.2553766369819641s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.25631070137023926s
+['ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.2579470038414001s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.2589952230453491s
+['NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.2596203565597534s
+['ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.26113162040710447s
+['ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.2664738655090332s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.26820601224899293s
+['NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.26927268505096436s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.2704548597335815s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.2712187528610229s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.2716861367225647s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.27207604646682737s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2725644826889038s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.27321226596832277s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.27323747873306276s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.2735077142715454s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.2740268111228943s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.2743328809738159s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.27475665807724s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.2753268122673035s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2754525303840637s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.2757508397102356s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.27587405443191526s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.2759517550468445s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.27615511417388916s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.2762438416481018s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2763076305389404s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.2766442894935608s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.27713253498077395s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.27751449346542356s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.27800061702728274s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.27835448980331423s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.27950512170791625s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.2795348882675171s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.28071061372756956s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.2808001756668091s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.2814313769340515s
+['NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.28978397846221926s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.2902389407157898s
+['ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.29109147787094114s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.2917110323905945s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.2917948722839355s
+['ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.29191476106643677s
+['NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2921650171279907s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.2922534942626953s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.2923880457878113s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.2932516932487488s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.2933542370796204s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.2938319563865662s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.29404228925704956s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.29420052766799926s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.29437822103500366s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.29458401203155515s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.29481234550476076s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.29504393339157103s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.2951698303222656s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.2953660249710083s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.29587000608444214s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.2962373852729797s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.2966136336326599s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.29668885469436646s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.2968808650970459s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.29708985090255735s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.2972058534622192s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.29727060794830323s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.29740711450576784s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.2974225997924805s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.2979349374771118s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.29822282791137694s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.2982823133468628s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.2984381079673767s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.2986930251121521s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.29871612787246704s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.29900282621383667s
+['ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.2990615725517273s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.2992133378982544s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.29968575239181516s
+['ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.3007174849510193s
+['NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.3009162902832031s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.30097916126251223s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.30135035514831543s
+['NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.30188575983047483s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.30233728885650635s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.30239540338516235s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.3027472972869873s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.30332326889038086s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.3039513826370239s
+['NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.30455799102783204s
+['ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.3053741455078125s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.3066912770271301s
+['NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.3071808576583862s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.3076807141304016s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.30870970487594607s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.3087349057197571s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.3087812542915344s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.31044124364852904s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.31055569648742676s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.31191054582595823s
+['ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.3147173285484314s
+['ArcConsistency', 'MRV', 'LCV'] avg time: 0.3196594715118408s
+['NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.3209798812866211s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.32234113216400145s
+['ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.3226856470108032s
+['ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.32400022745132445s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.3242667555809021s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.3245846271514893s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.32496163845062254s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.3263490557670593s
+['NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.3272064089775085s
+['NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.32804068326950075s
+['ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.3285393357276917s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.32958372831344607s
+['NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.3319620370864868s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.3319932818412781s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.3321824908256531s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.3336804389953613s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.33501367568969725s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.33556203842163085s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.33560192584991455s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.33615870475769044s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.33685842752456663s
+['ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.33713332414627073s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.3375178694725037s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.33763872385025023s
+['ForwardChecking', 'MRV', 'LCV'] avg time: 0.33826773166656493s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.3387898564338684s
+['NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.33897593021392824s
+['ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.33906776905059816s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.34545120000839236s
+['NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.34650698900222776s
+['ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.350096595287323s
+['NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.35183690786361693s
+['ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.35489821434020996s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.3559522271156311s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.35599044561386106s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.35609735250473024s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.35612413883209226s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.3573009490966797s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.3591330170631409s
+['ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.36608319282531737s
+['NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.36663088798522947s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.3670928716659546s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.3676660180091858s
+['ArcConsistency', 'MRV', 'None'] avg time: 0.3679764151573181s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.36804698705673217s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.3693368911743164s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.3695207118988037s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.3729013681411743s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.373064124584198s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.376580011844635s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.3768206715583801s
+['NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.37858675718307494s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.3805752158164978s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.3821177363395691s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.382161283493042s
+['ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.3839017629623413s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.38540120124816896s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.3854049324989319s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.3862615942955017s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.3884516000747681s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.3896690130233765s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.39254939556121826s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.40151166915893555s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.4073348164558411s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.4295111894607544s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.43102225065231325s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.43145138025283813s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.4333595871925354s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.43458240032196044s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.43576329946517944s
+['ArcConsistency', 'None', 'LCV'] avg time: 0.448662531375885s
+['NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.45276846885681155s
+['ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.4528783202171326s
+['ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.4598693251609802s
+['ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.46178982257843015s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.46389055252075195s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.4644952654838562s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.4650912404060364s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.4651045560836792s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.46554591655731203s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.4739986419677734s
+['ForwardChecking', 'MRV', 'None'] avg time: 0.4874464273452759s
+['ArcConsistency', 'None', 'None'] avg time: 0.49762301445007323s
+['ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.5048534154891968s
+['NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.5060899376869201s
+['ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.5564096212387085s
+['ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.5631594061851501s
+['ForwardChecking', 'None', 'LCV'] avg time: 0.582809317111969s
+['ForwardChecking', 'None', 'None'] avg time: 0.6124519228935241s
+['NKT', 'DH', 'None'] avg time: 0.6704395055770874s
+['NKT', 'DH', 'LCV'] avg time: 0.6943472981452942s
+['ArcConsistency', 'DH', 'LCV'] avg time: 8.953698706626891s
+['ArcConsistency', 'DH', 'None'] avg time: 10.737040066719056s
+['ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 15.034619772434235s
+['ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 15.25761126279831s
+['ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 17.481104803085326s
+['ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 17.789054799079896s
+['ForwardChecking', 'DH', 'LCV'] avg time: 18.999262607097627s
+['ForwardChecking', 'DH', 'None'] avg time: 24.70683534145355s
+['None', 'DH', 'LCV'] avg time: infs
+['None', 'DH', 'None'] avg time: infs
+['None', 'MRV', 'LCV'] avg time: infs
+['None', 'MRV', 'None'] avg time: infs
+['None', 'None', 'LCV'] avg time: infs
+['None', 'None', 'None'] avg time: infs
+Start Testing PE4.txt
+['NKD', 'None', 'None'] avg time: 0.02849971055984497s
+['NKD', 'MRV', 'None'] avg time: 0.028728997707366942s
+['NKD', 'MRV', 'LCV'] avg time: 0.029060840606689453s
+['NKD', 'None', 'LCV'] avg time: 0.029085028171539306s
+['NKT', 'NKD', 'None', 'None'] avg time: 0.03190470933914184s
+['NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.032547152042388915s
+['NKD', 'NKT', 'None', 'None'] avg time: 0.03259707689285278s
+['NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.03284269571304321s
+['NKT', 'NKD', 'MRV', 'None'] avg time: 0.03512451648712158s
+['NKD', 'NKT', 'MRV', 'None'] avg time: 0.03522900342941284s
+['NKT', 'MRV', 'LCV'] avg time: 0.03528729677200317s
+['NKT', 'NKD', 'None', 'LCV'] avg time: 0.035362422466278076s
+['NKT', 'None', 'None'] avg time: 0.03557122945785522s
+['NKD', 'NKT', 'None', 'LCV'] avg time: 0.035746288299560544s
+['NKT', 'MRV', 'None'] avg time: 0.03909353017807007s
+['NKT', 'None', 'LCV'] avg time: 0.03941497802734375s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.05302294492721558s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.05313100814819336s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.05315154790878296s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.0531940221786499s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.053223049640655516s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.053679466247558594s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.05378005504608154s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.053785622119903564s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.05381176471710205s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.05398606061935425s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.05401722192764282s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.054037737846374514s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.05416243076324463s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.05418001413345337s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.05423041582107544s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.05433598756790161s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.05451172590255737s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.05460360050201416s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.05461243391036987s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.05462191104888916s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.05462328195571899s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.055101215839385986s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.05522100925445557s
+['NKD', 'NKT', 'DH', 'LCV'] avg time: 0.05625172853469849s
+['NKT', 'NKD', 'DH', 'LCV'] avg time: 0.05639482736587524s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.056819808483123777s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.05994333028793335s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.06011054515838623s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.060204923152923584s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.06022665500640869s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.06023895740509033s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.06027224063873291s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.060282778739929196s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.06030049324035645s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.0603476881980896s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.06036561727523804s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.060370910167694095s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.06037214994430542s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.060379433631896975s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.06043894290924072s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.060446858406066895s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.060504353046417235s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.060538744926452635s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.06053932905197144s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.06054465770721436s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.060550498962402347s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.06055386066436767s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.06055701971054077s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.06056734323501587s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.0606270432472229s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.060650181770324704s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.06066281795501709s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.060699284076690674s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.06071813106536865s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.0607257604598999s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.06073243618011474s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.06075078248977661s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.06076724529266357s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.06078016757965088s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.06078691482543945s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.060793709754943845s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.06079624891281128s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.06079646348953247s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.06080492734909058s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.060810279846191403s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.060895109176635744s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.06089879274368286s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.06091533899307251s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.06092038154602051s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.06092644929885864s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06093583106994629s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.06095144748687744s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.060969984531402587s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.060982930660247806s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.060984575748443605s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.06099413633346558s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06099907159805298s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.060999274253845215s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.06102902889251709s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.06105785369873047s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.061058223247528076s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.061083865165710446s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.06110062599182129s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.06111598014831543s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.06112804412841797s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06114184856414795s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.061146092414855954s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.06115963459014893s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.061185145378112794s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.06119184494018555s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.06121300458908081s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.06122664213180542s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.061230015754699704s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.06124002933502197s
+['NKT', 'NKD', 'DH', 'None'] avg time: 0.061251044273376465s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.061272048950195314s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.06130043268203735s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.06131268739700317s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.06134390830993652s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.06136503219604492s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.06137517690658569s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.061387622356414796s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.06139165163040161s
+['NKD', 'NKT', 'DH', 'None'] avg time: 0.06141735315322876s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.0614210844039917s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.06142886877059937s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.06150166988372803s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.061534559726715087s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.06156761646270752s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.061614465713500974s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.06170850992202759s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.0617173433303833s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.06176064014434814s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.06181766986846924s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.06186866760253906s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.061941683292388916s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.06203889846801758s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.06205967664718628s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.062123095989227294s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06222646236419678s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.06223540306091309s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.06227734088897705s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.0628941535949707s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.06296790838241577s
+['NKD', 'DH', 'LCV'] avg time: 0.06361898183822631s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.06700693368911743s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.06736634969711304s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.0674096703529358s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.06743112802505494s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.06745507717132568s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.06750271320343018s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.06761555671691895s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.06763046979904175s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.06772037744522094s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06772308349609375s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.0678326964378357s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.06795437335968017s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.06804027557373046s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.06811848878860474s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.06820255517959595s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.06836023330688476s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.06846311092376708s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.0684896469116211s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.06876798868179321s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.06890008449554444s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.06911358833312989s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.06914176940917968s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.06931884288787842s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.07043637037277221s
+['NKD', 'DH', 'None'] avg time: 0.07107508182525635s
+['NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.07401112318038941s
+['ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.07409492731094361s
+['NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.07452191114425659s
+['ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.07589290142059327s
+['NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.07937240600585938s
+['ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.07953606843948365s
+['NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.08076710700988769s
+['ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.08089020252227783s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.08470131158828735s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.08503451347351074s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.08531157970428467s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.08533675670623779s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.08547022342681884s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.0859083890914917s
+['NKT', 'DH', 'None'] avg time: 0.08694702386856079s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.08719631433486938s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.08721647262573243s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.0872305154800415s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.08733218908309937s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.08745101690292359s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.08749648332595825s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.08751847743988037s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.08753294944763183s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.08769620656967163s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.08773497343063355s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.087738037109375s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.0877690076828003s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.08793878555297852s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.08800630569458008s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.0880350112915039s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.08810042142868042s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.08815141916275024s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.0883449912071228s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.08836420774459838s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.08846629858016967s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.08848116397857667s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.08859413862228394s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.08860574960708618s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.08872323036193848s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.08875347375869751s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.08882942199707031s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0888598084449768s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.08887015581130982s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.08890972137451172s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.08895667791366577s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.08912850618362426s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.08925437927246094s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.08934588432312011s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.08947405815124512s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.0894955039024353s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.08951650857925415s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.08966172933578491s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.08974664211273194s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.08985711336135864s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.08994481563568116s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.08999345302581788s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.09010401964187623s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.09010765552520753s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09012564420700073s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09012600183486938s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.09028338193893433s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.09035502672195435s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.09044760465621948s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.09048854112625122s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.09056413173675537s
+['ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.09082145690917968s
+['ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.09102866649627686s
+['ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.09124987125396729s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.09151884317398071s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.09154764413833619s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.09165393114089966s
+['NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.09174281358718872s
+['NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.09237469434738159s
+['ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.09260412454605102s
+['NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.09281280040740966s
+['NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.09295914173126221s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.09356237649917602s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.09376431703567505s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.09379775524139404s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.09382834434509277s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.09386876821517945s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.09393373727798462s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.09395321607589721s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.09409692287445068s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.09413836002349854s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.09416314363479614s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.09428452253341675s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.09433146715164184s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.0944172501564026s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.0945585012435913s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09457639455795289s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.09459174871444702s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.09467955827713012s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.0947035312652588s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.09490865468978882s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.09491451978683471s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.09498832225799561s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.09506241083145142s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.09508051872253417s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.095302414894104s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.09557400941848755s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.0956275224685669s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.09568957090377808s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.09580482244491577s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.09580957889556885s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.09594316482543945s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.09607229232788086s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.09622832536697387s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.09651976823806763s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.09691486358642579s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.09799976348876953s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.09842331409454345s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0986945390701294s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.09877163171768188s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.09918571710586548s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.09961295127868652s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.0996518850326538s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.09979109764099121s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.10004345178604127s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.10016928911209107s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.10056581497192382s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.10072411298751831s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.10123928785324096s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.10235480070114136s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.10302780866622925s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.10412156581878662s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.10493366718292237s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.10547674894332885s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.1056443452835083s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.10662620067596436s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.10755107402801514s
+['NKT', 'DH', 'LCV'] avg time: 0.10904829502105713s
+['NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.11052908897399902s
+['ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.1118735909461975s
+['ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.1124376893043518s
+['NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.1137062668800354s
+['NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.1145630955696106s
+['ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.11543697118759155s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.11653633117675781s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.11669868230819702s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.1174532413482666s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11748799085617065s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.11772540807724s
+['ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.11799161434173584s
+['NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.11808875799179078s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.11908729076385498s
+['ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.1263270854949951s
+['NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.1279125213623047s
+['ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.12793599367141723s
+['NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.12917312383651733s
+['NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.12967535257339477s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.12970374822616576s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.12986966371536254s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.12994250059127807s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.13012099266052246s
+['ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.13081469535827636s
+['ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.13398094177246095s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.13427132368087769s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.13509222269058227s
+['NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.13582897186279297s
+['NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.15675466060638427s
+['ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.15722954273223877s
+['ArcConsistency', 'MRV', 'None'] avg time: 0.16504982709884644s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.17040072679519652s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.17160677909851074s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.17211779356002807s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.1728965163230896s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.1733280301094055s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.17452372312545777s
+['NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.17804657220840453s
+['ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.1787060022354126s
+['NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.18777624368667603s
+['ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.1881853461265564s
+['NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.18906035423278808s
+['NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.18967719078063966s
+['NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.18973369598388673s
+['ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.1898835301399231s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.19002269506454467s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.19023916721343995s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.19042366743087769s
+['ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.1909050464630127s
+['ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.19093254804611207s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.19103987216949464s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.1917880654335022s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.19195098876953126s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.1921120047569275s
+['ForwardChecking', 'MRV', 'None'] avg time: 0.19250155687332154s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.19320375919342042s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.19338241815567017s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.19362270832061768s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.1938602566719055s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.1947898507118225s
+['ArcConsistency', 'None', 'None'] avg time: 0.19670979976654052s
+['ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.2073776602745056s
+['ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.20897678136825562s
+['NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.20927082300186156s
+['NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.21131256818771363s
+['ArcConsistency', 'None', 'LCV'] avg time: 0.21713857650756835s
+['ForwardChecking', 'None', 'None'] avg time: 0.2207915186882019s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.2212193489074707s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.2214045763015747s
+['ArcConsistency', 'MRV', 'LCV'] avg time: 0.23104803562164306s
+['ForwardChecking', 'None', 'LCV'] avg time: 0.27220051288604735s
+['ForwardChecking', 'MRV', 'LCV'] avg time: 0.2726247310638428s
+['ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.28605352640151976s
+['ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.2861096143722534s
+['ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.28672802448272705s
+['ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.2873732089996338s
+['ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.2876907229423523s
+['ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.29389736652374265s
+['ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.2998423933982849s
+['ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.3017466068267822s
+['ArcConsistency', 'DH', 'None'] avg time: 0.314845883846283s
+['ArcConsistency', 'DH', 'LCV'] avg time: 0.31709684133529664s
+['ForwardChecking', 'DH', 'LCV'] avg time: 0.32388620376586913s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.33915765285491944s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.34076437950134275s
+['ForwardChecking', 'DH', 'None'] avg time: 0.3566561460494995s
+['None', 'None', 'None'] avg time: 12.230871868133544s
+['None', 'MRV', 'None'] avg time: 12.297563302516938s
+['None', 'MRV', 'LCV'] avg time: 12.595369184017182s
+['None', 'None', 'LCV'] avg time: 12.656560683250428s
+['None', 'DH', 'LCV'] avg time: infs
+['None', 'DH', 'None'] avg time: infs
+Start Testing PE5.txt
+['NKD', 'None', 'LCV'] avg time: 0.01644195318222046s
+['NKD', 'None', 'None'] avg time: 0.01645587682723999s
+['NKD', 'MRV', 'LCV'] avg time: 0.01650913953781128s
+['NKD', 'MRV', 'None'] avg time: 0.016624999046325684s
+['NKT', 'NKD', 'None', 'None'] avg time: 0.018675792217254638s
+['NKD', 'NKT', 'None', 'LCV'] avg time: 0.018717527389526367s
+['NKT', 'NKD', 'None', 'LCV'] avg time: 0.018750214576721193s
+['NKT', 'NKD', 'MRV', 'None'] avg time: 0.018936574459075928s
+['NKD', 'NKT', 'None', 'None'] avg time: 0.01898949146270752s
+['NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.01899796724319458s
+['NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.019092071056365966s
+['NKD', 'NKT', 'MRV', 'None'] avg time: 0.019286692142486572s
+['NKT', 'MRV', 'LCV'] avg time: 0.01979016065597534s
+['NKT', 'None', 'None'] avg time: 0.020234549045562746s
+['NKT', 'None', 'LCV'] avg time: 0.0203202486038208s
+['NKT', 'MRV', 'None'] avg time: 0.02053849697113037s
+['ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.028039824962615967s
+['ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.028222262859344482s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.02848353385925293s
+['ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.02848585844039917s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.028532111644744874s
+['ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.028634977340698243s
+['ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.028755879402160643s
+['ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.02905827760696411s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.029984796047210695s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.03002936840057373s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.03010329008102417s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.030197608470916747s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.030275869369506835s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.030310094356536865s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.030321276187896727s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.030354070663452148s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.030362236499786376s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.030367696285247804s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.03037945032119751s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03047527074813843s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.030708897113800048s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.030775678157806397s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.0308640718460083s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03087196350097656s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.030898940563201905s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.030915987491607667s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.03091905117034912s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03102775812149048s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.031034839153289796s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03112446069717407s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.031129276752471922s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03113898038864136s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.031144535541534422s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03114718198776245s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03117016553878784s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.031181693077087402s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03124758005142212s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.031304919719696046s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.03147706985473633s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.0315153956413269s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03155819177627563s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03156979084014892s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.03157962560653686s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.03159013986587524s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.03163125514984131s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.031767845153808594s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03187052011489868s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03188626766204834s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03189096450805664s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.03206936120986938s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.03227574825286865s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.032559192180633544s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.03264597654342651s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.03269295692443848s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.032806766033172605s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.03291124105453491s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.032928192615509035s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.0329322099685669s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.03295658826828003s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.0329704761505127s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.03297944068908691s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.03302906751632691s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03304455280303955s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03308284282684326s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.03312562704086304s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.033136415481567386s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.0331473708152771s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.033162903785705564s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.03320446014404297s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.03320920467376709s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.033232688903808594s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.033240091800689694s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.033244192600250244s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.03325037956237793s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.033277809619903564s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'None'] avg time: 0.033285248279571536s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.033287334442138675s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.03330692052841187s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.033316504955291745s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.0333182692527771s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.03332167863845825s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03332639932632446s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03333715200424194s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.033345043659210205s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.033347058296203616s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.033349907398223876s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03338356018066406s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03339011669158935s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.03339288234710693s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.03340040445327759s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03340113162994385s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.033413493633270265s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03341532945632934s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.03342452049255371s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03343797922134399s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.033438587188720705s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.03343983888626099s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.033466458320617676s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03346700668334961s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.03347553014755249s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.033486366271972656s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.033491325378417966s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.03349847793579101s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.03354918956756592s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.03355065584182739s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.033557999134063723s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.033572936058044435s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.033575570583343504s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.033580660820007324s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.033585536479949954s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.033585870265960695s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.033618247509002684s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.033631527423858644s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.03364776372909546s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03369530439376831s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.03370634317398071s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.03372733592987061s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.03374844789505005s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.03375186920166016s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.0337796688079834s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.033786344528198245s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.0337937593460083s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03381191492080689s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.03382428884506226s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.03382865190505981s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.033849132061004636s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.033897888660430905s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'None', 'LCV'] avg time: 0.033933615684509276s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.03394967317581177s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.033951175212860105s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'None'] avg time: 0.0339780330657959s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'None', 'LCV'] avg time: 0.03399192094802857s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.034025931358337404s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.0340313196182251s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.034058022499084475s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.034058773517608644s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.03407028913497925s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03408045768737793s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.03409719467163086s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.03411821126937866s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.034174561500549316s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.03417474031448364s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.03419462442398071s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.03423852920532226s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.03427896499633789s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.03429423570632935s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.034375333786010744s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.03438501358032227s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.03445390462875366s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.03445789813995361s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.03446372747421265s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.03452332019805908s
+['NKT', 'NKD', 'DH', 'LCV'] avg time: 0.035512876510620114s
+['NKD', 'NKT', 'DH', 'None'] avg time: 0.03602569103240967s
+['NKD', 'NKT', 'DH', 'LCV'] avg time: 0.036068737506866455s
+['NKT', 'NKD', 'DH', 'None'] avg time: 0.03674392700195313s
+['NKD', 'DH', 'None'] avg time: 0.03874459266662598s
+['NKD', 'DH', 'LCV'] avg time: 0.04054776430130005s
+['NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.041011476516723634s
+['ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.04104324579238892s
+['ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.04105032682418823s
+['NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.041404342651367186s
+['ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.04156019687652588s
+['NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.04171508550643921s
+['NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04195002317428589s
+['ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.042189288139343264s
+['ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.042339003086090087s
+['NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.042545998096466066s
+['NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.04286558628082275s
+['NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.043172478675842285s
+['ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.04325963258743286s
+['ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.043498802185058597s
+['NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.043579709529876706s
+['ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.04378798007965088s
+['NKT', 'DH', 'None'] avg time: 0.04554922580718994s
+['NKT', 'DH', 'LCV'] avg time: 0.047620689868927s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.04763625860214234s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'None'] avg time: 0.04788848161697388s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04791238307952881s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'None'] avg time: 0.04800623655319214s
+['ForwardChecking', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.048013734817504886s
+['NKT', 'NKD', 'ForwardChecking', 'MRV', 'None'] avg time: 0.048115217685699464s
+['NKT', 'ForwardChecking', 'NKD', 'None', 'LCV'] avg time: 0.04812977313995361s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'LCV'] avg time: 0.04814826250076294s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.048278212547302246s
+['NKD', 'NKT', 'ForwardChecking', 'MRV', 'None'] avg time: 0.048314464092254636s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'None'] avg time: 0.04850946664810181s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'None'] avg time: 0.04853271245956421s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'None'] avg time: 0.048657238483428955s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.04866712093353272s
+['NKD', 'NKT', 'ForwardChecking', 'None', 'LCV'] avg time: 0.048681020736694336s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'None'] avg time: 0.04874665737152099s
+['ForwardChecking', 'NKT', 'NKD', 'None', 'None'] avg time: 0.04875525236129761s
+['NKD', 'ForwardChecking', 'NKT', 'None', 'LCV'] avg time: 0.0488359808921814s
+['NKT', 'ForwardChecking', 'NKD', 'MRV', 'LCV'] avg time: 0.04893463850021362s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'None'] avg time: 0.04894403219223022s
+['NKT', 'NKD', 'ForwardChecking', 'None', 'LCV'] avg time: 0.04905260801315307s
+['ForwardChecking', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.049060630798339847s
+['ForwardChecking', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.04959042072296142s
+['NKD', 'ForwardChecking', 'NKT', 'MRV', 'LCV'] avg time: 0.049634850025177s
+['ForwardChecking', 'MRV', 'LCV'] avg time: 0.059492874145507815s
+['ForwardChecking', 'None', 'None'] avg time: 0.059727823734283446s
+['ForwardChecking', 'None', 'LCV'] avg time: 0.059953951835632326s
+['ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.060520708560943604s
+['ForwardChecking', 'MRV', 'None'] avg time: 0.06067875623703003s
+['ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06080104112625122s
+['ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.06112685203552246s
+['ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.0612433910369873s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06228803396224976s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.0633514404296875s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.06344736814498901s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.06347892284393311s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.06349124908447265s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06363945007324219s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.06381767988204956s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06383827924728394s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.06384477615356446s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06388921737670898s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06406683921813965s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.06421234607696533s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.06425796747207642s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.064398193359375s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.06447414159774781s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06448100805282593s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.0645481824874878s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.06476036310195923s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.06487593650817872s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06504132747650146s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.06509938240051269s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.06533414125442505s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.0653989553451538s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.06551717519760132s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.06558879613876342s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.0656320333480835s
+['ArcConsistency', 'NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.06563482284545899s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06573143005371093s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06579090356826782s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06585172414779664s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.06603024005889893s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.06604697704315185s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.0660502552986145s
+['ArcConsistency', 'ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.06606824398040771s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06609013080596923s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06609368324279785s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0661472201347351s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06617456674575806s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.0662345051765442s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.06623497009277343s
+['NKD', 'ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.06625669002532959s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.06626514196395875s
+['ArcConsistency', 'NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.06629542112350464s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.06631057262420655s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.06637179851531982s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.06637331247329711s
+['NKT', 'ArcConsistency', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.06637638807296753s
+['NKT', 'NKD', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.0665543556213379s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.06655967235565186s
+['NKT', 'NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06665496826171875s
+['ForwardChecking', 'NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.06671751737594604s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.06682006120681763s
+['ArcConsistency', 'NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.06683861017227173s
+['NKD', 'NKT', 'ArcConsistency', 'ForwardChecking', 'DH', 'None'] avg time: 0.06688311100006103s
+['NKT', 'ForwardChecking', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.06689373254776002s
+['NKT', 'ForwardChecking', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.06692895889282227s
+['NKD', 'NKT', 'ForwardChecking', 'ArcConsistency', 'DH', 'None'] avg time: 0.06705570220947266s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06709917783737182s
+['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.0671568751335144s
+['ForwardChecking', 'NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.06727461814880371s
+['NKD', 'ArcConsistency', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.06730294227600098s
+['ArcConsistency', 'ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.06732772588729859s
+['NKD', 'ForwardChecking', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.06736149787902831s
+['ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.06737192869186401s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.06747258901596069s
+['ForwardChecking', 'NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.06748558282852173s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.06759339570999146s
+['ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.06764217615127563s
+['NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.06764807701110839s
+['ArcConsistency', 'NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.06766688823699951s
+['ForwardChecking', 'NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.06779003143310547s
+['ForwardChecking', 'ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.06783909797668457s
+['NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.06787066459655762s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.06800857782363892s
+['NKT', 'ArcConsistency', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.06812751293182373s
+['ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.06882153749465943s
+['NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.06954113245010377s
+['ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.06988041400909424s
+['NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07054901123046875s
+['NKD', 'ArcConsistency', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07069882154464721s
+['ArcConsistency', 'None', 'None'] avg time: 0.07089943885803222s
+['ArcConsistency', 'MRV', 'LCV'] avg time: 0.0710118293762207s
+['ArcConsistency', 'MRV', 'None'] avg time: 0.07173930406570435s
+['ArcConsistency', 'None', 'LCV'] avg time: 0.07201435565948486s
+['ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.07229279279708863s
+['NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.07230437994003296s
+['NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.07257719039916992s
+['NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.07279540300369262s
+['NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.07293481826782226s
+['ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.07293519973754883s
+['ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.0733073115348816s
+['ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.0735325813293457s
+['ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.07379372119903564s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.07427457571029664s
+['NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.07431671619415284s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07437665462493896s
+['ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.07450321912765503s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'None'] avg time: 0.07451827526092529s
+['ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.07453411817550659s
+['NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.0745378851890564s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'LCV'] avg time: 0.07460867166519165s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.07475706338882446s
+['ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.07476316690444947s
+['NKT', 'ForwardChecking', 'NKD', 'DH', 'LCV'] avg time: 0.07489075660705566s
+['NKD', 'ForwardChecking', 'NKT', 'DH', 'None'] avg time: 0.0751987338066101s
+['NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.07522475719451904s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'None'] avg time: 0.07542262077331544s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'None'] avg time: 0.07546931505203247s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'LCV'] avg time: 0.07548896074295045s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'LCV'] avg time: 0.07558224201202393s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'None'] avg time: 0.07559412717819214s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'LCV'] avg time: 0.07560551166534424s
+['NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.07568905353546143s
+['ForwardChecking', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.07569633722305298s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'LCV'] avg time: 0.07569997310638428s
+['ArcConsistency', 'NKD', 'NKT', 'MRV', 'None'] avg time: 0.07573004961013793s
+['NKD', 'ArcConsistency', 'NKT', 'None', 'None'] avg time: 0.07580077648162842s
+['NKD', 'NKT', 'ForwardChecking', 'DH', 'None'] avg time: 0.07588740587234497s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'None'] avg time: 0.07598886489868165s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.07606371641159057s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'None'] avg time: 0.07606983184814453s
+['NKT', 'NKD', 'ForwardChecking', 'DH', 'None'] avg time: 0.0761725902557373s
+['ForwardChecking', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.07617518901824952s
+['ArcConsistency', 'NKT', 'NKD', 'None', 'LCV'] avg time: 0.07635722160339356s
+['NKD', 'NKT', 'ArcConsistency', 'MRV', 'None'] avg time: 0.07640535831451416s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'LCV'] avg time: 0.0764971375465393s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'None'] avg time: 0.07670295238494873s
+['NKD', 'NKT', 'ArcConsistency', 'None', 'LCV'] avg time: 0.07690161466598511s
+['ArcConsistency', 'NKT', 'NKD', 'MRV', 'None'] avg time: 0.0769730806350708s
+['NKT', 'NKD', 'ArcConsistency', 'None', 'LCV'] avg time: 0.07702640295028687s
+['NKT', 'NKD', 'ArcConsistency', 'MRV', 'None'] avg time: 0.07709572315216065s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'None'] avg time: 0.07717714309692383s
+['NKD', 'ArcConsistency', 'NKT', 'MRV', 'LCV'] avg time: 0.07738819122314453s
+['NKT', 'ArcConsistency', 'NKD', 'MRV', 'LCV'] avg time: 0.07755441665649414s
+['NKT', 'ArcConsistency', 'NKD', 'None', 'LCV'] avg time: 0.07756415605545045s
+['ArcConsistency', 'NKD', 'NKT', 'None', 'LCV'] avg time: 0.0778367280960083s
+['ForwardChecking', 'DH', 'LCV'] avg time: 0.1253649353981018s
+['ForwardChecking', 'DH', 'None'] avg time: 0.1255454659461975s
+['ArcConsistency', 'DH', 'LCV'] avg time: 0.14059845209121705s
+['NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.14220529794692993s
+['ArcConsistency', 'DH', 'None'] avg time: 0.14263763427734374s
+['NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.14306073188781737s
+['ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.14432299137115479s
+['NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.14463138580322266s
+['ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.14478789567947387s
+['ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.1449775815010071s
+['ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.145026695728302s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'LCV'] avg time: 0.14527130126953125s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'LCV'] avg time: 0.14576112031936644s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'LCV'] avg time: 0.14581451416015626s
+['ArcConsistency', 'NKT', 'NKD', 'DH', 'None'] avg time: 0.1458840012550354s
+['NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.1460321545600891s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'LCV'] avg time: 0.146350634098053s
+['NKD', 'ArcConsistency', 'NKT', 'DH', 'None'] avg time: 0.1463642120361328s
+['NKT', 'ArcConsistency', 'NKD', 'DH', 'None'] avg time: 0.146636438369751s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'None'] avg time: 0.14682809114456177s
+['NKT', 'NKD', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.14721431732177734s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'LCV'] avg time: 0.1474027991294861s
+['ArcConsistency', 'NKD', 'NKT', 'DH', 'None'] avg time: 0.1474271297454834s
+['NKD', 'NKT', 'ArcConsistency', 'DH', 'None'] avg time: 0.14822256565093994s
+['None', 'None', 'LCV'] avg time: 0.31005719900131223s
+['None', 'MRV', 'LCV'] avg time: 0.31569820642471313s
+['None', 'MRV', 'None'] avg time: 0.40492361783981323s
+['None', 'None', 'None'] avg time: 0.40573490858078004s
+['None', 'DH', 'LCV'] avg time: infs
+['None', 'DH', 'None'] avg time: infs
