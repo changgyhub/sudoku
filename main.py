@@ -186,7 +186,8 @@ def test():
         for name in [x for x in files if x.startswith('P' + difficulty)]:
             logline = 'Start Testing ' + name
             outfile.write(logline+'\n')
-            print(logline)
+            print('\n' + logline)
+            print('\nUnordered Result:\n')
             data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
             timeHeap = []
             for consisNum in range(16):
@@ -222,8 +223,10 @@ def test():
                                     avgtime /= numTest
                             tokenList = [x for x in consisChkPermute] +\
                                         [VarH] + [ValH]
-                            print(str(tokenList) + ' avg time: ' + str(avgtime) + 's')
+                            print(str(tokenList) + ' avg time: ' +
+                                  str(avgtime) + 's')
                             heappush(timeHeap, (avgtime, tokenList))
+            print('\nOrdered Result:\n')
             while timeHeap:
                 avgtime, tokens = heappop(timeHeap)
                 logline = str(tokens) + ' avg time: ' + str(avgtime) + 's'
