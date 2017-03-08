@@ -1,5 +1,5 @@
 # Sudoku
-A scalable sudoku solver, can be generalized to a solver for all constraint satisfaction problems.
+A scalable sudoku solver with templates for all constraint satisfaction problems.
 
 ## Author
 [Chang Gao](http://www.linkedin.com/in/irsisyphus "linkedin")<br>
@@ -11,7 +11,7 @@ A scalable sudoku solver, can be generalized to a solver for all constraint sati
 python main.py <input> <output> <timeout> <tokens>
 ```
 
-1. `<input>`: Raw input file of sudoku problems, see `/ExampleSudokuFiles` for samples. We support different size of board, and upperCase letters.
+1. `<input>`: Raw input file of sudoku problems, see `/ExampleSudokuFiles` for samples. For sudoku data, we support different size of board, with digits or/and upperCase letters.
 
 2. `<output>`: Name and location of output file.
 
@@ -19,8 +19,8 @@ python main.py <input> <output> <timeout> <tokens>
 
 4. `<tokens>`: Backtracking methods to use, we support:
  * `BT`: Default backtracking.
- * `FC`, `ACP`, `NKD`, `NKT`: Consistency checking methods to use. `FC` for Forward Checking, `ACP` for Arc Consistency, `NKD` for Naked Double, and `NKT` for Naked Triple. If multiple methods are set, they will be considered in order.
- * `MRV`, `DH`: Variable selection heuristic to use. `MRV` for Minimum Remaining Values, and `DH` for Degree Heuristic. We only support one heuristic at the same time.
+ * `FC, ACP, NKD, NKT`: Consistency checking methods to use. `FC` for Forward Checking, `ACP` for Arc Consistency, `NKD` for Naked Double, and `NKT` for Naked Triple. If multiple methods are set, they will be considered in order.
+ * `MRV, DH`: Variable selection heuristic to use. `MRV` for Minimum Remaining Values, and `DH` for Degree Heuristic. We only support one heuristic at the same time.
  * `LCV`: Value selection heuristic to use. `LCV` for Least Constraining Value.
 
 ## Generate a new Sudoku puzzle
