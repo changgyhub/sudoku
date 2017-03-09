@@ -1,6 +1,4 @@
 # Example Sudoku Files
 
 ### Source
-These puzzles were taken from project euler problem 96
-
-http://projecteuler.net/problem=96
+These puzzles were taken from [project euler problem 96](http://projecteuler.net/problem=96)
