@@ -171,9 +171,9 @@ def test():
     ------------------------------
     numTest | difficulty | timeout
     ------------------------------
-       20   |    'E'     |   30
-        5   |    'M'     |   60
-        2   |    'H'     |  120
+       20   |    'E'     |   60
+        5   |    'M'     |  120
+        2   |    'H'     |  600
     ------------------------------
     """
     numTest = 20      # number of tests for each configuration
