@@ -204,7 +204,7 @@ def test():
                             avgtime = 0
                             for i in range(numTest):
                                 solver = btsolver.BTSolver(data)
-                                for consis in consisChk:
+                                for consis in consisChkPermute:
                                     solver.setConsistencyChecks(
                                          btsolver.ConsistencyCheck[consis])
                                 solver.setVariableSelectionHeuristic(
