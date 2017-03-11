@@ -194,7 +194,7 @@ def test():
             print('Unordered Result:')
             data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
             timeHeap = []
-            for consisNum in range(1, 16):
+            for consisNum in range(16):
                 consisChk = []
                 consisBits = "{0:04b}".format(consisNum)
                 for bit, consisBit in enumerate(consisBits):
