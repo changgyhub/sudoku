@@ -182,12 +182,16 @@ def test():
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     outfile = open('log/P' + difficulty + '.txt', 'w+')
+    headline = 'id method numBacktracks numAssignments avgtime'
+    print('\n'+headline)
+    outfile.write(headline+'\n')
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
         for name in [x for x in files if x.startswith('P' + difficulty)]:
+            combid = 0
             logline = 'Start Testing ' + name
             outfile.write(logline+'\n')
             print('\n' + logline)
-            print('\nUnordered Result:\n')
+            print('Unordered Result:')
             data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
             timeHeap = []
             for consisNum in range(16):
@@ -201,6 +205,7 @@ def test():
                 for consisChkPermute in permutations(consisChk):
                     for VarH in ['None', 'MRV', 'DH']:
                         for ValH in ['None', 'LCV']:
+                            combid += 1
                             avgtime = 0
                             for i in range(numTest):
                                 solver = btsolver.BTSolver(data)
@@ -221,16 +226,18 @@ def test():
                                     break
                                 if i == numTest - 1:
                                     avgtime /= numTest
-                            tokenList = [x for x in consisChkPermute] +\
-                                        [VarH] + [ValH]
-                            print(str(tokenList) + ' avg time: ' +
-                                  str(avgtime) + 's')
-                            heappush(timeHeap, (avgtime, tokenList))
-            print('\nOrdered Result:\n')
+                            status = str(combid) + ' ' +\
+                                str([x for x in consisChkPermute] +
+                                    [VarH] + [ValH]) + ' ' +\
+                                str(solver.numBacktracks) + ' ' +\
+                                str(solver.numAssignments) + ' ' +\
+                                str(avgtime)
+                            print(status)
+                            heappush(timeHeap, (avgtime, status))
+            print('Ordered Result:')
             while timeHeap:
-                avgtime, tokens = heappop(timeHeap)
-                logline = str(tokens) + ' avg time: ' + str(avgtime) + 's'
-                outfile.write(logline+'\n')
+                avgtime, status = heappop(timeHeap)
+                outfile.write(status+'\n')
                 print(logline)
     outfile.close()
 
