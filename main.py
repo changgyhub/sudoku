@@ -168,33 +168,33 @@ def test():
     Test Function for Solver.
 
     Recommanded configuration:
-    ------------------------------
+    -------------------------------
     numTest | difficulty | timeout
-    ------------------------------
-       20   |    'E'     |   60
-        5   |    'M'     |  120
-        2   |    'H'     |  600
-    ------------------------------
+    -------------------------------
+       20   |    'E'     |  30/60
+        5   |    'M'     |  60/120
+        1   |    'H'     | 300/600
+    -------------------------------
     """
-    numTest = 20      # number of tests for each configuration
+    numTest = 20       # number of tests for each configuration
     difficulty = 'E'  # E - easy, M - medium, H - high
     timeout = 120     # set timeout to exit, will display 'infs'
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     outfile = open('log/P' + difficulty + '.txt', 'w+')
-    headline = 'id method numBacktracks numAssignments avgtime'
+    headline = 'id numBacktracks numAssignments avgtime'
     print('\n'+headline)
     outfile.write(headline+'\n')
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
         for name in [x for x in files if x.startswith('P' + difficulty)]:
             combid = 0
-            logline = 'Start Testing ' + name
+            logline = name
             outfile.write(logline+'\n')
             print('\n' + logline)
             print('Unordered Result:')
             data = filereader.SudokuFileReader("ExampleSudokuFiles/" + name)
             timeHeap = []
-            for consisNum in range(16):
+            for consisNum in range(1, 16):
                 consisChk = []
                 consisBits = "{0:04b}".format(consisNum)
                 for bit, consisBit in enumerate(consisBits):
@@ -227,8 +227,6 @@ def test():
                                 if i == numTest - 1:
                                     avgtime /= numTest
                             status = str(combid) + ' ' +\
-                                str([x for x in consisChkPermute] +
-                                    [VarH] + [ValH]) + ' ' +\
                                 str(solver.numBacktracks) + ' ' +\
                                 str(solver.numAssignments) + ' ' +\
                                 str(avgtime)
@@ -238,7 +236,7 @@ def test():
             while timeHeap:
                 avgtime, status = heappop(timeHeap)
                 outfile.write(status+'\n')
-                print(logline)
+                print(status)
     outfile.close()
 
 
