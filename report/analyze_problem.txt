@@ -13,6 +13,156 @@ Top 5 Solutions:
 
 [('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=0.029404854774475096  Backtracks=0  AvgBacktrackTime=0
 
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.030712175369262695  Backtracks=3  AvgBacktrackTime=0.01024
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.030828428268432618  Backtracks=3  AvgBacktrackTime=0.01028
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.030959439277648926  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.030980515480041503  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=0.030987811088562012  Backtracks=5  AvgBacktrackTime=0.006198
+
+[('NKD',), 'None', 'None'] 13  Total Time=0.03126397132873535  Backtracks=6  AvgBacktrackTime=0.005211
+
+[('NKD',), 'None', 'LCV'] 14  Total Time=0.03131327629089355  Backtracks=1  AvgBacktrackTime=0.03131
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.031891679763793944  Backtracks=3  AvgBacktrackTime=0.01063
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.0318922758102417  Backtracks=3  AvgBacktrackTime=0.01063
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.03201935291290283  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.03216092586517334  Backtracks=4  AvgBacktrackTime=0.008040
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.03217062950134277  Backtracks=4  AvgBacktrackTime=0.008043
+
+[('NKT',), 'None', 'None'] 7  Total Time=0.03217780590057373  Backtracks=6  AvgBacktrackTime=0.005363
+
+[('NKT',), 'None', 'LCV'] 8  Total Time=0.03293275833129883  Backtracks=1  AvgBacktrackTime=0.03293
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=0.03304717540740967  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=0.034099030494689944  Backtracks=1  AvgBacktrackTime=0.03410
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.034201192855834964  Backtracks=1  AvgBacktrackTime=0.03420
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.0345034122467041  Backtracks=1  AvgBacktrackTime=0.03450
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=0.03494186401367187  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=0.03532693386077881  Backtracks=3  AvgBacktrackTime=0.01178
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 219  Total Time=0.035451436042785646  Backtracks=3  AvgBacktrackTime=0.01182
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=0.035471343994140626  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'None', 'None'] 55  Total Time=0.03551745414733887  Backtracks=3  AvgBacktrackTime=0.01184
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 217  Total Time=0.035577917098999025  Backtracks=3  AvgBacktrackTime=0.01186
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 220  Total Time=0.03571033477783203  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 218  Total Time=0.035798144340515134  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=0.0361781120300293  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=0.036333656311035155  Backtracks=3  AvgBacktrackTime=0.01211
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=0.03639960289001465  Backtracks=3  AvgBacktrackTime=0.01213
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=0.03715407848358154  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD',), 'DH', 'LCV'] 18  Total Time=0.03715965747833252  Backtracks=1  AvgBacktrackTime=0.03716
+
+[('ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 183  Total Time=0.037306571006774904  Backtracks=3  AvgBacktrackTime=0.01244
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=0.037384963035583495  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'None'] 181  Total Time=0.037464475631713866  Backtracks=3  AvgBacktrackTime=0.01249
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=0.03747513294219971  Backtracks=3  AvgBacktrackTime=0.01249
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 277  Total Time=0.03750441074371338  Backtracks=3  AvgBacktrackTime=0.01250
+
+[('ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 182  Total Time=0.0376209020614624  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=0.03764026165008545  Backtracks=3  AvgBacktrackTime=0.01255
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=0.03768379688262939  Backtracks=3  AvgBacktrackTime=0.01256
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 278  Total Time=0.037687039375305174  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 184  Total Time=0.03772461414337158  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 268  Total Time=0.03772666454315186  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 266  Total Time=0.03786804676055908  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=0.0378986120223999  Backtracks=3  AvgBacktrackTime=0.01263
+
+[('NKD', 'NKT'), 'DH', 'LCV'] 24  Total Time=0.037967681884765625  Backtracks=1  AvgBacktrackTime=0.03797
+
+[('NKT',), 'MRV', 'None'] 9  Total Time=0.03800978660583496  Backtracks=5  AvgBacktrackTime=0.007602
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=0.03812727928161621  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 271  Total Time=0.03836114406585693  Backtracks=3  AvgBacktrackTime=0.01279
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.03842520713806152  Backtracks=3  AvgBacktrackTime=0.01281
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=0.03843114376068115  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=0.03848233222961426  Backtracks=3  AvgBacktrackTime=0.01283
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=0.03865506649017334  Backtracks=3  AvgBacktrackTime=0.01289
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=0.03887152671813965  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 259  Total Time=0.03891124725341797  Backtracks=3  AvgBacktrackTime=0.01297
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 261  Total Time=0.03891510963439941  Backtracks=3  AvgBacktrackTime=0.01297
+
+[('ForwardChecking', 'ArcConsistency'), 'None', 'None'] 163  Total Time=0.03891522884368896  Backtracks=3  AvgBacktrackTime=0.01297
+
+[('ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 165  Total Time=0.0390052318572998  Backtracks=3  AvgBacktrackTime=0.01300
+
+[('ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 164  Total Time=0.039059686660766604  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 272  Total Time=0.03910360336303711  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 166  Total Time=0.03911008834838867  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 262  Total Time=0.03911974430084229  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'DH', 'LCV'] 30  Total Time=0.03915255069732666  Backtracks=1  AvgBacktrackTime=0.03915
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=0.039222121238708496  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 273  Total Time=0.0394406795501709  Backtracks=3  AvgBacktrackTime=0.01315
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=0.039475107192993165  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 274  Total Time=0.03951566219329834  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 84  Total Time=0.0417771577835083  Backtracks=1  AvgBacktrackTime=0.04178
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'None'] 83  Total Time=0.041861224174499514  Backtracks=1  AvgBacktrackTime=0.04186
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 211  Total Time=0.0421889066696167  Backtracks=3  AvgBacktrackTime=0.01406
+
+[('NKD', 'ArcConsistency'), 'DH', 'None'] 59  Total Time=0.042200350761413576  Backtracks=1  AvgBacktrackTime=0.04220
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 213  Total Time=0.04230220317840576  Backtracks=3  AvgBacktrackTime=0.01410
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 212  Total Time=0.04240729808807373  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'None'] 95  Total Time=0.04248049259185791  Backtracks=1  AvgBacktrackTime=0.04248
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 96  Total Time=0.042487931251525876  Backtracks=1  AvgBacktrackTime=0.04249
+
+[('NKD', 'ArcConsistency'), 'DH', 'LCV'] 60  Total Time=0.04250411987304688  Backtracks=1  AvgBacktrackTime=0.04250
+
 
 PE2.txt
 Success Rate=0.9949
@@ -28,6 +178,156 @@ Top 5 Solutions:
 [('NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 96  Total Time=0.035658979415893556  Backtracks=0  AvgBacktrackTime=0
 
 [('NKT', 'NKD', 'ArcConsistency'), 'DH', 'None'] 95  Total Time=0.036231160163879395  Backtracks=2  AvgBacktrackTime=0.01812
+
+[('NKD', 'NKT'), 'DH', 'None'] 23  Total Time=0.03697764873504639  Backtracks=4  AvgBacktrackTime=0.009244
+
+[('NKT', 'NKD'), 'None', 'None'] 25  Total Time=0.037347841262817386  Backtracks=3  AvgBacktrackTime=0.01245
+
+[('NKD',), 'None', 'LCV'] 14  Total Time=0.03930938243865967  Backtracks=4  AvgBacktrackTime=0.009827
+
+[('NKD',), 'None', 'None'] 13  Total Time=0.040304827690124514  Backtracks=8  AvgBacktrackTime=0.005038
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.041376280784606936  Backtracks=4  AvgBacktrackTime=0.01034
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 282  Total Time=0.04158926010131836  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'DH', 'None'] 281  Total Time=0.0420058012008667  Backtracks=2  AvgBacktrackTime=0.02100
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=0.04410858154296875  Backtracks=2  AvgBacktrackTime=0.02205
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.04441068172454834  Backtracks=3  AvgBacktrackTime=0.01480
+
+[('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=0.044435977935791016  Backtracks=2  AvgBacktrackTime=0.02222
+
+[('NKT',), 'MRV', 'None'] 9  Total Time=0.04464974403381348  Backtracks=5  AvgBacktrackTime=0.008930
+
+[('NKT',), 'None', 'None'] 7  Total Time=0.044969367980957034  Backtracks=5  AvgBacktrackTime=0.008994
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.04566502571105957  Backtracks=3  AvgBacktrackTime=0.01522
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 366  Total Time=0.045901918411254884  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=0.046768999099731444  Backtracks=8  AvgBacktrackTime=0.005846
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'DH', 'None'] 365  Total Time=0.04723763465881348  Backtracks=2  AvgBacktrackTime=0.02362
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'DH', 'LCV'] 384  Total Time=0.04773471355438232  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'DH', 'None'] 383  Total Time=0.04816503524780273  Backtracks=2  AvgBacktrackTime=0.02408
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.04833488464355469  Backtracks=2  AvgBacktrackTime=0.02417
+
+[('NKD', 'ArcConsistency', 'NKT'), 'DH', 'LCV'] 78  Total Time=0.048896265029907224  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=0.05050792694091797  Backtracks=7  AvgBacktrackTime=0.007215
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.050773239135742186  Backtracks=5  AvgBacktrackTime=0.01015
+
+[('NKT',), 'None', 'LCV'] 8  Total Time=0.05103719234466553  Backtracks=4  AvgBacktrackTime=0.01276
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 84  Total Time=0.051697373390197754  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.05185933113098144  Backtracks=2  AvgBacktrackTime=0.02593
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=0.0531832218170166  Backtracks=3  AvgBacktrackTime=0.01773
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=0.05328803062438965  Backtracks=1  AvgBacktrackTime=0.05329
+
+[('NKT', 'ArcConsistency', 'NKD'), 'DH', 'LCV'] 90  Total Time=0.05358045101165772  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=0.0541724443435669  Backtracks=3  AvgBacktrackTime=0.01806
+
+[('NKD', 'ArcConsistency', 'NKT'), 'DH', 'None'] 77  Total Time=0.055137467384338376  Backtracks=4  AvgBacktrackTime=0.01378
+
+[('NKD', 'ArcConsistency'), 'None', 'None'] 55  Total Time=0.05559823513031006  Backtracks=3  AvgBacktrackTime=0.01853
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=0.05581772327423096  Backtracks=1  AvgBacktrackTime=0.05582
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=0.05616209506988525  Backtracks=3  AvgBacktrackTime=0.01872
+
+[('NKT', 'ArcConsistency', 'NKD'), 'DH', 'None'] 89  Total Time=0.05734853744506836  Backtracks=2  AvgBacktrackTime=0.02867
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'None'] 83  Total Time=0.057727813720703125  Backtracks=4  AvgBacktrackTime=0.01443
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.058440542221069335  Backtracks=3  AvgBacktrackTime=0.01948
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.058492517471313475  Backtracks=3  AvgBacktrackTime=0.01950
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.05963566303253174  Backtracks=3  AvgBacktrackTime=0.01988
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.060171985626220705  Backtracks=3  AvgBacktrackTime=0.02006
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=0.060468530654907225  Backtracks=3  AvgBacktrackTime=0.02016
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'DH', 'LCV'] 390  Total Time=0.06048264503479004  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.06083126068115234  Backtracks=3  AvgBacktrackTime=0.02028
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=0.060845017433166504  Backtracks=3  AvgBacktrackTime=0.02028
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'DH', 'None'] 389  Total Time=0.06104822158813476  Backtracks=2  AvgBacktrackTime=0.03052
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 363  Total Time=0.06219391822814942  Backtracks=3  AvgBacktrackTime=0.02073
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=0.06314325332641602  Backtracks=3  AvgBacktrackTime=0.02105
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=0.06315970420837402  Backtracks=3  AvgBacktrackTime=0.02105
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=0.06510193347930908  Backtracks=3  AvgBacktrackTime=0.02170
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=0.06528904438018798  Backtracks=2  AvgBacktrackTime=0.03264
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.0654627799987793  Backtracks=2  AvgBacktrackTime=0.03273
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.06588025093078613  Backtracks=2  AvgBacktrackTime=0.03294
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'DH', 'LCV'] 264  Total Time=0.06612417697906495  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=0.06660196781158448  Backtracks=2  AvgBacktrackTime=0.03330
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=0.06683814525604248  Backtracks=1  AvgBacktrackTime=0.06684
+
+[('NKT', 'NKD', 'ForwardChecking'), 'DH', 'LCV'] 162  Total Time=0.06690154075622559  Backtracks=1  AvgBacktrackTime=0.06690
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=0.06704978942871094  Backtracks=2  AvgBacktrackTime=0.03352
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=0.0674706220626831  Backtracks=2  AvgBacktrackTime=0.03374
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'DH', 'LCV'] 258  Total Time=0.06750717163085937  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking'), 'DH', 'None'] 161  Total Time=0.06768162250518799  Backtracks=3  AvgBacktrackTime=0.02256
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=0.06769757270812989  Backtracks=3  AvgBacktrackTime=0.02257
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=0.06778290271759033  Backtracks=3  AvgBacktrackTime=0.02259
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'DH', 'None'] 257  Total Time=0.06805498600006103  Backtracks=2  AvgBacktrackTime=0.03403
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=0.06881742477416992  Backtracks=2  AvgBacktrackTime=0.03441
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=0.06953561305999756  Backtracks=2  AvgBacktrackTime=0.03477
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=0.06985828876495362  Backtracks=2  AvgBacktrackTime=0.03493
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'DH', 'LCV'] 324  Total Time=0.07159159183502198  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=0.07198565006256104  Backtracks=1  AvgBacktrackTime=0.07199
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 270  Total Time=0.07339596748352051  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT'), 'DH', 'LCV'] 132  Total Time=0.07413127422332763  Backtracks=1  AvgBacktrackTime=0.07413
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=0.0751767873764038  Backtracks=2  AvgBacktrackTime=0.03759
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=0.07536656856536865  Backtracks=2  AvgBacktrackTime=0.03768
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=0.0755326509475708  Backtracks=3  AvgBacktrackTime=0.02518
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.07571091651916503  Backtracks=2  AvgBacktrackTime=0.03786
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'DH', 'LCV'] 276  Total Time=0.07593379020690919  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 217  Total Time=0.07610886096954346  Backtracks=3  AvgBacktrackTime=0.02537
 
 
 PE3.txt
@@ -45,6 +345,156 @@ Top 5 Solutions:
 
 [('NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 84  Total Time=0.0888350248336792  Backtracks=2  AvgBacktrackTime=0.04442
 
+[('NKT', 'ArcConsistency', 'NKD'), 'DH', 'LCV'] 90  Total Time=0.089564847946167  Backtracks=2  AvgBacktrackTime=0.04478
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.08981993198394775  Backtracks=8  AvgBacktrackTime=0.01123
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 270  Total Time=0.09014976024627686  Backtracks=1  AvgBacktrackTime=0.09015
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 366  Total Time=0.09340317249298095  Backtracks=1  AvgBacktrackTime=0.09340
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.09419064521789551  Backtracks=9  AvgBacktrackTime=0.01047
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'DH', 'LCV'] 384  Total Time=0.09601995944976807  Backtracks=1  AvgBacktrackTime=0.09602
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.0982506275177002  Backtracks=11  AvgBacktrackTime=0.008932
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 282  Total Time=0.10001335144042969  Backtracks=1  AvgBacktrackTime=0.1000
+
+[('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=0.10132372379302979  Backtracks=10  AvgBacktrackTime=0.01013
+
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=0.10245816707611084  Backtracks=19  AvgBacktrackTime=0.005393
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'None'] 83  Total Time=0.10299255847930908  Backtracks=4  AvgBacktrackTime=0.02575
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.10473220348358155  Backtracks=12  AvgBacktrackTime=0.008728
+
+[('NKD', 'NKT'), 'DH', 'None'] 23  Total Time=0.10818307399749756  Backtracks=13  AvgBacktrackTime=0.008322
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'None'] 95  Total Time=0.11134648323059082  Backtracks=4  AvgBacktrackTime=0.02784
+
+[('NKT', 'ArcConsistency', 'NKD'), 'DH', 'None'] 89  Total Time=0.11158292293548584  Backtracks=4  AvgBacktrackTime=0.02790
+
+[('ForwardChecking', 'NKD', 'NKT'), 'DH', 'LCV'] 132  Total Time=0.11398105621337891  Backtracks=3  AvgBacktrackTime=0.03799
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.11566050052642822  Backtracks=4  AvgBacktrackTime=0.02892
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'DH', 'LCV'] 324  Total Time=0.1158226728439331  Backtracks=2  AvgBacktrackTime=0.05791
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 330  Total Time=0.11661605834960938  Backtracks=2  AvgBacktrackTime=0.05831
+
+[('NKD',), 'DH', 'LCV'] 18  Total Time=0.11674795150756836  Backtracks=22  AvgBacktrackTime=0.005307
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'DH', 'LCV'] 354  Total Time=0.11849641799926758  Backtracks=2  AvgBacktrackTime=0.05925
+
+[('NKT', 'ForwardChecking', 'NKD'), 'DH', 'LCV'] 156  Total Time=0.11870381832122803  Backtracks=4  AvgBacktrackTime=0.02968
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'DH', 'LCV'] 276  Total Time=0.11880567073822021  Backtracks=2  AvgBacktrackTime=0.05940
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.119258713722229  Backtracks=6  AvgBacktrackTime=0.01988
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=0.11950688362121582  Backtracks=12  AvgBacktrackTime=0.009959
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.11982197761535644  Backtracks=6  AvgBacktrackTime=0.01997
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'DH', 'LCV'] 342  Total Time=0.12013750076293946  Backtracks=2  AvgBacktrackTime=0.06007
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'DH', 'LCV'] 348  Total Time=0.12028050422668457  Backtracks=2  AvgBacktrackTime=0.06014
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'DH', 'LCV'] 360  Total Time=0.12045235633850097  Backtracks=2  AvgBacktrackTime=0.06023
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.12123041152954102  Backtracks=19  AvgBacktrackTime=0.006381
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'DH', 'LCV'] 336  Total Time=0.12171380519866944  Backtracks=2  AvgBacktrackTime=0.06086
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'DH', 'LCV'] 378  Total Time=0.12182464599609374  Backtracks=2  AvgBacktrackTime=0.06091
+
+[('NKT', 'NKD'), 'None', 'None'] 25  Total Time=0.12335016727447509  Backtracks=14  AvgBacktrackTime=0.008811
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=0.12377474308013917  Backtracks=4  AvgBacktrackTime=0.03094
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'DH', 'LCV'] 372  Total Time=0.12423894405364991  Backtracks=2  AvgBacktrackTime=0.06212
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=0.12447953224182129  Backtracks=26  AvgBacktrackTime=0.004788
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'DH', 'LCV'] 252  Total Time=0.1258101463317871  Backtracks=2  AvgBacktrackTime=0.06291
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.1263761043548584  Backtracks=5  AvgBacktrackTime=0.02528
+
+[('NKT', 'ArcConsistency'), 'DH', 'LCV'] 48  Total Time=0.1272282838821411  Backtracks=4  AvgBacktrackTime=0.03181
+
+[('NKT',), 'MRV', 'None'] 9  Total Time=0.12854232788085937  Backtracks=21  AvgBacktrackTime=0.006121
+
+[('NKD', 'NKT', 'ForwardChecking'), 'DH', 'LCV'] 150  Total Time=0.1286235809326172  Backtracks=7  AvgBacktrackTime=0.01837
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'DH', 'None'] 383  Total Time=0.1287567138671875  Backtracks=4  AvgBacktrackTime=0.03219
+
+[('NKD', 'ArcConsistency', 'NKT'), 'DH', 'None'] 77  Total Time=0.1306208610534668  Backtracks=6  AvgBacktrackTime=0.02177
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.13085334300994872  Backtracks=7  AvgBacktrackTime=0.01869
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'DH', 'LCV'] 390  Total Time=0.13160221576690673  Backtracks=1  AvgBacktrackTime=0.1316
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'DH', 'None'] 353  Total Time=0.13181707859039307  Backtracks=4  AvgBacktrackTime=0.03295
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.13367271423339844  Backtracks=8  AvgBacktrackTime=0.01671
+
+[('ForwardChecking', 'NKD', 'NKT'), 'DH', 'None'] 131  Total Time=0.13444762229919432  Backtracks=6  AvgBacktrackTime=0.02241
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'DH', 'None'] 347  Total Time=0.1345426321029663  Backtracks=4  AvgBacktrackTime=0.03364
+
+[('NKT', 'NKD', 'ForwardChecking'), 'DH', 'LCV'] 162  Total Time=0.13520514965057373  Backtracks=4  AvgBacktrackTime=0.03380
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'LCV'] 136  Total Time=0.13636267185211182  Backtracks=4  AvgBacktrackTime=0.03409
+
+[('NKD', 'NKT', 'ForwardChecking'), 'DH', 'None'] 149  Total Time=0.13802103996276854  Backtracks=8  AvgBacktrackTime=0.01725
+
+[('NKD',), 'None', 'LCV'] 14  Total Time=0.1414029359817505  Backtracks=37  AvgBacktrackTime=0.003822
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'DH', 'LCV'] 258  Total Time=0.1417597532272339  Backtracks=7  AvgBacktrackTime=0.02025
+
+[('NKT', 'ForwardChecking', 'NKD'), 'DH', 'None'] 155  Total Time=0.14264800548553466  Backtracks=5  AvgBacktrackTime=0.02853
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=0.14343063831329345  Backtracks=4  AvgBacktrackTime=0.03586
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'DH', 'None'] 371  Total Time=0.1438809871673584  Backtracks=4  AvgBacktrackTime=0.03597
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=0.14579558372497559  Backtracks=5  AvgBacktrackTime=0.02916
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'DH', 'None'] 329  Total Time=0.1467803955078125  Backtracks=4  AvgBacktrackTime=0.03670
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=0.14738867282867432  Backtracks=4  AvgBacktrackTime=0.03685
+
+[('NKD',), 'None', 'None'] 13  Total Time=0.14797258377075195  Backtracks=37  AvgBacktrackTime=0.003999
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.14840497970581054  Backtracks=10  AvgBacktrackTime=0.01484
+
+[('NKT', 'NKD', 'ForwardChecking'), 'DH', 'None'] 161  Total Time=0.14844605922698975  Backtracks=6  AvgBacktrackTime=0.02474
+
+[('NKD', 'ForwardChecking', 'NKT'), 'DH', 'LCV'] 144  Total Time=0.14880127906799318  Backtracks=5  AvgBacktrackTime=0.02976
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'DH', 'LCV'] 264  Total Time=0.14926714897155763  Backtracks=2  AvgBacktrackTime=0.07463
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'DH', 'None'] 377  Total Time=0.14974348545074462  Backtracks=4  AvgBacktrackTime=0.03744
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=0.15156140327453613  Backtracks=8  AvgBacktrackTime=0.01895
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=0.15253641605377197  Backtracks=8  AvgBacktrackTime=0.01907
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=0.15308880805969238  Backtracks=8  AvgBacktrackTime=0.01914
+
+[('ForwardChecking', 'NKT', 'NKD'), 'DH', 'LCV'] 138  Total Time=0.15344488620758057  Backtracks=11  AvgBacktrackTime=0.01395
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=0.15556249618530274  Backtracks=4  AvgBacktrackTime=0.03889
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'DH', 'None'] 359  Total Time=0.15603501796722413  Backtracks=4  AvgBacktrackTime=0.03901
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=0.15729033946990967  Backtracks=5  AvgBacktrackTime=0.03146
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=0.15750257968902587  Backtracks=6  AvgBacktrackTime=0.02625
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=0.15788400173187256  Backtracks=6  AvgBacktrackTime=0.02631
+
 
 PE4.txt
 Success Rate=0.9949
@@ -60,6 +510,156 @@ Top 5 Solutions:
 [('NKD',), 'None', 'LCV'] 14  Total Time=0.03258726596832275  Backtracks=2  AvgBacktrackTime=0.01629
 
 [('NKD',), 'MRV', 'LCV'] 16  Total Time=0.03311467170715332  Backtracks=2  AvgBacktrackTime=0.01656
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.03551492691040039  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.03610327243804932  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.03640668392181397  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.03645768165588379  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.03648877143859863  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.036545825004577634  Backtracks=2  AvgBacktrackTime=0.01827
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.03769378662109375  Backtracks=1  AvgBacktrackTime=0.03769
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=0.039646339416503903  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.039731740951538086  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=0.03977832794189453  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=0.0398005485534668  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=0.039827942848205566  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=0.04007422924041748  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT',), 'None', 'None'] 7  Total Time=0.04009096622467041  Backtracks=2  AvgBacktrackTime=0.02005
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 268  Total Time=0.04014673233032227  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=0.04020218849182129  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 266  Total Time=0.040322613716125486  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.0404951810836792  Backtracks=2  AvgBacktrackTime=0.02025
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 219  Total Time=0.04107844829559326  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 217  Total Time=0.04108939170837402  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 218  Total Time=0.04136447906494141  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 220  Total Time=0.041421031951904295  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=0.04192848205566406  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=0.042058682441711424  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=0.04238770008087158  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=0.04243144989013672  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT',), 'MRV', 'None'] 9  Total Time=0.04321188926696777  Backtracks=2  AvgBacktrackTime=0.02161
+
+[('NKT',), 'None', 'LCV'] 8  Total Time=0.0441253662109375  Backtracks=3  AvgBacktrackTime=0.01471
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 259  Total Time=0.044211316108703616  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 261  Total Time=0.04431736469268799  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 277  Total Time=0.044358444213867185  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=0.044364404678344724  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=0.04462718963623047  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 262  Total Time=0.04465773105621338  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=0.044808816909790036  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 278  Total Time=0.04487612247467041  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'None', 'None'] 55  Total Time=0.045068764686584474  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=0.04542629718780518  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=0.046048903465271  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 363  Total Time=0.0463062047958374  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=0.04645800590515137  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=0.04650745391845703  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 199  Total Time=0.04676275253295899  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 202  Total Time=0.046937870979309085  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.04725103378295899  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 379  Total Time=0.04774441719055176  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.04778268337249756  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 381  Total Time=0.047890233993530276  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 382  Total Time=0.04804222583770752  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=0.04814586639404297  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 200  Total Time=0.04831793308258057  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 355  Total Time=0.048671507835388185  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=0.04869375228881836  Backtracks=1  AvgBacktrackTime=0.04869
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 357  Total Time=0.04890151023864746  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 356  Total Time=0.04925200939178467  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 358  Total Time=0.04935281276702881  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=0.04983632564544678  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=0.05111868381500244  Backtracks=1  AvgBacktrackTime=0.05112
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.05151591300964355  Backtracks=1  AvgBacktrackTime=0.05152
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.05268385410308838  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=0.05573801994323731  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=0.05606629848480225  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=0.056324315071105954  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=0.05633199214935303  Backtracks=1  AvgBacktrackTime=0.05633
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=0.05643312931060791  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=0.057920217514038086  Backtracks=3  AvgBacktrackTime=0.01931
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 96  Total Time=0.05911996364593506  Backtracks=2  AvgBacktrackTime=0.02956
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=0.06023216247558594  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=0.06036367416381836  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=0.060630273818969724  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'None'] 95  Total Time=0.06075351238250733  Backtracks=7  AvgBacktrackTime=0.008679
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=0.060775017738342284  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 387  Total Time=0.06081314086914062  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 211  Total Time=0.06093099117279053  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 213  Total Time=0.061002564430236814  Backtracks=0  AvgBacktrackTime=0
 
 
 PE5.txt
@@ -77,6 +677,156 @@ Top 5 Solutions:
 
 [('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=0.020551013946533202  Backtracks=0  AvgBacktrackTime=0
 
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.02068660259246826  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'None', 'None'] 25  Total Time=0.02081131935119629  Backtracks=4  AvgBacktrackTime=0.005203
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.020889949798583985  Backtracks=4  AvgBacktrackTime=0.005222
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.020965266227722167  Backtracks=5  AvgBacktrackTime=0.004193
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.02102506160736084  Backtracks=5  AvgBacktrackTime=0.004205
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=0.021100354194641114  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.021155643463134765  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT',), 'None', 'LCV'] 8  Total Time=0.021915149688720704  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.02208998203277588  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT',), 'MRV', 'None'] 9  Total Time=0.02221388816833496  Backtracks=5  AvgBacktrackTime=0.004443
+
+[('NKT',), 'None', 'None'] 7  Total Time=0.02224249839782715  Backtracks=5  AvgBacktrackTime=0.004448
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=0.025582480430603027  Backtracks=4  AvgBacktrackTime=0.006396
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=0.026203560829162597  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=0.026289653778076173  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'None', 'None'] 55  Total Time=0.026441287994384766  Backtracks=4  AvgBacktrackTime=0.006610
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.02894144058227539  Backtracks=4  AvgBacktrackTime=0.007235
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.02909252643585205  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=0.029100561141967775  Backtracks=4  AvgBacktrackTime=0.007275
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.029121041297912598  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=0.029188036918640137  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.029197144508361816  Backtracks=4  AvgBacktrackTime=0.007299
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.029426193237304686  Backtracks=4  AvgBacktrackTime=0.007357
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=0.029807233810424806  Backtracks=4  AvgBacktrackTime=0.007452
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.02986886501312256  Backtracks=4  AvgBacktrackTime=0.007467
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=0.02995901107788086  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.029988861083984374  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=0.030002427101135255  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=0.031166839599609374  Backtracks=4  AvgBacktrackTime=0.007792
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=0.031293058395385744  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 166  Total Time=0.03169851303100586  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency'), 'None', 'None'] 163  Total Time=0.031855320930480956  Backtracks=4  AvgBacktrackTime=0.007964
+
+[('ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 164  Total Time=0.032074785232543944  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 165  Total Time=0.03215484619140625  Backtracks=4  AvgBacktrackTime=0.008039
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 219  Total Time=0.03234496116638184  Backtracks=4  AvgBacktrackTime=0.008086
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 217  Total Time=0.03258645534515381  Backtracks=4  AvgBacktrackTime=0.008147
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 220  Total Time=0.03260958194732666  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 218  Total Time=0.03299195766448974  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.033017945289611814  Backtracks=4  AvgBacktrackTime=0.008254
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 212  Total Time=0.03321120738983154  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 211  Total Time=0.03331472873687744  Backtracks=4  AvgBacktrackTime=0.008329
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 213  Total Time=0.03341679573059082  Backtracks=4  AvgBacktrackTime=0.008354
+
+[('ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 214  Total Time=0.03448452949523926  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=0.03497488498687744  Backtracks=4  AvgBacktrackTime=0.008744
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 261  Total Time=0.035129356384277347  Backtracks=4  AvgBacktrackTime=0.008782
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=0.035225439071655276  Backtracks=4  AvgBacktrackTime=0.008806
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 259  Total Time=0.035276269912719725  Backtracks=4  AvgBacktrackTime=0.008819
+
+[('ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'None'] 175  Total Time=0.03530299663543701  Backtracks=4  AvgBacktrackTime=0.008826
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=0.035342955589294435  Backtracks=4  AvgBacktrackTime=0.008836
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 266  Total Time=0.035382318496704104  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 268  Total Time=0.03545498847961426  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 262  Total Time=0.035484695434570314  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 178  Total Time=0.03557229042053223  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=0.03566298484802246  Backtracks=4  AvgBacktrackTime=0.008916
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 139  Total Time=0.03566761016845703  Backtracks=4  AvgBacktrackTime=0.008917
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=0.0356900691986084  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 142  Total Time=0.03572068214416504  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=0.03586688041687012  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 249  Total Time=0.03627188205718994  Backtracks=4  AvgBacktrackTime=0.009068
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 271  Total Time=0.03633327484130859  Backtracks=4  AvgBacktrackTime=0.009083
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 253  Total Time=0.03635437488555908  Backtracks=4  AvgBacktrackTime=0.009089
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 248  Total Time=0.03639564514160156  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=0.036404991149902345  Backtracks=4  AvgBacktrackTime=0.009101
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 273  Total Time=0.03640990257263184  Backtracks=4  AvgBacktrackTime=0.009102
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 255  Total Time=0.03651506900787353  Backtracks=4  AvgBacktrackTime=0.009129
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 274  Total Time=0.03657588958740234  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 247  Total Time=0.0365891695022583  Backtracks=4  AvgBacktrackTime=0.009147
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 250  Total Time=0.03660218715667725  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 278  Total Time=0.03661048412322998  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=0.03663897514343262  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 272  Total Time=0.03667151927947998  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 256  Total Time=0.03674635887145996  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=0.03678297996520996  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 254  Total Time=0.03689076900482178  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=0.036913061141967775  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=0.03782422542572021  Backtracks=0  AvgBacktrackTime=0
+
 
 PM1.txt
 Success Rate=0.6590
@@ -92,6 +842,156 @@ Top 5 Solutions:
 [('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.22577625513076782  Backtracks=7  AvgBacktrackTime=0.03225
 
 [('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=0.22663038969039917  Backtracks=7  AvgBacktrackTime=0.03238
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.23578935861587524  Backtracks=2  AvgBacktrackTime=0.1179
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.23684120178222656  Backtracks=2  AvgBacktrackTime=0.1184
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.24606508016586304  Backtracks=1  AvgBacktrackTime=0.2461
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=0.2509496212005615  Backtracks=2  AvgBacktrackTime=0.1255
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.2522231340408325  Backtracks=1  AvgBacktrackTime=0.2522
+
+[('NKD',), 'None', 'LCV'] 14  Total Time=0.2616918683052063  Backtracks=23  AvgBacktrackTime=0.01138
+
+[('NKD', 'ArcConsistency'), 'None', 'None'] 55  Total Time=0.2640421390533447  Backtracks=6  AvgBacktrackTime=0.04401
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.26661747694015503  Backtracks=7  AvgBacktrackTime=0.03809
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.26737427711486816  Backtracks=7  AvgBacktrackTime=0.03820
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=0.2686105966567993  Backtracks=3  AvgBacktrackTime=0.08954
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.2749117612838745  Backtracks=6  AvgBacktrackTime=0.04582
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=0.27544504404067993  Backtracks=21  AvgBacktrackTime=0.01312
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.2924097180366516  Backtracks=2  AvgBacktrackTime=0.1462
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=0.29635971784591675  Backtracks=3  AvgBacktrackTime=0.09879
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.3126981854438782  Backtracks=6  AvgBacktrackTime=0.05212
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.31474387645721436  Backtracks=6  AvgBacktrackTime=0.05246
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 266  Total Time=0.31931692361831665  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=0.32293426990509033  Backtracks=3  AvgBacktrackTime=0.1076
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=0.323403000831604  Backtracks=2  AvgBacktrackTime=0.1617
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 326  Total Time=0.32463252544403076  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=0.35041576623916626  Backtracks=5  AvgBacktrackTime=0.07008
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=0.366929292678833  Backtracks=3  AvgBacktrackTime=0.1223
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=0.37420958280563354  Backtracks=1  AvgBacktrackTime=0.3742
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=0.38058042526245117  Backtracks=2  AvgBacktrackTime=0.1903
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=0.38118982315063477  Backtracks=2  AvgBacktrackTime=0.1906
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 344  Total Time=0.38410764932632446  Backtracks=1  AvgBacktrackTime=0.3841
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=0.3842219114303589  Backtracks=5  AvgBacktrackTime=0.07684
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 363  Total Time=0.3866783380508423  Backtracks=2  AvgBacktrackTime=0.1933
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 381  Total Time=0.3886420726776123  Backtracks=2  AvgBacktrackTime=0.1943
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 272  Total Time=0.388746440410614  Backtracks=2  AvgBacktrackTime=0.1944
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 327  Total Time=0.39229750633239746  Backtracks=2  AvgBacktrackTime=0.1961
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'None'] 325  Total Time=0.3928315043449402  Backtracks=6  AvgBacktrackTime=0.06547
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 343  Total Time=0.3933337926864624  Backtracks=6  AvgBacktrackTime=0.06556
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 345  Total Time=0.3945976495742798  Backtracks=2  AvgBacktrackTime=0.1973
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=0.398078978061676  Backtracks=7  AvgBacktrackTime=0.05687
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 350  Total Time=0.398126482963562  Backtracks=1  AvgBacktrackTime=0.3981
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 278  Total Time=0.4004850387573242  Backtracks=1  AvgBacktrackTime=0.4005
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 356  Total Time=0.40176963806152344  Backtracks=2  AvgBacktrackTime=0.2009
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 386  Total Time=0.40184485912323  Backtracks=1  AvgBacktrackTime=0.4018
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'LCV'] 134  Total Time=0.40443581342697144  Backtracks=3  AvgBacktrackTime=0.1348
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=0.41043156385421753  Backtracks=1  AvgBacktrackTime=0.4104
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 351  Total Time=0.41125208139419556  Backtracks=2  AvgBacktrackTime=0.2056
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=0.41738295555114746  Backtracks=1  AvgBacktrackTime=0.4174
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 387  Total Time=0.4179873466491699  Backtracks=2  AvgBacktrackTime=0.2090
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=0.41909003257751465  Backtracks=6  AvgBacktrackTime=0.06985
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 374  Total Time=0.4217582941055298  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=0.4240949749946594  Backtracks=8  AvgBacktrackTime=0.05301
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=0.4257879853248596  Backtracks=3  AvgBacktrackTime=0.1419
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 368  Total Time=0.4270282983779907  Backtracks=2  AvgBacktrackTime=0.2135
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 349  Total Time=0.4320024847984314  Backtracks=6  AvgBacktrackTime=0.07200
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 273  Total Time=0.4339748024940491  Backtracks=3  AvgBacktrackTime=0.1447
+
+[('NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 235  Total Time=0.43405890464782715  Backtracks=6  AvgBacktrackTime=0.07234
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 357  Total Time=0.43623703718185425  Backtracks=3  AvgBacktrackTime=0.1454
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=0.438187837600708  Backtracks=4  AvgBacktrackTime=0.1095
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=0.4480780363082886  Backtracks=5  AvgBacktrackTime=0.08962
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 379  Total Time=0.4545367956161499  Backtracks=6  AvgBacktrackTime=0.07576
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=0.46033644676208496  Backtracks=2  AvgBacktrackTime=0.2302
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 388  Total Time=0.4607500433921814  Backtracks=2  AvgBacktrackTime=0.2304
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=0.4609668254852295  Backtracks=2  AvgBacktrackTime=0.2305
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 385  Total Time=0.4677738547325134  Backtracks=6  AvgBacktrackTime=0.07796
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 382  Total Time=0.4694920778274536  Backtracks=2  AvgBacktrackTime=0.2347
+
+[('NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 241  Total Time=0.4697147607803345  Backtracks=6  AvgBacktrackTime=0.07829
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 369  Total Time=0.4705274701118469  Backtracks=3  AvgBacktrackTime=0.1568
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'None'] 319  Total Time=0.47712987661361694  Backtracks=6  AvgBacktrackTime=0.07952
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=0.4813160300254822  Backtracks=2  AvgBacktrackTime=0.2407
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 139  Total Time=0.4842700958251953  Backtracks=7  AvgBacktrackTime=0.06918
+
+[('NKD', 'ForwardChecking'), 'None', 'None'] 121  Total Time=0.4854227304458618  Backtracks=12  AvgBacktrackTime=0.04045
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=0.49081718921661377  Backtracks=11  AvgBacktrackTime=0.04462
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=0.49565571546554565  Backtracks=4  AvgBacktrackTime=0.1239
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=0.49652743339538574  Backtracks=6  AvgBacktrackTime=0.08275
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 217  Total Time=0.4979322552680969  Backtracks=6  AvgBacktrackTime=0.08299
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=0.498022198677063  Backtracks=5  AvgBacktrackTime=0.09960
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.49844056367874146  Backtracks=31  AvgBacktrackTime=0.01608
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 375  Total Time=0.5043625235557556  Backtracks=4  AvgBacktrackTime=0.1261
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'None', 'None'] 331  Total Time=0.5050964951515198  Backtracks=6  AvgBacktrackTime=0.08418
 
 
 PM2.txt
@@ -109,6 +1009,156 @@ Top 5 Solutions:
 
 [('NKT',), 'None', 'LCV'] 8  Total Time=0.5281691551208496  Backtracks=3  AvgBacktrackTime=0.1761
 
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=0.5387411117553711  Backtracks=36  AvgBacktrackTime=0.01497
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=0.5762069821357727  Backtracks=1  AvgBacktrackTime=0.5762
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.5798981785774231  Backtracks=9  AvgBacktrackTime=0.06443
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.5961967706680298  Backtracks=9  AvgBacktrackTime=0.06624
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.6517546772956848  Backtracks=7  AvgBacktrackTime=0.09311
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=0.691710352897644  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.709465503692627  Backtracks=8  AvgBacktrackTime=0.08868
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.7116514444351196  Backtracks=9  AvgBacktrackTime=0.07907
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.9269982576370239  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.9347629547119141  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=0.9351499676704407  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=1.0193099975585938  Backtracks=7  AvgBacktrackTime=0.1456
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=1.1204286217689514  Backtracks=1  AvgBacktrackTime=1.120
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=1.1309276819229126  Backtracks=7  AvgBacktrackTime=0.1616
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=1.1332201957702637  Backtracks=1  AvgBacktrackTime=1.133
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=1.1517248153686523  Backtracks=18  AvgBacktrackTime=0.06398
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=1.1519700288772583  Backtracks=7  AvgBacktrackTime=0.1646
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=1.154846727848053  Backtracks=7  AvgBacktrackTime=0.1650
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=1.19578355550766  Backtracks=7  AvgBacktrackTime=0.1708
+
+[('NKD', 'ForwardChecking'), 'None', 'LCV'] 122  Total Time=1.200802206993103  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=1.2090654373168945  Backtracks=1  AvgBacktrackTime=1.209
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=1.2227067351341248  Backtracks=19  AvgBacktrackTime=0.06435
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=1.2243678569793701  Backtracks=5  AvgBacktrackTime=0.2449
+
+[('ArcConsistency', 'NKD'), 'None', 'LCV'] 50  Total Time=1.238450050354004  Backtracks=5  AvgBacktrackTime=0.2477
+
+[('ArcConsistency',), 'None', 'LCV'] 32  Total Time=1.2635329961776733  Backtracks=9  AvgBacktrackTime=0.1404
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=1.2851253151893616  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=1.2881615161895752  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=1.2964563965797424  Backtracks=4  AvgBacktrackTime=0.3241
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=1.3058947324752808  Backtracks=9  AvgBacktrackTime=0.1451
+
+[('ArcConsistency', 'NKT'), 'MRV', 'None'] 39  Total Time=1.321605622768402  Backtracks=7  AvgBacktrackTime=0.1888
+
+[('ForwardChecking', 'NKD', 'NKT'), 'None', 'LCV'] 128  Total Time=1.3267454504966736  Backtracks=1  AvgBacktrackTime=1.327
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=1.345482051372528  Backtracks=6  AvgBacktrackTime=0.2242
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 68  Total Time=1.355605661869049  Backtracks=1  AvgBacktrackTime=1.356
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=1.3713617324829102  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=1.4085615873336792  Backtracks=9  AvgBacktrackTime=0.1565
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 69  Total Time=1.4388350248336792  Backtracks=7  AvgBacktrackTime=0.2055
+
+[('ArcConsistency', 'NKT'), 'None', 'LCV'] 38  Total Time=1.4520582556724548  Backtracks=2  AvgBacktrackTime=0.7260
+
+[('NKT', 'ForwardChecking'), 'MRV', 'None'] 111  Total Time=1.452640414237976  Backtracks=9  AvgBacktrackTime=0.1614
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 63  Total Time=1.456375002861023  Backtracks=7  AvgBacktrackTime=0.2081
+
+[('ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 218  Total Time=1.4699110984802246  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 242  Total Time=1.5062561631202698  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 236  Total Time=1.5075386762619019  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=1.5325083136558533  Backtracks=7  AvgBacktrackTime=0.2189
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'LCV'] 134  Total Time=1.53726464509964  Backtracks=1  AvgBacktrackTime=1.537
+
+[('ForwardChecking', 'NKT'), 'MRV', 'None'] 105  Total Time=1.5416836142539978  Backtracks=9  AvgBacktrackTime=0.1713
+
+[('ArcConsistency',), 'MRV', 'LCV'] 34  Total Time=1.5453253984451294  Backtracks=25  AvgBacktrackTime=0.06181
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=1.5593475699424744  Backtracks=7  AvgBacktrackTime=0.2228
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=1.5631805658340454  Backtracks=1  AvgBacktrackTime=1.563
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=1.571987807750702  Backtracks=7  AvgBacktrackTime=0.2246
+
+[('ArcConsistency', 'NKT'), 'MRV', 'LCV'] 40  Total Time=1.6042016744613647  Backtracks=4  AvgBacktrackTime=0.4011
+
+[('ForwardChecking', 'NKD'), 'None', 'LCV'] 116  Total Time=1.6222028136253357  Backtracks=7  AvgBacktrackTime=0.2317
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=1.6381189823150635  Backtracks=7  AvgBacktrackTime=0.2340
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 129  Total Time=1.642356276512146  Backtracks=7  AvgBacktrackTime=0.2346
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=1.6574550867080688  Backtracks=7  AvgBacktrackTime=0.2368
+
+[('ArcConsistency', 'NKD'), 'MRV', 'LCV'] 52  Total Time=1.6576520800590515  Backtracks=18  AvgBacktrackTime=0.09209
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=1.6754570603370667  Backtracks=9  AvgBacktrackTime=0.1862
+
+[('ForwardChecking', 'NKT'), 'None', 'LCV'] 104  Total Time=1.685916006565094  Backtracks=1  AvgBacktrackTime=1.686
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=1.7041110396385193  Backtracks=8  AvgBacktrackTime=0.2130
+
+[('NKT', 'ForwardChecking'), 'None', 'LCV'] 110  Total Time=1.7158746719360352  Backtracks=1  AvgBacktrackTime=1.716
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 320  Total Time=1.728830635547638  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 326  Total Time=1.7322744727134705  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=1.7375854849815369  Backtracks=5  AvgBacktrackTime=0.3475
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 332  Total Time=1.7386459708213806  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 278  Total Time=1.7438871264457703  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKD'), 'MRV', 'None'] 51  Total Time=1.7594878673553467  Backtracks=22  AvgBacktrackTime=0.07998
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=1.762890338897705  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=1.7635275721549988  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=1.7689682245254517  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 266  Total Time=1.7702921628952026  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 386  Total Time=1.7793888449668884  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 350  Total Time=1.7799551486968994  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 374  Total Time=1.7802841067314148  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 344  Total Time=1.7898517847061157  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 338  Total Time=1.7942495346069336  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 248  Total Time=1.7959697246551514  Backtracks=1  AvgBacktrackTime=1.796
+
 
 PM3.txt
 Success Rate=0.7462
@@ -124,6 +1174,156 @@ Top 5 Solutions:
 [('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.5847625136375427  Backtracks=26  AvgBacktrackTime=0.02249
 
 [('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.5971459746360779  Backtracks=3  AvgBacktrackTime=0.1990
+
+[('NKT',), 'None', 'LCV'] 8  Total Time=0.673578679561615  Backtracks=35  AvgBacktrackTime=0.01925
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.6996901631355286  Backtracks=18  AvgBacktrackTime=0.03887
+
+[('NKT',), 'None', 'None'] 7  Total Time=0.734670102596283  Backtracks=48  AvgBacktrackTime=0.01531
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.7363189458847046  Backtracks=8  AvgBacktrackTime=0.09204
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=0.7830842733383179  Backtracks=9  AvgBacktrackTime=0.08701
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.8541342616081238  Backtracks=27  AvgBacktrackTime=0.03163
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.8728880286216736  Backtracks=30  AvgBacktrackTime=0.02910
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.8737913966178894  Backtracks=17  AvgBacktrackTime=0.05140
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.9443619847297668  Backtracks=16  AvgBacktrackTime=0.05902
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=0.9503190517425537  Backtracks=94  AvgBacktrackTime=0.01011
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=0.9922946691513062  Backtracks=3  AvgBacktrackTime=0.3308
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=0.9943140149116516  Backtracks=10  AvgBacktrackTime=0.09943
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=1.0538299083709717  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=1.0596592426300049  Backtracks=11  AvgBacktrackTime=0.09633
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=1.0612775683403015  Backtracks=1  AvgBacktrackTime=1.061
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=1.0952629446983337  Backtracks=9  AvgBacktrackTime=0.1217
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=1.0962885022163391  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=1.114650011062622  Backtracks=9  AvgBacktrackTime=0.1239
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=1.1298227310180664  Backtracks=9  AvgBacktrackTime=0.1255
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=1.1338974833488464  Backtracks=29  AvgBacktrackTime=0.03910
+
+[('NKD',), 'None', 'None'] 13  Total Time=1.1440314650535583  Backtracks=146  AvgBacktrackTime=0.007836
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=1.1465032696723938  Backtracks=17  AvgBacktrackTime=0.06744
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=1.1552686095237732  Backtracks=15  AvgBacktrackTime=0.07702
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 67  Total Time=1.158553421497345  Backtracks=11  AvgBacktrackTime=0.1053
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=1.161228597164154  Backtracks=2  AvgBacktrackTime=0.5806
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'None'] 133  Total Time=1.1999579668045044  Backtracks=11  AvgBacktrackTime=0.1091
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 61  Total Time=1.2294761538505554  Backtracks=17  AvgBacktrackTime=0.07232
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 139  Total Time=1.247370421886444  Backtracks=16  AvgBacktrackTime=0.07796
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=1.257802963256836  Backtracks=8  AvgBacktrackTime=0.1572
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=1.3062727451324463  Backtracks=20  AvgBacktrackTime=0.06531
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=1.306367814540863  Backtracks=3  AvgBacktrackTime=0.4355
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=1.3360312581062317  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 68  Total Time=1.3512930274009705  Backtracks=9  AvgBacktrackTime=0.1501
+
+[('NKD', 'ArcConsistency'), 'None', 'None'] 55  Total Time=1.3742191195487976  Backtracks=58  AvgBacktrackTime=0.02369
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 385  Total Time=1.3800700306892395  Backtracks=8  AvgBacktrackTime=0.1725
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=1.3866730332374573  Backtracks=17  AvgBacktrackTime=0.08157
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'None'] 373  Total Time=1.3996831178665161  Backtracks=8  AvgBacktrackTime=0.1750
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 379  Total Time=1.419317364692688  Backtracks=8  AvgBacktrackTime=0.1774
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 277  Total Time=1.428546965122223  Backtracks=8  AvgBacktrackTime=0.1786
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=1.4330413937568665  Backtracks=9  AvgBacktrackTime=0.1592
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=1.4425515532493591  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=1.443281352519989  Backtracks=8  AvgBacktrackTime=0.1804
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'LCV'] 136  Total Time=1.45302152633667  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT'), 'None', 'None'] 127  Total Time=1.460525631904602  Backtracks=19  AvgBacktrackTime=0.07687
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=1.4621675610542297  Backtracks=3  AvgBacktrackTime=0.4874
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'LCV'] 134  Total Time=1.4636958837509155  Backtracks=9  AvgBacktrackTime=0.1626
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=1.4784045219421387  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKD'), 'MRV', 'LCV'] 52  Total Time=1.4861252307891846  Backtracks=15  AvgBacktrackTime=0.09908
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=1.4904512166976929  Backtracks=16  AvgBacktrackTime=0.09315
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 271  Total Time=1.493100106716156  Backtracks=9  AvgBacktrackTime=0.1659
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 355  Total Time=1.5118703246116638  Backtracks=9  AvgBacktrackTime=0.1680
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=1.5265222787857056  Backtracks=10  AvgBacktrackTime=0.1527
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'None'] 367  Total Time=1.528808832168579  Backtracks=9  AvgBacktrackTime=0.1699
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 148  Total Time=1.5512550473213196  Backtracks=2  AvgBacktrackTime=0.7756
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'None'] 325  Total Time=1.5784715414047241  Backtracks=17  AvgBacktrackTime=0.09285
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=1.5833401083946228  Backtracks=14  AvgBacktrackTime=0.1131
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=1.5849817395210266  Backtracks=23  AvgBacktrackTime=0.06891
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 259  Total Time=1.5964758396148682  Backtracks=13  AvgBacktrackTime=0.1228
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=1.6046063303947449  Backtracks=10  AvgBacktrackTime=0.1605
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 253  Total Time=1.6081832647323608  Backtracks=11  AvgBacktrackTime=0.1462
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 142  Total Time=1.608480989933014  Backtracks=2  AvgBacktrackTime=0.8042
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 343  Total Time=1.6349543929100037  Backtracks=17  AvgBacktrackTime=0.09617
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'None'] 319  Total Time=1.6510960459709167  Backtracks=16  AvgBacktrackTime=0.1032
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 349  Total Time=1.6520447134971619  Backtracks=17  AvgBacktrackTime=0.09718
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'LCV'] 130  Total Time=1.6609474420547485  Backtracks=3  AvgBacktrackTime=0.5536
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=1.6650320291519165  Backtracks=21  AvgBacktrackTime=0.07929
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 313  Total Time=1.685733437538147  Backtracks=10  AvgBacktrackTime=0.1686
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=1.695959448814392  Backtracks=21  AvgBacktrackTime=0.08076
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 247  Total Time=1.7173684239387512  Backtracks=17  AvgBacktrackTime=0.1010
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=1.7303943037986755  Backtracks=36  AvgBacktrackTime=0.04807
+
+[('NKT', 'ForwardChecking'), 'None', 'None'] 109  Total Time=1.751729130744934  Backtracks=34  AvgBacktrackTime=0.05152
+
+[('ArcConsistency', 'NKT'), 'None', 'None'] 37  Total Time=1.767516553401947  Backtracks=36  AvgBacktrackTime=0.04910
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'None', 'None'] 331  Total Time=1.791536033153534  Backtracks=16  AvgBacktrackTime=0.1120
+
+[('NKD', 'ForwardChecking'), 'MRV', 'LCV'] 124  Total Time=1.808769404888153  Backtracks=19  AvgBacktrackTime=0.09520
+
+[('ArcConsistency', 'NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 295  Total Time=1.8215839266777039  Backtracks=13  AvgBacktrackTime=0.1401
 
 
 PM4.txt
@@ -141,6 +1341,156 @@ Top 5 Solutions:
 
 [('NKT',), 'MRV', 'None'] 9  Total Time=0.6213763952255249  Backtracks=1  AvgBacktrackTime=0.6214
 
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=0.7243829965591431  Backtracks=40  AvgBacktrackTime=0.01811
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.7445570826530457  Backtracks=1  AvgBacktrackTime=0.7446
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=0.7584007382392883  Backtracks=2  AvgBacktrackTime=0.3792
+
+[('NKT',), 'MRV', 'LCV'] 10  Total Time=0.7639440298080444  Backtracks=16  AvgBacktrackTime=0.04775
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.8610902428627014  Backtracks=6  AvgBacktrackTime=0.1435
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.8676669597625732  Backtracks=4  AvgBacktrackTime=0.2169
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=1.0597967505455017  Backtracks=2  AvgBacktrackTime=0.5299
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=1.061371386051178  Backtracks=2  AvgBacktrackTime=0.5307
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=1.0627813935279846  Backtracks=1  AvgBacktrackTime=1.063
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=1.100041925907135  Backtracks=1  AvgBacktrackTime=1.100
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=1.114315390586853  Backtracks=2  AvgBacktrackTime=0.5572
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=1.1758162379264832  Backtracks=7  AvgBacktrackTime=0.1680
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=1.3609906435012817  Backtracks=1  AvgBacktrackTime=1.361
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=1.3708850741386414  Backtracks=1  AvgBacktrackTime=1.371
+
+[('ArcConsistency',), 'MRV', 'None'] 33  Total Time=1.3915618062019348  Backtracks=1  AvgBacktrackTime=1.392
+
+[('ArcConsistency', 'NKD'), 'MRV', 'None'] 51  Total Time=1.3964824080467224  Backtracks=1  AvgBacktrackTime=1.396
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 67  Total Time=1.4093483090400696  Backtracks=2  AvgBacktrackTime=0.7047
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=1.4241830706596375  Backtracks=1  AvgBacktrackTime=1.424
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=1.4314631819725037  Backtracks=1  AvgBacktrackTime=1.431
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 61  Total Time=1.476064682006836  Backtracks=2  AvgBacktrackTime=0.7380
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=1.496826171875  Backtracks=1  AvgBacktrackTime=1.497
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=1.5191857814788818  Backtracks=3  AvgBacktrackTime=0.5064
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=1.5215807557106018  Backtracks=2  AvgBacktrackTime=0.7608
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=1.5409889221191406  Backtracks=3  AvgBacktrackTime=0.5137
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=1.5691376328468323  Backtracks=6  AvgBacktrackTime=0.2615
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'None'] 133  Total Time=1.5806403756141663  Backtracks=2  AvgBacktrackTime=0.7903
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=1.5960352420806885  Backtracks=4  AvgBacktrackTime=0.3990
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=1.6048604846000671  Backtracks=4  AvgBacktrackTime=0.4012
+
+[('ForwardChecking', 'NKD', 'NKT'), 'None', 'None'] 127  Total Time=1.6061390042304993  Backtracks=3  AvgBacktrackTime=0.5354
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 139  Total Time=1.62655907869339  Backtracks=3  AvgBacktrackTime=0.5422
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=1.6332072019577026  Backtracks=6  AvgBacktrackTime=0.2722
+
+[('NKT', 'ForwardChecking'), 'None', 'None'] 109  Total Time=1.633322536945343  Backtracks=10  AvgBacktrackTime=0.1633
+
+[('NKD', 'ForwardChecking'), 'MRV', 'None'] 123  Total Time=1.6664140820503235  Backtracks=1  AvgBacktrackTime=1.666
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 69  Total Time=1.7003756761550903  Backtracks=1  AvgBacktrackTime=1.700
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 63  Total Time=1.7053444385528564  Backtracks=1  AvgBacktrackTime=1.705
+
+[('ArcConsistency', 'NKT'), 'None', 'None'] 37  Total Time=1.7145553231239319  Backtracks=11  AvgBacktrackTime=0.1559
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=1.715510904788971  Backtracks=16  AvgBacktrackTime=0.1072
+
+[('ForwardChecking', 'NKD'), 'MRV', 'None'] 117  Total Time=1.7239637970924377  Backtracks=2  AvgBacktrackTime=0.8620
+
+[('ArcConsistency', 'NKT'), 'MRV', 'None'] 39  Total Time=1.8299917578697205  Backtracks=1  AvgBacktrackTime=1.830
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=1.8401695489883423  Backtracks=20  AvgBacktrackTime=0.09201
+
+[('ForwardChecking',), 'MRV', 'None'] 99  Total Time=1.8915830850601196  Backtracks=4  AvgBacktrackTime=0.4729
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=1.926910400390625  Backtracks=4  AvgBacktrackTime=0.4817
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=1.9321255683898926  Backtracks=4  AvgBacktrackTime=0.4830
+
+[('ForwardChecking', 'NKT'), 'None', 'None'] 103  Total Time=1.9701639413833618  Backtracks=12  AvgBacktrackTime=0.1642
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=1.9991514682769775  Backtracks=1  AvgBacktrackTime=1.999
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=2.0424030423164368  Backtracks=2  AvgBacktrackTime=1.021
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 129  Total Time=2.044794738292694  Backtracks=1  AvgBacktrackTime=2.045
+
+[('ArcConsistency', 'NKT'), 'MRV', 'LCV'] 40  Total Time=2.0510209798812866  Backtracks=18  AvgBacktrackTime=0.1139
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 343  Total Time=2.052119791507721  Backtracks=1  AvgBacktrackTime=2.052
+
+[('ForwardChecking', 'NKT'), 'MRV', 'None'] 105  Total Time=2.059259831905365  Backtracks=1  AvgBacktrackTime=2.059
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'None'] 373  Total Time=2.0620744824409485  Backtracks=2  AvgBacktrackTime=1.031
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 247  Total Time=2.0700318813323975  Backtracks=2  AvgBacktrackTime=1.035
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=2.0715773701667786  Backtracks=2  AvgBacktrackTime=1.036
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=2.0738219022750854  Backtracks=2  AvgBacktrackTime=1.037
+
+[('NKT', 'ForwardChecking'), 'MRV', 'None'] 111  Total Time=2.084230065345764  Backtracks=1  AvgBacktrackTime=2.084
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=2.0912309288978577  Backtracks=2  AvgBacktrackTime=1.046
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 379  Total Time=2.1015514731407166  Backtracks=2  AvgBacktrackTime=1.051
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 349  Total Time=2.103720784187317  Backtracks=1  AvgBacktrackTime=2.104
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=2.1054638028144836  Backtracks=1  AvgBacktrackTime=2.105
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 355  Total Time=2.112976908683777  Backtracks=2  AvgBacktrackTime=1.056
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 385  Total Time=2.1178793907165527  Backtracks=2  AvgBacktrackTime=1.059
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'None'] 367  Total Time=2.13582706451416  Backtracks=2  AvgBacktrackTime=1.068
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=2.138519823551178  Backtracks=2  AvgBacktrackTime=1.069
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'None'] 325  Total Time=2.139793574810028  Backtracks=1  AvgBacktrackTime=2.140
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'None'] 337  Total Time=2.149200677871704  Backtracks=2  AvgBacktrackTime=1.075
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 271  Total Time=2.153739333152771  Backtracks=2  AvgBacktrackTime=1.077
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 259  Total Time=2.1546838879585266  Backtracks=2  AvgBacktrackTime=1.077
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 277  Total Time=2.1647006273269653  Backtracks=2  AvgBacktrackTime=1.082
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=2.2108463048934937  Backtracks=4  AvgBacktrackTime=0.5527
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'None'] 319  Total Time=2.214112162590027  Backtracks=2  AvgBacktrackTime=1.107
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'None', 'None'] 331  Total Time=2.219521164894104  Backtracks=2  AvgBacktrackTime=1.110
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'LCV'] 136  Total Time=2.24179345369339  Backtracks=4  AvgBacktrackTime=0.5604
+
+[('ArcConsistency', 'NKD'), 'MRV', 'LCV'] 52  Total Time=2.241931438446045  Backtracks=18  AvgBacktrackTime=0.1246
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 142  Total Time=2.2436776161193848  Backtracks=6  AvgBacktrackTime=0.3739
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 253  Total Time=2.2522809505462646  Backtracks=2  AvgBacktrackTime=1.126
+
 
 PM5.txt
 Success Rate=0.8872
@@ -156,6 +1506,156 @@ Top 5 Solutions:
 [('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=0.9511937499046326  Backtracks=20  AvgBacktrackTime=0.04756
 
 [('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.9738292694091797  Backtracks=37  AvgBacktrackTime=0.02632
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=1.0696787238121033  Backtracks=37  AvgBacktrackTime=0.02891
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=1.0715543627738953  Backtracks=35  AvgBacktrackTime=0.03062
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 139  Total Time=1.10975581407547  Backtracks=38  AvgBacktrackTime=0.02920
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=1.1237760186195374  Backtracks=31  AvgBacktrackTime=0.03625
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=1.167914092540741  Backtracks=37  AvgBacktrackTime=0.03157
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=1.1766948103904724  Backtracks=39  AvgBacktrackTime=0.03017
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'None'] 337  Total Time=1.202555775642395  Backtracks=25  AvgBacktrackTime=0.04810
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=1.225882887840271  Backtracks=36  AvgBacktrackTime=0.03405
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=1.229196846485138  Backtracks=37  AvgBacktrackTime=0.03322
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=1.2621467113494873  Backtracks=35  AvgBacktrackTime=0.03606
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=1.2635376453399658  Backtracks=33  AvgBacktrackTime=0.03829
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=1.2990363240242004  Backtracks=35  AvgBacktrackTime=0.03712
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 259  Total Time=1.3097181916236877  Backtracks=35  AvgBacktrackTime=0.03742
+
+[('ForwardChecking', 'NKD', 'NKT'), 'None', 'None'] 127  Total Time=1.31263667345047  Backtracks=41  AvgBacktrackTime=0.03202
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=1.3391185998916626  Backtracks=40  AvgBacktrackTime=0.03348
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'None'] 319  Total Time=1.3464542627334595  Backtracks=37  AvgBacktrackTime=0.03639
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 338  Total Time=1.3469987511634827  Backtracks=23  AvgBacktrackTime=0.05857
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'None'] 325  Total Time=1.3511801958084106  Backtracks=25  AvgBacktrackTime=0.05405
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 343  Total Time=1.359553337097168  Backtracks=25  AvgBacktrackTime=0.05438
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 349  Total Time=1.3728135824203491  Backtracks=25  AvgBacktrackTime=0.05491
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 350  Total Time=1.3924837112426758  Backtracks=20  AvgBacktrackTime=0.06962
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'None', 'None'] 331  Total Time=1.394843578338623  Backtracks=37  AvgBacktrackTime=0.03770
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=1.4008965492248535  Backtracks=87  AvgBacktrackTime=0.01610
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 326  Total Time=1.4315569996833801  Backtracks=20  AvgBacktrackTime=0.07158
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=1.4356685280799866  Backtracks=23  AvgBacktrackTime=0.06242
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=1.4471813440322876  Backtracks=85  AvgBacktrackTime=0.01703
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 320  Total Time=1.489710807800293  Backtracks=35  AvgBacktrackTime=0.04256
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'None'] 133  Total Time=1.4904993176460266  Backtracks=42  AvgBacktrackTime=0.03549
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 266  Total Time=1.4948568940162659  Backtracks=18  AvgBacktrackTime=0.08305
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 344  Total Time=1.5116639733314514  Backtracks=20  AvgBacktrackTime=0.07558
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=1.5195571780204773  Backtracks=38  AvgBacktrackTime=0.03999
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 332  Total Time=1.5204681158065796  Backtracks=35  AvgBacktrackTime=0.04344
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=1.5505492091178894  Backtracks=90  AvgBacktrackTime=0.01723
+
+[('ForwardChecking', 'NKD', 'NKT'), 'None', 'LCV'] 128  Total Time=1.557392656803131  Backtracks=41  AvgBacktrackTime=0.03799
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=1.5875187516212463  Backtracks=33  AvgBacktrackTime=0.04811
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 379  Total Time=1.6145628094673157  Backtracks=37  AvgBacktrackTime=0.04364
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 277  Total Time=1.6373350620269775  Backtracks=29  AvgBacktrackTime=0.05646
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=1.6403416991233826  Backtracks=37  AvgBacktrackTime=0.04433
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=1.6501232385635376  Backtracks=89  AvgBacktrackTime=0.01854
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 278  Total Time=1.6506913304328918  Backtracks=23  AvgBacktrackTime=0.07177
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 271  Total Time=1.6757200360298157  Backtracks=34  AvgBacktrackTime=0.04929
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=1.694989800453186  Backtracks=31  AvgBacktrackTime=0.05468
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 355  Total Time=1.6976677179336548  Backtracks=39  AvgBacktrackTime=0.04353
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=1.7108381986618042  Backtracks=31  AvgBacktrackTime=0.05519
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'LCV'] 134  Total Time=1.7216519713401794  Backtracks=41  AvgBacktrackTime=0.04199
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'None'] 373  Total Time=1.79345703125  Backtracks=37  AvgBacktrackTime=0.04847
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 385  Total Time=1.7993577718734741  Backtracks=37  AvgBacktrackTime=0.04863
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 374  Total Time=1.8135009407997131  Backtracks=32  AvgBacktrackTime=0.05667
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 356  Total Time=1.816726565361023  Backtracks=35  AvgBacktrackTime=0.05191
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 386  Total Time=1.830242395401001  Backtracks=31  AvgBacktrackTime=0.05904
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 272  Total Time=1.8952409029006958  Backtracks=30  AvgBacktrackTime=0.06317
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=1.9112222790718079  Backtracks=78  AvgBacktrackTime=0.02450
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 247  Total Time=1.9691949486732483  Backtracks=40  AvgBacktrackTime=0.04923
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 253  Total Time=2.0030307173728943  Backtracks=48  AvgBacktrackTime=0.04173
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=2.02871036529541  Backtracks=57  AvgBacktrackTime=0.03559
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=2.060755431652069  Backtracks=52  AvgBacktrackTime=0.03963
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'None'] 367  Total Time=2.0688655376434326  Backtracks=39  AvgBacktrackTime=0.05305
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=2.0954015851020813  Backtracks=57  AvgBacktrackTime=0.03676
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 368  Total Time=2.158280849456787  Backtracks=35  AvgBacktrackTime=0.06167
+
+[('ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 248  Total Time=2.1731502413749695  Backtracks=38  AvgBacktrackTime=0.05719
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=2.17519211769104  Backtracks=53  AvgBacktrackTime=0.04104
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 61  Total Time=2.211706578731537  Backtracks=40  AvgBacktrackTime=0.05529
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 254  Total Time=2.2670981884002686  Backtracks=47  AvgBacktrackTime=0.04824
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=2.3589513897895813  Backtracks=38  AvgBacktrackTime=0.06208
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=2.398350715637207  Backtracks=72  AvgBacktrackTime=0.03331
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 67  Total Time=2.400843381881714  Backtracks=48  AvgBacktrackTime=0.05002
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=2.4075382947921753  Backtracks=75  AvgBacktrackTime=0.03210
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=2.4565171599388123  Backtracks=67  AvgBacktrackTime=0.03666
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=2.4710038900375366  Backtracks=72  AvgBacktrackTime=0.03432
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=2.47814804315567  Backtracks=94  AvgBacktrackTime=0.02636
+
+[('ArcConsistency', 'NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 295  Total Time=2.480740010738373  Backtracks=37  AvgBacktrackTime=0.06705
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 313  Total Time=2.509207010269165  Backtracks=30  AvgBacktrackTime=0.08364
+
+[('ArcConsistency', 'NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 301  Total Time=2.5772456526756287  Backtracks=33  AvgBacktrackTime=0.07810
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 68  Total Time=2.602077066898346  Backtracks=47  AvgBacktrackTime=0.05536
+
+[('NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 199  Total Time=2.627560019493103  Backtracks=78  AvgBacktrackTime=0.03369
 
 
 PH1.txt
@@ -173,6 +1673,156 @@ Top 5 Solutions:
 
 [('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=6.796313524246216  Backtracks=3  AvgBacktrackTime=2.265
 
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=6.834631681442261  Backtracks=3  AvgBacktrackTime=2.278
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=7.054620265960693  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=7.062765598297119  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency',), 'MRV', 'None'] 33  Total Time=8.72816801071167  Backtracks=2  AvgBacktrackTime=4.364
+
+[('ArcConsistency',), 'MRV', 'LCV'] 34  Total Time=9.262332439422607  Backtracks=1  AvgBacktrackTime=9.262
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=9.546559810638428  Backtracks=1  AvgBacktrackTime=9.547
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=9.739192247390747  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKD'), 'MRV', 'None'] 51  Total Time=9.889007329940796  Backtracks=1  AvgBacktrackTime=9.889
+
+[('ArcConsistency', 'NKD'), 'MRV', 'LCV'] 52  Total Time=10.523918867111206  Backtracks=1  AvgBacktrackTime=10.52
+
+[('NKT', 'ArcConsistency'), 'MRV', 'None'] 45  Total Time=11.686494827270508  Backtracks=2  AvgBacktrackTime=5.843
+
+[('NKT', 'ArcConsistency'), 'None', 'LCV'] 44  Total Time=11.698625564575195  Backtracks=22  AvgBacktrackTime=0.5318
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=12.249966859817505  Backtracks=9  AvgBacktrackTime=1.361
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=12.261112928390503  Backtracks=19  AvgBacktrackTime=0.6453
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=12.33145785331726  Backtracks=18  AvgBacktrackTime=0.6851
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=12.574416399002075  Backtracks=16  AvgBacktrackTime=0.7859
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=12.57712197303772  Backtracks=3  AvgBacktrackTime=4.192
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=12.581699848175049  Backtracks=9  AvgBacktrackTime=1.398
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=12.599077224731445  Backtracks=26  AvgBacktrackTime=0.4846
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=12.716299295425415  Backtracks=24  AvgBacktrackTime=0.5298
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=12.878213167190552  Backtracks=1  AvgBacktrackTime=12.88
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=12.906102180480957  Backtracks=1  AvgBacktrackTime=12.91
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=12.919423341751099  Backtracks=1  AvgBacktrackTime=12.92
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=12.939806938171387  Backtracks=1  AvgBacktrackTime=12.94
+
+[('ArcConsistency', 'NKT'), 'MRV', 'None'] 39  Total Time=13.070511102676392  Backtracks=2  AvgBacktrackTime=6.535
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=13.12441635131836  Backtracks=57  AvgBacktrackTime=0.2303
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=13.214427947998047  Backtracks=60  AvgBacktrackTime=0.2202
+
+[('NKD',), 'None', 'LCV'] 14  Total Time=13.26000428199768  Backtracks=894  AvgBacktrackTime=0.01483
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=13.425928831100464  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=13.47541856765747  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=13.495250940322876  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ArcConsistency'), 'None', 'LCV'] 56  Total Time=13.629273414611816  Backtracks=216  AvgBacktrackTime=0.06310
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=13.640524864196777  Backtracks=1  AvgBacktrackTime=13.64
+
+[('ArcConsistency', 'NKT'), 'None', 'LCV'] 38  Total Time=13.747742652893066  Backtracks=39  AvgBacktrackTime=0.3525
+
+[('ForwardChecking',), 'MRV', 'None'] 99  Total Time=13.752828598022461  Backtracks=6  AvgBacktrackTime=2.292
+
+[('NKD', 'ForwardChecking'), 'MRV', 'None'] 123  Total Time=13.851716041564941  Backtracks=3  AvgBacktrackTime=4.617
+
+[('ArcConsistency', 'NKT'), 'MRV', 'LCV'] 40  Total Time=14.025112867355347  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 68  Total Time=14.082902669906616  Backtracks=33  AvgBacktrackTime=0.4268
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=14.18409252166748  Backtracks=30  AvgBacktrackTime=0.4728
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 69  Total Time=14.210471391677856  Backtracks=1  AvgBacktrackTime=14.21
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 63  Total Time=14.25808072090149  Backtracks=1  AvgBacktrackTime=14.26
+
+[('ForwardChecking', 'NKD'), 'MRV', 'None'] 117  Total Time=14.555766820907593  Backtracks=3  AvgBacktrackTime=4.852
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 61  Total Time=14.824253559112549  Backtracks=65  AvgBacktrackTime=0.2281
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=14.869603633880615  Backtracks=0  AvgBacktrackTime=0
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=14.945333242416382  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'ForwardChecking'), 'MRV', 'LCV'] 124  Total Time=15.241826295852661  Backtracks=1  AvgBacktrackTime=15.24
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 67  Total Time=15.24743103981018  Backtracks=74  AvgBacktrackTime=0.2060
+
+[('ForwardChecking', 'NKD'), 'MRV', 'LCV'] 118  Total Time=15.306832790374756  Backtracks=1  AvgBacktrackTime=15.31
+
+[('ForwardChecking',), 'MRV', 'LCV'] 100  Total Time=15.539030075073242  Backtracks=10  AvgBacktrackTime=1.554
+
+[('NKT',), 'None', 'LCV'] 8  Total Time=16.652371883392334  Backtracks=401  AvgBacktrackTime=0.04153
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=17.203067541122437  Backtracks=9  AvgBacktrackTime=1.911
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=17.21139168739319  Backtracks=9  AvgBacktrackTime=1.912
+
+[('NKT', 'ForwardChecking'), 'None', 'LCV'] 110  Total Time=17.508492708206177  Backtracks=22  AvgBacktrackTime=0.7958
+
+[('ArcConsistency', 'NKT'), 'None', 'None'] 37  Total Time=17.642090320587158  Backtracks=119  AvgBacktrackTime=0.1483
+
+[('NKT', 'ForwardChecking'), 'MRV', 'None'] 111  Total Time=17.660308599472046  Backtracks=5  AvgBacktrackTime=3.532
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=17.769222497940063  Backtracks=26  AvgBacktrackTime=0.6834
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=17.909550666809082  Backtracks=16  AvgBacktrackTime=1.119
+
+[('ForwardChecking', 'NKD', 'NKT'), 'None', 'LCV'] 128  Total Time=17.91742730140686  Backtracks=30  AvgBacktrackTime=0.5972
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=18.202961206436157  Backtracks=1  AvgBacktrackTime=18.20
+
+[('ForwardChecking', 'NKT'), 'MRV', 'None'] 105  Total Time=18.249223709106445  Backtracks=5  AvgBacktrackTime=3.650
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=18.249793529510498  Backtracks=1  AvgBacktrackTime=18.25
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 129  Total Time=18.346155405044556  Backtracks=1  AvgBacktrackTime=18.35
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'LCV'] 134  Total Time=18.382702350616455  Backtracks=33  AvgBacktrackTime=0.5571
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=18.427193641662598  Backtracks=1  AvgBacktrackTime=18.43
+
+[('ForwardChecking', 'NKT'), 'None', 'LCV'] 104  Total Time=18.560001850128174  Backtracks=39  AvgBacktrackTime=0.4759
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=18.579699754714966  Backtracks=1  AvgBacktrackTime=18.58
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=18.717267274856567  Backtracks=1  AvgBacktrackTime=18.72
+
+[('NKT', 'ForwardChecking'), 'MRV', 'LCV'] 112  Total Time=18.777814388275146  Backtracks=0  AvgBacktrackTime=0
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=18.830185651779175  Backtracks=20  AvgBacktrackTime=0.9415
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=18.885185480117798  Backtracks=19  AvgBacktrackTime=0.9940
+
+[('ForwardChecking', 'NKT'), 'MRV', 'LCV'] 106  Total Time=19.093579292297363  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=19.219019889831543  Backtracks=0  AvgBacktrackTime=0
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=19.228373289108276  Backtracks=25  AvgBacktrackTime=0.7691
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 148  Total Time=19.298920154571533  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'LCV'] 130  Total Time=19.3116557598114  Backtracks=0  AvgBacktrackTime=0
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'LCV'] 136  Total Time=19.350865602493286  Backtracks=0  AvgBacktrackTime=0
+
 
 PH2.txt
 Success Rate=0.8872
@@ -188,6 +1838,156 @@ Top 5 Solutions:
 [('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=0.6320071220397949  Backtracks=9  AvgBacktrackTime=0.07022
 
 [('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=0.639176607131958  Backtracks=5  AvgBacktrackTime=0.1278
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=0.6403141021728516  Backtracks=12  AvgBacktrackTime=0.05336
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=0.7506513595581055  Backtracks=5  AvgBacktrackTime=0.1501
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=0.7738461494445801  Backtracks=5  AvgBacktrackTime=0.1548
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=0.7934973239898682  Backtracks=5  AvgBacktrackTime=0.1587
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'None'] 83  Total Time=0.8572728633880615  Backtracks=5  AvgBacktrackTime=0.1715
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=0.8612499237060547  Backtracks=12  AvgBacktrackTime=0.07177
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=0.8649160861968994  Backtracks=5  AvgBacktrackTime=0.1730
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=0.8702785968780518  Backtracks=5  AvgBacktrackTime=0.1741
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=0.8867340087890625  Backtracks=12  AvgBacktrackTime=0.07389
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=0.8888192176818848  Backtracks=4  AvgBacktrackTime=0.2222
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=0.9203193187713623  Backtracks=10  AvgBacktrackTime=0.09203
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'None'] 157  Total Time=0.927952766418457  Backtracks=5  AvgBacktrackTime=0.1856
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=0.9876508712768555  Backtracks=5  AvgBacktrackTime=0.1975
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=1.0059657096862793  Backtracks=7  AvgBacktrackTime=0.1437
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 379  Total Time=1.016632080078125  Backtracks=5  AvgBacktrackTime=0.2033
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=1.0271096229553223  Backtracks=5  AvgBacktrackTime=0.2054
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'None'] 361  Total Time=1.0398824214935303  Backtracks=5  AvgBacktrackTime=0.2080
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=1.0425567626953125  Backtracks=8  AvgBacktrackTime=0.1303
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 273  Total Time=1.0456268787384033  Backtracks=4  AvgBacktrackTime=0.2614
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=1.055290937423706  Backtracks=7  AvgBacktrackTime=0.1508
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV'] 84  Total Time=1.0580427646636963  Backtracks=7  AvgBacktrackTime=0.1511
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=1.065976858139038  Backtracks=5  AvgBacktrackTime=0.2132
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=1.0684928894042969  Backtracks=5  AvgBacktrackTime=0.2137
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'None'] 343  Total Time=1.0742707252502441  Backtracks=5  AvgBacktrackTime=0.2149
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 385  Total Time=1.078061580657959  Backtracks=5  AvgBacktrackTime=0.2156
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=1.0963695049285889  Backtracks=7  AvgBacktrackTime=0.1566
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'None'] 151  Total Time=1.1142451763153076  Backtracks=6  AvgBacktrackTime=0.1857
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'None', 'None'] 373  Total Time=1.1216440200805664  Backtracks=5  AvgBacktrackTime=0.2243
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'None', 'None'] 325  Total Time=1.1270596981048584  Backtracks=5  AvgBacktrackTime=0.2254
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=1.1349542140960693  Backtracks=8  AvgBacktrackTime=0.1419
+
+[('NKD', 'ArcConsistency', 'NKT'), 'DH', 'None'] 77  Total Time=1.1357972621917725  Backtracks=13  AvgBacktrackTime=0.08737
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=1.1378941535949707  Backtracks=5  AvgBacktrackTime=0.2276
+
+[('NKD', 'NKT'), 'DH', 'None'] 23  Total Time=1.141362190246582  Backtracks=24  AvgBacktrackTime=0.04756
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 277  Total Time=1.1428403854370117  Backtracks=5  AvgBacktrackTime=0.2286
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 271  Total Time=1.154571294784546  Backtracks=5  AvgBacktrackTime=0.2309
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 265  Total Time=1.1676287651062012  Backtracks=5  AvgBacktrackTime=0.2335
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 387  Total Time=1.1751749515533447  Backtracks=5  AvgBacktrackTime=0.2350
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 349  Total Time=1.1790211200714111  Backtracks=5  AvgBacktrackTime=0.2358
+
+[('ForwardChecking', 'NKT', 'NKD'), 'None', 'None'] 133  Total Time=1.1939587593078613  Backtracks=6  AvgBacktrackTime=0.1990
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 357  Total Time=1.2109317779541016  Backtracks=5  AvgBacktrackTime=0.2422
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 381  Total Time=1.2152345180511475  Backtracks=5  AvgBacktrackTime=0.2430
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 363  Total Time=1.226940393447876  Backtracks=5  AvgBacktrackTime=0.2454
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=1.2340490818023682  Backtracks=5  AvgBacktrackTime=0.2468
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None'] 139  Total Time=1.2384343147277832  Backtracks=11  AvgBacktrackTime=0.1126
+
+[('NKT', 'NKD'), 'DH', 'LCV'] 30  Total Time=1.2601406574249268  Backtracks=20  AvgBacktrackTime=0.06301
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'None', 'None'] 355  Total Time=1.2624073028564453  Backtracks=5  AvgBacktrackTime=0.2525
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=1.2689433097839355  Backtracks=23  AvgBacktrackTime=0.05517
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 345  Total Time=1.2699992656707764  Backtracks=5  AvgBacktrackTime=0.2540
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 255  Total Time=1.276125192642212  Backtracks=4  AvgBacktrackTime=0.3190
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=1.2768864631652832  Backtracks=10  AvgBacktrackTime=0.1277
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 369  Total Time=1.3153183460235596  Backtracks=5  AvgBacktrackTime=0.2631
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=1.3157784938812256  Backtracks=7  AvgBacktrackTime=0.1880
+
+[('NKT', 'ArcConsistency'), 'MRV', 'LCV'] 46  Total Time=1.3227739334106445  Backtracks=3  AvgBacktrackTime=0.4409
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=1.3254356384277344  Backtracks=9  AvgBacktrackTime=0.1473
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV'] 96  Total Time=1.3273861408233643  Backtracks=6  AvgBacktrackTime=0.2212
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'DH', 'None'] 347  Total Time=1.330840826034546  Backtracks=5  AvgBacktrackTime=0.2662
+
+[('NKT', 'ArcConsistency'), 'None', 'None'] 43  Total Time=1.3310856819152832  Backtracks=12  AvgBacktrackTime=0.1109
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 375  Total Time=1.3356215953826904  Backtracks=7  AvgBacktrackTime=0.1908
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 388  Total Time=1.3632473945617676  Backtracks=4  AvgBacktrackTime=0.3408
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'None'] 367  Total Time=1.3677175045013428  Backtracks=5  AvgBacktrackTime=0.2735
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 148  Total Time=1.3771741390228271  Backtracks=8  AvgBacktrackTime=0.1721
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 351  Total Time=1.3858904838562012  Backtracks=5  AvgBacktrackTime=0.2772
+
+[('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=1.3939785957336426  Backtracks=29  AvgBacktrackTime=0.04807
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'None'] 337  Total Time=1.3963921070098877  Backtracks=5  AvgBacktrackTime=0.2793
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 253  Total Time=1.3965251445770264  Backtracks=5  AvgBacktrackTime=0.2793
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'DH', 'None'] 329  Total Time=1.3970041275024414  Backtracks=5  AvgBacktrackTime=0.2794
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'DH', 'None'] 353  Total Time=1.40440034866333  Backtracks=5  AvgBacktrackTime=0.2809
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=1.4218497276306152  Backtracks=5  AvgBacktrackTime=0.2844
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=1.4245035648345947  Backtracks=8  AvgBacktrackTime=0.1781
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 129  Total Time=1.429542064666748  Backtracks=7  AvgBacktrackTime=0.2042
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'None', 'None'] 319  Total Time=1.4327664375305176  Backtracks=10  AvgBacktrackTime=0.1433
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=1.445899486541748  Backtracks=4  AvgBacktrackTime=0.3615
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 327  Total Time=1.4547553062438965  Backtracks=5  AvgBacktrackTime=0.2910
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=1.4680087566375732  Backtracks=8  AvgBacktrackTime=0.1835
+
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=1.4681622982025146  Backtracks=67  AvgBacktrackTime=0.02191
 
 
 PH3.txt
@@ -205,6 +2005,156 @@ Top 5 Solutions:
 
 [('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=42.97999358177185  Backtracks=461  AvgBacktrackTime=0.09323
 
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=48.032439947128296  Backtracks=465  AvgBacktrackTime=0.1033
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=51.167439699172974  Backtracks=455  AvgBacktrackTime=0.1125
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=55.78283643722534  Backtracks=507  AvgBacktrackTime=0.1100
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 148  Total Time=56.11328172683716  Backtracks=526  AvgBacktrackTime=0.1067
+
+[('NKD', 'NKT'), 'MRV', 'None'] 21  Total Time=58.657466173172  Backtracks=1308  AvgBacktrackTime=0.04485
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=58.71049118041992  Backtracks=528  AvgBacktrackTime=0.1112
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 352  Total Time=60.79485201835632  Backtracks=393  AvgBacktrackTime=0.1547
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 388  Total Time=60.805415630340576  Backtracks=372  AvgBacktrackTime=0.1635
+
+[('NKT', 'NKD'), 'None', 'LCV'] 26  Total Time=62.705936670303345  Backtracks=1303  AvgBacktrackTime=0.04812
+
+[('NKT', 'NKD'), 'MRV', 'None'] 27  Total Time=64.23638010025024  Backtracks=1335  AvgBacktrackTime=0.04812
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 142  Total Time=66.14698338508606  Backtracks=527  AvgBacktrackTime=0.1255
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 340  Total Time=68.01566410064697  Backtracks=440  AvgBacktrackTime=0.1546
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 346  Total Time=68.04722952842712  Backtracks=393  AvgBacktrackTime=0.1731
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 382  Total Time=68.46900677680969  Backtracks=372  AvgBacktrackTime=0.1841
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=69.15458583831787  Backtracks=529  AvgBacktrackTime=0.1307
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 376  Total Time=70.57004523277283  Backtracks=435  AvgBacktrackTime=0.1622
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 334  Total Time=71.40130662918091  Backtracks=461  AvgBacktrackTime=0.1549
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=73.82947039604187  Backtracks=372  AvgBacktrackTime=0.1985
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 370  Total Time=74.37921190261841  Backtracks=465  AvgBacktrackTime=0.1600
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 268  Total Time=74.77938222885132  Backtracks=363  AvgBacktrackTime=0.2060
+
+[('ArcConsistency', 'NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 304  Total Time=75.1350371837616  Backtracks=435  AvgBacktrackTime=0.1727
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'LCV'] 130  Total Time=75.14156794548035  Backtracks=499  AvgBacktrackTime=0.1506
+
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=75.67391514778137  Backtracks=4041  AvgBacktrackTime=0.01873
+
+[('NKD', 'NKT'), 'None', 'LCV'] 20  Total Time=75.82040071487427  Backtracks=1821  AvgBacktrackTime=0.04164
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 328  Total Time=76.00960683822632  Backtracks=389  AvgBacktrackTime=0.1954
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 316  Total Time=77.30744862556458  Backtracks=455  AvgBacktrackTime=0.1699
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=77.96558690071106  Backtracks=372  AvgBacktrackTime=0.2096
+
+[('ArcConsistency', 'NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 298  Total Time=79.47789192199707  Backtracks=437  AvgBacktrackTime=0.1819
+
+[('NKD', 'NKT'), 'None', 'None'] 19  Total Time=81.67606115341187  Backtracks=1947  AvgBacktrackTime=0.04195
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 322  Total Time=82.67649984359741  Backtracks=461  AvgBacktrackTime=0.1793
+
+[('ArcConsistency', 'ForwardChecking', 'NKD', 'NKT'), 'MRV', 'LCV'] 286  Total Time=83.27312302589417  Backtracks=455  AvgBacktrackTime=0.1830
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'LCV'] 136  Total Time=83.44982504844666  Backtracks=562  AvgBacktrackTime=0.1485
+
+[('ArcConsistency', 'NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 310  Total Time=83.45299887657166  Backtracks=461  AvgBacktrackTime=0.1810
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=83.65489029884338  Backtracks=917  AvgBacktrackTime=0.09123
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 358  Total Time=84.12004089355469  Backtracks=465  AvgBacktrackTime=0.1809
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 262  Total Time=84.91520643234253  Backtracks=424  AvgBacktrackTime=0.2003
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=87.02629518508911  Backtracks=932  AvgBacktrackTime=0.09338
+
+[('NKT', 'NKD'), 'None', 'None'] 25  Total Time=87.81390070915222  Backtracks=1848  AvgBacktrackTime=0.04752
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=88.23296999931335  Backtracks=874  AvgBacktrackTime=0.1010
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None'] 79  Total Time=89.15868711471558  Backtracks=959  AvgBacktrackTime=0.09297
+
+[('ArcConsistency', 'ForwardChecking', 'NKT', 'NKD'), 'MRV', 'LCV'] 292  Total Time=89.62846398353577  Backtracks=507  AvgBacktrackTime=0.1768
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=90.12734794616699  Backtracks=943  AvgBacktrackTime=0.09558
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 274  Total Time=91.12289261817932  Backtracks=461  AvgBacktrackTime=0.1977
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=91.65068221092224  Backtracks=958  AvgBacktrackTime=0.09567
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None'] 91  Total Time=98.50011038780212  Backtracks=992  AvgBacktrackTime=0.09929
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=99.47213649749756  Backtracks=1151  AvgBacktrackTime=0.08642
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=99.8995611667633  Backtracks=1062  AvgBacktrackTime=0.09407
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 256  Total Time=103.55865502357483  Backtracks=507  AvgBacktrackTime=0.2043
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=104.60995101928711  Backtracks=1076  AvgBacktrackTime=0.09722
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None'] 73  Total Time=105.9804105758667  Backtracks=1211  AvgBacktrackTime=0.08751
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'LCV'] 68  Total Time=109.50185513496399  Backtracks=1086  AvgBacktrackTime=0.1008
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None'] 85  Total Time=115.45056748390198  Backtracks=1182  AvgBacktrackTime=0.09767
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 63  Total Time=118.20717000961304  Backtracks=1097  AvgBacktrackTime=0.1078
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=118.88778495788574  Backtracks=1159  AvgBacktrackTime=0.1026
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 69  Total Time=126.82175421714783  Backtracks=1174  AvgBacktrackTime=0.1080
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 350  Total Time=127.13453388214111  Backtracks=917  AvgBacktrackTime=0.1386
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=127.6572916507721  Backtracks=1173  AvgBacktrackTime=0.1088
+
+[('NKT', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 152  Total Time=127.70223212242126  Backtracks=991  AvgBacktrackTime=0.1289
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=129.10654091835022  Backtracks=1227  AvgBacktrackTime=0.1052
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'None'] 61  Total Time=130.76382899284363  Backtracks=1292  AvgBacktrackTime=0.1012
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=131.26662611961365  Backtracks=1283  AvgBacktrackTime=0.1023
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=133.18511819839478  Backtracks=1161  AvgBacktrackTime=0.1147
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 387  Total Time=139.0244104862213  Backtracks=874  AvgBacktrackTime=0.1591
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'None', 'LCV'] 368  Total Time=139.54975366592407  Backtracks=943  AvgBacktrackTime=0.1480
+
+[('NKD', 'ArcConsistency'), 'MRV', 'LCV'] 58  Total Time=139.7568075656891  Backtracks=1821  AvgBacktrackTime=0.07675
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 351  Total Time=139.76059103012085  Backtracks=932  AvgBacktrackTime=0.1500
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 386  Total Time=140.32063913345337  Backtracks=958  AvgBacktrackTime=0.1465
+
+[('ArcConsistency', 'NKT', 'NKD'), 'None', 'None'] 67  Total Time=142.11721396446228  Backtracks=1400  AvgBacktrackTime=0.1015
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 344  Total Time=143.34949278831482  Backtracks=917  AvgBacktrackTime=0.1563
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'None'] 349  Total Time=145.03630328178406  Backtracks=959  AvgBacktrackTime=0.1512
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None'] 145  Total Time=146.84244179725647  Backtracks=1267  AvgBacktrackTime=0.1159
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'LCV'] 140  Total Time=149.06561923027039  Backtracks=1244  AvgBacktrackTime=0.1198
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=149.69073152542114  Backtracks=958  AvgBacktrackTime=0.1563
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=149.84265327453613  Backtracks=1170  AvgBacktrackTime=0.1281
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 338  Total Time=150.231369972229  Backtracks=1044  AvgBacktrackTime=0.1439
+
 
 PH4.txt
 Success Rate=0.4282
@@ -221,6 +2171,156 @@ Top 5 Solutions:
 
 [('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=28.26208472251892  Backtracks=330  AvgBacktrackTime=0.08564
 
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=32.21288871765137  Backtracks=362  AvgBacktrackTime=0.08899
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 69  Total Time=37.38044857978821  Backtracks=359  AvgBacktrackTime=0.1041
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=37.58044195175171  Backtracks=367  AvgBacktrackTime=0.1024
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 387  Total Time=38.89905118942261  Backtracks=300  AvgBacktrackTime=0.1297
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 63  Total Time=39.317607402801514  Backtracks=383  AvgBacktrackTime=0.1027
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=39.785823345184326  Backtracks=413  AvgBacktrackTime=0.09633
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=41.34674048423767  Backtracks=403  AvgBacktrackTime=0.1026
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 381  Total Time=41.89944410324097  Backtracks=300  AvgBacktrackTime=0.1397
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 351  Total Time=42.6612753868103  Backtracks=330  AvgBacktrackTime=0.1293
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 339  Total Time=44.03883743286133  Backtracks=338  AvgBacktrackTime=0.1303
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 363  Total Time=44.216604709625244  Backtracks=294  AvgBacktrackTime=0.1504
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 345  Total Time=45.180485248565674  Backtracks=330  AvgBacktrackTime=0.1369
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 333  Total Time=45.413365602493286  Backtracks=342  AvgBacktrackTime=0.1328
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=46.11230731010437  Backtracks=2388  AvgBacktrackTime=0.01931
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=46.372802734375  Backtracks=431  AvgBacktrackTime=0.1076
+
+[('NKD', 'NKT'), 'MRV', 'LCV'] 22  Total Time=46.991493940353394  Backtracks=1037  AvgBacktrackTime=0.04531
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 327  Total Time=47.00094485282898  Backtracks=319  AvgBacktrackTime=0.1473
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 375  Total Time=47.43147659301758  Backtracks=356  AvgBacktrackTime=0.1332
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=48.77853512763977  Backtracks=288  AvgBacktrackTime=0.1694
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 321  Total Time=48.8765983581543  Backtracks=342  AvgBacktrackTime=0.1429
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 369  Total Time=49.38921666145325  Backtracks=362  AvgBacktrackTime=0.1364
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 129  Total Time=51.511696577072144  Backtracks=391  AvgBacktrackTime=0.1317
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=51.87194466590881  Backtracks=1045  AvgBacktrackTime=0.04964
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 315  Total Time=52.24974465370178  Backtracks=351  AvgBacktrackTime=0.1489
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=52.32118463516235  Backtracks=423  AvgBacktrackTime=0.1237
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 261  Total Time=52.42763662338257  Backtracks=322  AvgBacktrackTime=0.1628
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=53.64140176773071  Backtracks=310  AvgBacktrackTime=0.1730
+
+[('ArcConsistency', 'NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 309  Total Time=54.36033248901367  Backtracks=355  AvgBacktrackTime=0.1531
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 357  Total Time=54.99278807640076  Backtracks=362  AvgBacktrackTime=0.1519
+
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=55.10010623931885  Backtracks=2893  AvgBacktrackTime=0.01905
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 273  Total Time=56.652729988098145  Backtracks=350  AvgBacktrackTime=0.1619
+
+[('ArcConsistency', 'NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 297  Total Time=56.914085388183594  Backtracks=368  AvgBacktrackTime=0.1547
+
+[('ArcConsistency', 'NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 303  Total Time=57.98972988128662  Backtracks=379  AvgBacktrackTime=0.1530
+
+[('ArcConsistency', 'ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 291  Total Time=59.42937922477722  Backtracks=359  AvgBacktrackTime=0.1655
+
+[('ArcConsistency', 'ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 285  Total Time=61.90706729888916  Backtracks=383  AvgBacktrackTime=0.1616
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 255  Total Time=62.289994955062866  Backtracks=359  AvgBacktrackTime=0.1735
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=64.46970462799072  Backtracks=659  AvgBacktrackTime=0.09783
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=67.14169669151306  Backtracks=690  AvgBacktrackTime=0.09731
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=71.62133121490479  Backtracks=795  AvgBacktrackTime=0.09009
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=79.46543431282043  Backtracks=980  AvgBacktrackTime=0.08109
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=79.77365469932556  Backtracks=806  AvgBacktrackTime=0.09897
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=81.36739945411682  Backtracks=1277  AvgBacktrackTime=0.06372
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=87.16640949249268  Backtracks=801  AvgBacktrackTime=0.1088
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=88.05219721794128  Backtracks=1147  AvgBacktrackTime=0.07677
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=88.94224214553833  Backtracks=855  AvgBacktrackTime=0.1040
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=91.52553915977478  Backtracks=1296  AvgBacktrackTime=0.07062
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 148  Total Time=95.08945536613464  Backtracks=871  AvgBacktrackTime=0.1092
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=95.4929690361023  Backtracks=861  AvgBacktrackTime=0.1109
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 388  Total Time=96.61704802513123  Backtracks=659  AvgBacktrackTime=0.1466
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 352  Total Time=102.10223817825317  Backtracks=690  AvgBacktrackTime=0.1480
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 382  Total Time=105.6846342086792  Backtracks=659  AvgBacktrackTime=0.1604
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 142  Total Time=107.56673669815063  Backtracks=937  AvgBacktrackTime=0.1148
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 386  Total Time=109.21105146408081  Backtracks=980  AvgBacktrackTime=0.1114
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 346  Total Time=110.92928719520569  Backtracks=690  AvgBacktrackTime=0.1608
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 340  Total Time=111.9478166103363  Backtracks=741  AvgBacktrackTime=0.1511
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=112.6565158367157  Backtracks=1354  AvgBacktrackTime=0.08320
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=113.46212387084961  Backtracks=639  AvgBacktrackTime=0.1776
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=115.4731936454773  Backtracks=923  AvgBacktrackTime=0.1251
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=115.66121411323547  Backtracks=1427  AvgBacktrackTime=0.08105
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=116.1746506690979  Backtracks=603  AvgBacktrackTime=0.1927
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=117.28305006027222  Backtracks=1397  AvgBacktrackTime=0.08395
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 334  Total Time=117.84597253799438  Backtracks=795  AvgBacktrackTime=0.1482
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=117.99858784675598  Backtracks=980  AvgBacktrackTime=0.1204
+
+[('NKD', 'ForwardChecking'), 'MRV', 'None'] 123  Total Time=118.70255780220032  Backtracks=1596  AvgBacktrackTime=0.07438
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 328  Total Time=119.03516483306885  Backtracks=675  AvgBacktrackTime=0.1763
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 376  Total Time=119.14439177513123  Backtracks=782  AvgBacktrackTime=0.1524
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=121.07051944732666  Backtracks=898  AvgBacktrackTime=0.1348
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 338  Total Time=121.08327150344849  Backtracks=1097  AvgBacktrackTime=0.1104
+
+[('ArcConsistency', 'NKD'), 'MRV', 'None'] 51  Total Time=121.53734731674194  Backtracks=1633  AvgBacktrackTime=0.07443
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=122.47139120101929  Backtracks=1527  AvgBacktrackTime=0.08020
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 316  Total Time=123.27592754364014  Backtracks=757  AvgBacktrackTime=0.1628
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 370  Total Time=123.59395933151245  Backtracks=806  AvgBacktrackTime=0.1533
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 350  Total Time=123.77155804634094  Backtracks=1147  AvgBacktrackTime=0.1079
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 268  Total Time=127.51741361618042  Backtracks=644  AvgBacktrackTime=0.1980
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=128.67319536209106  Backtracks=909  AvgBacktrackTime=0.1416
+
 
 PH5.txt
 Success Rate=0.03333
@@ -236,5 +2336,155 @@ Top 5 Solutions:
 [('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 93  Total Time=321.7223014831543  Backtracks=3663  AvgBacktrackTime=0.08783
 
 [('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 81  Total Time=331.62927746772766  Backtracks=3524  AvgBacktrackTime=0.09411
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 75  Total Time=386.7686574459076  Backtracks=4288  AvgBacktrackTime=0.09020
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 87  Total Time=396.8329577445984  Backtracks=4241  AvgBacktrackTime=0.09357
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 147  Total Time=456.84487295150757  Backtracks=4519  AvgBacktrackTime=0.1011
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 159  Total Time=467.6484622955322  Backtracks=4400  AvgBacktrackTime=0.1063
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 69  Total Time=481.1846544742584  Backtracks=4651  AvgBacktrackTime=0.1035
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None'] 63  Total Time=483.44859290122986  Backtracks=4742  AvgBacktrackTime=0.1020
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 153  Total Time=547.8306379318237  Backtracks=4535  AvgBacktrackTime=0.1208
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 141  Total Time=575.49986743927  Backtracks=4635  AvgBacktrackTime=0.1242
+
+[('ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 129  Total Time=Infinity  Backtracks=4429  AvgBacktrackTime=Infinity
+
+[('NKD',), 'MRV', 'None'] 15  Total Time=Infinity  Backtracks=33411  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 279  Total Time=Infinity  Backtracks=3168  AvgBacktrackTime=Infinity
+
+[('NKD', 'ForwardChecking', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 321  Total Time=Infinity  Backtracks=3581  AvgBacktrackTime=Infinity
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 327  Total Time=Infinity  Backtracks=3164  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 333  Total Time=Infinity  Backtracks=3640  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 339  Total Time=Infinity  Backtracks=3671  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 345  Total Time=Infinity  Backtracks=3210  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 351  Total Time=Infinity  Backtracks=3351  AvgBacktrackTime=Infinity
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'None'] 363  Total Time=Infinity  Backtracks=2884  AvgBacktrackTime=Infinity
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 369  Total Time=Infinity  Backtracks=3135  AvgBacktrackTime=Infinity
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 375  Total Time=Infinity  Backtracks=3036  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'None'] 381  Total Time=Infinity  Backtracks=2943  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None'] 387  Total Time=Infinity  Backtracks=3023  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD'), 'MRV', 'LCV'] 28  Total Time=Infinity  Backtracks=10450  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None'] 315  Total Time=Infinity  Backtracks=3510  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 135  Total Time=Infinity  Backtracks=4230  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None'] 261  Total Time=Infinity  Backtracks=3220  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None'] 267  Total Time=Infinity  Backtracks=3100  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKT', 'ForwardChecking', 'NKD'), 'MRV', 'None'] 309  Total Time=Infinity  Backtracks=3550  AvgBacktrackTime=Infinity
+
+[('NKT', 'ForwardChecking', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 357  Total Time=Infinity  Backtracks=3620  AvgBacktrackTime=Infinity
+
+[('NKD',), 'MRV', 'LCV'] 16  Total Time=Infinity  Backtracks=28930  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None'] 273  Total Time=Infinity  Backtracks=3500  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKD', 'ForwardChecking', 'NKT'), 'MRV', 'None'] 297  Total Time=Infinity  Backtracks=3680  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKD', 'NKT', 'ForwardChecking'), 'MRV', 'None'] 303  Total Time=Infinity  Backtracks=3790  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'ForwardChecking', 'NKT', 'NKD'), 'MRV', 'None'] 291  Total Time=Infinity  Backtracks=3590  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'ForwardChecking', 'NKD', 'NKT'), 'MRV', 'None'] 285  Total Time=Infinity  Backtracks=3830  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None'] 255  Total Time=Infinity  Backtracks=3590  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 94  Total Time=Infinity  Backtracks=6590  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 82  Total Time=Infinity  Backtracks=6900  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV'] 76  Total Time=Infinity  Backtracks=7950  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 92  Total Time=Infinity  Backtracks=9800  AvgBacktrackTime=Infinity
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV'] 88  Total Time=Infinity  Backtracks=8060  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency'), 'MRV', 'None'] 57  Total Time=Infinity  Backtracks=12770  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV'] 70  Total Time=Infinity  Backtracks=8010  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV'] 80  Total Time=Infinity  Backtracks=11470  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV'] 64  Total Time=Infinity  Backtracks=8550  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 74  Total Time=Infinity  Backtracks=12960  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 148  Total Time=Infinity  Backtracks=8710  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 160  Total Time=Infinity  Backtracks=8610  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 388  Total Time=Infinity  Backtracks=6590  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'LCV'] 352  Total Time=Infinity  Backtracks=6900  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 382  Total Time=Infinity  Backtracks=6590  AvgBacktrackTime=Infinity
+
+[('NKD', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 142  Total Time=Infinity  Backtracks=9370  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 386  Total Time=Infinity  Backtracks=9800  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ForwardChecking', 'ArcConsistency'), 'MRV', 'LCV'] 346  Total Time=Infinity  Backtracks=6900  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'MRV', 'LCV'] 340  Total Time=Infinity  Backtracks=7410  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKD', 'NKT'), 'None', 'LCV'] 62  Total Time=Infinity  Backtracks=13540  AvgBacktrackTime=Infinity
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 364  Total Time=Infinity  Backtracks=6390  AvgBacktrackTime=Infinity
+
+[('NKT', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 154  Total Time=Infinity  Backtracks=9230  AvgBacktrackTime=Infinity
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV'] 86  Total Time=Infinity  Backtracks=14270  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV'] 280  Total Time=Infinity  Backtracks=6030  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ForwardChecking'), 'None', 'LCV'] 158  Total Time=Infinity  Backtracks=13970  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'ForwardChecking', 'NKT'), 'MRV', 'LCV'] 334  Total Time=Infinity  Backtracks=7950  AvgBacktrackTime=Infinity
+
+[('NKT', 'NKD', 'ForwardChecking', 'ArcConsistency'), 'None', 'LCV'] 380  Total Time=Infinity  Backtracks=9800  AvgBacktrackTime=Infinity
+
+[('NKD', 'ForwardChecking'), 'MRV', 'None'] 123  Total Time=Infinity  Backtracks=15960  AvgBacktrackTime=Infinity
+
+[('NKD', 'ForwardChecking', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 328  Total Time=Infinity  Backtracks=6750  AvgBacktrackTime=Infinity
+
+[('NKT', 'ArcConsistency', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 376  Total Time=Infinity  Backtracks=7820  AvgBacktrackTime=Infinity
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'None', 'LCV'] 362  Total Time=Infinity  Backtracks=8980  AvgBacktrackTime=Infinity
+
+[('NKD', 'ArcConsistency', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 338  Total Time=Infinity  Backtracks=10970  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKD'), 'MRV', 'None'] 51  Total Time=Infinity  Backtracks=16330  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'LCV'] 146  Total Time=Infinity  Backtracks=15270  AvgBacktrackTime=Infinity
+
+[('ArcConsistency', 'NKT', 'NKD', 'ForwardChecking'), 'MRV', 'LCV'] 316  Total Time=Infinity  Backtracks=7570  AvgBacktrackTime=Infinity
+
+[('NKT', 'ArcConsistency', 'ForwardChecking', 'NKD'), 'MRV', 'LCV'] 370  Total Time=Infinity  Backtracks=8060  AvgBacktrackTime=Infinity
+
+[('NKD', 'NKT', 'ArcConsistency', 'ForwardChecking'), 'None', 'LCV'] 350  Total Time=Infinity  Backtracks=11470  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV'] 268  Total Time=Infinity  Backtracks=6440  AvgBacktrackTime=Infinity
+
+[('ForwardChecking', 'NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV'] 260  Total Time=Infinity  Backtracks=9090  AvgBacktrackTime=Infinity
 
 
