@@ -1,0 +1,540 @@
+PE1.txt
+Success Rate=0.994872
+Average Backtracks=16.6077
+
+Top Ten Solutions:
+[('NKD',), 'MRV', 'LCV']  Total Time=0.026801705360412598
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.0268017
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.029026556015014648
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.00967552
+
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=0.029132080078125
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.029331207275390625
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.00977707
+
+[('NKD', 'NKT'), 'None', 'LCV']  Total Time=0.029404854774475096
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None']  Total Time=0.030712175369262695
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.0102374
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None']  Total Time=0.030828428268432618
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.0102761
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV']  Total Time=0.030959439277648926
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV']  Total Time=0.030980515480041503
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKD',), 'MRV', 'None']  Total Time=0.030987811088562012
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.00619756
+
+
+PE2.txt
+Success Rate=0.994872
+Average Backtracks=27.0590
+
+Top Ten Solutions:
+[('NKD', 'NKT'), 'DH', 'LCV']  Total Time=0.031050467491149904
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'DH', 'LCV']  Total Time=0.03163526058197021
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'DH', 'None']  Total Time=0.03546211719512939
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.0118207
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV']  Total Time=0.035658979415893556
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'None']  Total Time=0.036231160163879395
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0181156
+
+[('NKD', 'NKT'), 'DH', 'None']  Total Time=0.03697764873504639
+	  Backtracks=4  Solved=False  AvgBacktrackTime=0.00924441
+
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.037347841262817386
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.0124493
+
+[('NKD',), 'None', 'LCV']  Total Time=0.03930938243865967
+	  Backtracks=4  Solved=False  AvgBacktrackTime=0.00982735
+
+[('NKD',), 'None', 'None']  Total Time=0.040304827690124514
+	  Backtracks=8  Solved=False  AvgBacktrackTime=0.00503810
+
+[('NKD', 'NKT'), 'None', 'None']  Total Time=0.041376280784606936
+	  Backtracks=4  Solved=False  AvgBacktrackTime=0.0103441
+
+
+PE3.txt
+Success Rate=0.984615
+Average Backtracks=38.4205
+
+Top Ten Solutions:
+[('NKT', 'NKD', 'ArcConsistency'), 'DH', 'LCV']  Total Time=0.07117140293121338
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.0711714
+
+[('NKD', 'NKT'), 'DH', 'LCV']  Total Time=0.07760889530181884
+	  Backtracks=7  Solved=False  AvgBacktrackTime=0.0110870
+
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=0.08468484878540039
+	  Backtracks=6  Solved=False  AvgBacktrackTime=0.0141141
+
+[('NKD', 'ArcConsistency', 'NKT'), 'DH', 'LCV']  Total Time=0.08846092224121094
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0442305
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV']  Total Time=0.0888350248336792
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0444175
+
+[('NKT', 'ArcConsistency', 'NKD'), 'DH', 'LCV']  Total Time=0.089564847946167
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0447824
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=0.08981993198394775
+	  Backtracks=8  Solved=False  AvgBacktrackTime=0.0112275
+
+[('ForwardChecking', 'NKD', 'NKT', 'ArcConsistency'), 'DH', 'LCV']  Total Time=0.09014976024627686
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.0901498
+
+[('NKT', 'ForwardChecking', 'NKD', 'ArcConsistency'), 'DH', 'LCV']  Total Time=0.09340317249298095
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.0934032
+
+[('NKT', 'NKD'), 'MRV', 'LCV']  Total Time=0.09419064521789551
+	  Backtracks=9  Solved=False  AvgBacktrackTime=0.0104656
+
+
+PE4.txt
+Success Rate=0.994872
+Average Backtracks=154.508
+
+Top Ten Solutions:
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.029662132263183594
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKD',), 'MRV', 'None']  Total Time=0.032374095916748044
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.0107914
+
+[('NKD',), 'None', 'None']  Total Time=0.032509875297546384
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0162549
+
+[('NKD',), 'None', 'LCV']  Total Time=0.03258726596832275
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0162936
+
+[('NKD',), 'MRV', 'LCV']  Total Time=0.03311467170715332
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.0165573
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.03551492691040039
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None']  Total Time=0.03610327243804932
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None']  Total Time=0.03640668392181397
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV']  Total Time=0.03645768165588379
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV']  Total Time=0.03648877143859863
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+
+PE5.txt
+Success Rate=0.994872
+Average Backtracks=6.70256
+
+Top Ten Solutions:
+[('NKD',), 'None', 'LCV']  Total Time=0.01836841106414795
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.0183684
+
+[('NKD',), 'MRV', 'LCV']  Total Time=0.01845712661743164
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.0184571
+
+[('NKD',), 'MRV', 'None']  Total Time=0.018604278564453125
+	  Backtracks=6  Solved=False  AvgBacktrackTime=0.00310071
+
+[('NKD',), 'None', 'None']  Total Time=0.018644380569458007
+	  Backtracks=6  Solved=False  AvgBacktrackTime=0.00310740
+
+[('NKD', 'NKT'), 'None', 'LCV']  Total Time=0.020551013946533202
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=0.02068660259246826
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.02081131935119629
+	  Backtracks=4  Solved=False  AvgBacktrackTime=0.00520283
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.020889949798583985
+	  Backtracks=4  Solved=False  AvgBacktrackTime=0.00522249
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=0.020965266227722167
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.00419305
+
+[('NKD', 'NKT'), 'None', 'None']  Total Time=0.02102506160736084
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.00420501
+
+
+PM1.txt
+Success Rate=0.658974
+Average Backtracks=80.7692
+
+Top Ten Solutions:
+[('NKT', 'NKD'), 'None', 'LCV']  Total Time=0.19849348068237305
+	  Backtracks=6  Solved=False  AvgBacktrackTime=0.0330822
+
+[('NKD',), 'MRV', 'LCV']  Total Time=0.20903688669204712
+	  Backtracks=12  Solved=False  AvgBacktrackTime=0.0174197
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.2196761965751648
+	  Backtracks=7  Solved=False  AvgBacktrackTime=0.0313823
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=0.22577625513076782
+	  Backtracks=7  Solved=False  AvgBacktrackTime=0.0322538
+
+[('NKD', 'NKT'), 'None', 'LCV']  Total Time=0.22663038969039917
+	  Backtracks=7  Solved=False  AvgBacktrackTime=0.0323758
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None']  Total Time=0.23578935861587524
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.117895
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None']  Total Time=0.23684120178222656
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.118421
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV']  Total Time=0.24606508016586304
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.246065
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'LCV']  Total Time=0.2509496212005615
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.125475
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV']  Total Time=0.2522231340408325
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.252223
+
+
+PM2.txt
+Success Rate=0.492308
+Average Backtracks=3.9
+
+Top Ten Solutions:
+[('NKD',), 'None', 'LCV']  Total Time=0.3287263512611389
+	  Backtracks=11  Solved=False  AvgBacktrackTime=0.0298842
+
+[('NKD',), 'MRV', 'None']  Total Time=0.4427521228790283
+	  Backtracks=25  Solved=False  AvgBacktrackTime=0.0177101
+
+[('NKT',), 'MRV', 'None']  Total Time=0.48802924156188965
+	  Backtracks=12  Solved=False  AvgBacktrackTime=0.0406691
+
+[('NKD', 'NKT'), 'None', 'LCV']  Total Time=0.5270876288414001
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.527088
+
+[('NKT',), 'None', 'LCV']  Total Time=0.5281691551208496
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.176056
+
+[('NKD',), 'MRV', 'LCV']  Total Time=0.5387411117553711
+	  Backtracks=36  Solved=False  AvgBacktrackTime=0.0149650
+
+[('NKT', 'NKD'), 'None', 'LCV']  Total Time=0.5762069821357727
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.576207
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.5798981785774231
+	  Backtracks=9  Solved=False  AvgBacktrackTime=0.0644331
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=0.5961967706680298
+	  Backtracks=9  Solved=False  AvgBacktrackTime=0.0662441
+
+[('NKT',), 'MRV', 'LCV']  Total Time=0.6517546772956848
+	  Backtracks=7  Solved=False  AvgBacktrackTime=0.0931078
+
+
+PM3.txt
+Success Rate=0.746154
+Average Backtracks=139.459
+
+Top Ten Solutions:
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.4077579975128174
+	  Backtracks=11  Solved=False  AvgBacktrackTime=0.0370689
+
+[('NKD',), 'MRV', 'LCV']  Total Time=0.47135740518569946
+	  Backtracks=26  Solved=False  AvgBacktrackTime=0.0181291
+
+[('NKT', 'NKD'), 'MRV', 'LCV']  Total Time=0.5760911703109741
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'None', 'None']  Total Time=0.5847625136375427
+	  Backtracks=26  Solved=False  AvgBacktrackTime=0.0224909
+
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=0.5971459746360779
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.199049
+
+[('NKT',), 'None', 'LCV']  Total Time=0.673578679561615
+	  Backtracks=35  Solved=False  AvgBacktrackTime=0.0192451
+
+[('NKT',), 'MRV', 'LCV']  Total Time=0.6996901631355286
+	  Backtracks=18  Solved=False  AvgBacktrackTime=0.0388717
+
+[('NKT',), 'None', 'None']  Total Time=0.734670102596283
+	  Backtracks=48  Solved=False  AvgBacktrackTime=0.0153056
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None']  Total Time=0.7363189458847046
+	  Backtracks=8  Solved=False  AvgBacktrackTime=0.0920399
+
+[('NKT', 'ArcConsistency', 'NKD'), 'None', 'None']  Total Time=0.7830842733383179
+	  Backtracks=9  Solved=False  AvgBacktrackTime=0.0870094
+
+
+PM4.txt
+Success Rate=0.469231
+Average Backtracks=31.6359
+
+Top Ten Solutions:
+[('NKD',), 'MRV', 'None']  Total Time=0.36011940240859985
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.180060
+
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.5979604125022888
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.298980
+
+[('NKT',), 'None', 'None']  Total Time=0.616401731967926
+	  Backtracks=13  Solved=False  AvgBacktrackTime=0.0474155
+
+[('NKD', 'NKT'), 'None', 'None']  Total Time=0.6206061244010925
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.206869
+
+[('NKT',), 'MRV', 'None']  Total Time=0.6213763952255249
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.621376
+
+[('NKD',), 'MRV', 'LCV']  Total Time=0.7243829965591431
+	  Backtracks=40  Solved=False  AvgBacktrackTime=0.0181096
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=0.7445570826530457
+	  Backtracks=1  Solved=False  AvgBacktrackTime=0.744557
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.7584007382392883
+	  Backtracks=2  Solved=False  AvgBacktrackTime=0.379200
+
+[('NKT',), 'MRV', 'LCV']  Total Time=0.7639440298080444
+	  Backtracks=16  Solved=False  AvgBacktrackTime=0.0477465
+
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=0.8610902428627014
+	  Backtracks=6  Solved=False  AvgBacktrackTime=0.143515
+
+
+PM5.txt
+Success Rate=0.887179
+Average Backtracks=263.305
+
+Top Ten Solutions:
+[('NKD', 'NKT'), 'None', 'None']  Total Time=0.8156580924987793
+	  Backtracks=56  Solved=False  AvgBacktrackTime=0.0145653
+
+[('NKD', 'NKT'), 'None', 'LCV']  Total Time=0.8894836902618408
+	  Backtracks=56  Solved=False  AvgBacktrackTime=0.0158836
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None']  Total Time=0.89835524559021
+	  Backtracks=25  Solved=False  AvgBacktrackTime=0.0359342
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'LCV']  Total Time=0.9511937499046326
+	  Backtracks=20  Solved=False  AvgBacktrackTime=0.0475597
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'None']  Total Time=0.9738292694091797
+	  Backtracks=37  Solved=False  AvgBacktrackTime=0.0263197
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None']  Total Time=1.0696787238121033
+	  Backtracks=37  Solved=False  AvgBacktrackTime=0.0289102
+
+[('NKD', 'ArcConsistency', 'NKT'), 'None', 'LCV']  Total Time=1.0715543627738953
+	  Backtracks=35  Solved=False  AvgBacktrackTime=0.0306158
+
+[('NKD', 'ForwardChecking', 'NKT'), 'None', 'None']  Total Time=1.10975581407547
+	  Backtracks=38  Solved=False  AvgBacktrackTime=0.0292041
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'LCV']  Total Time=1.1237760186195374
+	  Backtracks=31  Solved=False  AvgBacktrackTime=0.0362508
+
+[('NKD', 'NKT', 'ForwardChecking'), 'None', 'None']  Total Time=1.167914092540741
+	  Backtracks=37  Solved=False  AvgBacktrackTime=0.0315652
+
+
+PH1.txt
+Success Rate=0.628205
+Average Backtracks=160.738
+
+Top Ten Solutions:
+[('NKD',), 'MRV', 'None']  Total Time=2.4662201404571533
+	  Backtracks=3  Solved=False  AvgBacktrackTime=0.822073
+
+[('NKD',), 'MRV', 'LCV']  Total Time=2.695343255996704
+	  Backtracks=6  Solved=False  AvgBacktrackTime=0.449224
+
+[('NKT',), 'MRV', 'None']  Total Time=5.573627471923828
+	  Backtracks=4  Solved=False  AvgBacktrackTime=1.39341
+
+[('NKT',), 'MRV', 'LCV']  Total Time=5.896251201629639
+	  Backtracks=5  Solved=False  AvgBacktrackTime=1.17925
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=6.796313524246216
+	  Backtracks=3  Solved=False  AvgBacktrackTime=2.26544
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=6.834631681442261
+	  Backtracks=3  Solved=False  AvgBacktrackTime=2.27821
+
+[('NKT', 'NKD'), 'MRV', 'LCV']  Total Time=7.054620265960693
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=7.062765598297119
+	  Backtracks=0  Solved=False  AvgBacktrackTime=0
+
+[('ArcConsistency',), 'MRV', 'None']  Total Time=8.72816801071167
+	  Backtracks=2  Solved=False  AvgBacktrackTime=4.36408
+
+[('ArcConsistency',), 'MRV', 'LCV']  Total Time=9.262332439422607
+	  Backtracks=1  Solved=False  AvgBacktrackTime=9.26233
+
+
+PH2.txt
+Success Rate=0.887179
+Average Backtracks=106.846
+
+Top Ten Solutions:
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=0.5021519660949707
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.100430
+
+[('NKD',), 'MRV', 'None']  Total Time=0.5332314968109131
+	  Backtracks=13  Solved=False  AvgBacktrackTime=0.0410178
+
+[('NKT', 'NKD'), 'None', 'None']  Total Time=0.5610296726226807
+	  Backtracks=7  Solved=False  AvgBacktrackTime=0.0801471
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=0.6320071220397949
+	  Backtracks=9  Solved=False  AvgBacktrackTime=0.0702230
+
+[('NKT', 'NKD', 'ArcConsistency'), 'None', 'None']  Total Time=0.639176607131958
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.127835
+
+[('NKD', 'NKT'), 'None', 'None']  Total Time=0.6403141021728516
+	  Backtracks=12  Solved=False  AvgBacktrackTime=0.0533595
+
+[('NKD', 'NKT', 'ArcConsistency'), 'None', 'None']  Total Time=0.7506513595581055
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.150130
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None']  Total Time=0.7738461494445801
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.154769
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None']  Total Time=0.7934973239898682
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.158699
+
+[('NKD', 'NKT', 'ArcConsistency'), 'DH', 'None']  Total Time=0.8572728633880615
+	  Backtracks=5  Solved=False  AvgBacktrackTime=0.171455
+
+
+PH3.txt
+Success Rate=0.420513
+Average Backtracks=624.118
+
+Top Ten Solutions:
+[('NKD', 'NKT'), 'MRV', 'LCV']  Total Time=26.31856870651245
+	  Backtracks=597  Solved=False  AvgBacktrackTime=0.0440847
+
+[('NKT', 'NKD'), 'MRV', 'LCV']  Total Time=29.981339931488037
+	  Backtracks=607  Solved=False  AvgBacktrackTime=0.0493927
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'LCV']  Total Time=39.03451180458069
+	  Backtracks=393  Solved=False  AvgBacktrackTime=0.0993245
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'LCV']  Total Time=39.944109201431274
+	  Backtracks=372  Solved=False  AvgBacktrackTime=0.107377
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'LCV']  Total Time=42.97999358177185
+	  Backtracks=461  Solved=False  AvgBacktrackTime=0.0932321
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'LCV']  Total Time=48.032439947128296
+	  Backtracks=465  Solved=False  AvgBacktrackTime=0.103296
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'LCV']  Total Time=51.167439699172974
+	  Backtracks=455  Solved=False  AvgBacktrackTime=0.112456
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'LCV']  Total Time=55.78283643722534
+	  Backtracks=507  Solved=False  AvgBacktrackTime=0.110025
+
+[('NKD', 'NKT', 'ForwardChecking'), 'MRV', 'LCV']  Total Time=56.11328172683716
+	  Backtracks=526  Solved=False  AvgBacktrackTime=0.106679
+
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=58.657466173172
+	  Backtracks=1308  Solved=False  AvgBacktrackTime=0.0448452
+
+
+PH4.txt
+Success Rate=0.428205
+Average Backtracks=775.951
+
+Top Ten Solutions:
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=20.13857412338257
+	  Backtracks=423  Solved=False  AvgBacktrackTime=0.0476089
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=23.094382286071777
+	  Backtracks=453  Solved=False  AvgBacktrackTime=0.0509810
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None']  Total Time=26.46717929840088
+	  Backtracks=300  Solved=False  AvgBacktrackTime=0.0882239
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None']  Total Time=28.15478014945984
+	  Backtracks=342  Solved=False  AvgBacktrackTime=0.0823239
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None']  Total Time=28.26208472251892
+	  Backtracks=330  Solved=False  AvgBacktrackTime=0.0856427
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None']  Total Time=32.21288871765137
+	  Backtracks=362  Solved=False  AvgBacktrackTime=0.0889859
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None']  Total Time=37.38044857978821
+	  Backtracks=359  Solved=False  AvgBacktrackTime=0.104124
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None']  Total Time=37.58044195175171
+	  Backtracks=367  Solved=False  AvgBacktrackTime=0.102399
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None']  Total Time=38.89905118942261
+	  Backtracks=300  Solved=False  AvgBacktrackTime=0.129664
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None']  Total Time=39.317607402801514
+	  Backtracks=383  Solved=False  AvgBacktrackTime=0.102657
+
+
+PH5.txt
+Success Rate=0.428205
+Average Backtracks=775.951
+
+Top Ten Solutions:
+[('NKD', 'NKT'), 'MRV', 'None']  Total Time=20.13857412338257
+	  Backtracks=423  Solved=False  AvgBacktrackTime=0.0476089
+
+[('NKT', 'NKD'), 'MRV', 'None']  Total Time=23.094382286071777
+	  Backtracks=453  Solved=False  AvgBacktrackTime=0.0509810
+
+[('NKT', 'NKD', 'ArcConsistency'), 'MRV', 'None']  Total Time=26.46717929840088
+	  Backtracks=300  Solved=False  AvgBacktrackTime=0.0882239
+
+[('NKD', 'ArcConsistency', 'NKT'), 'MRV', 'None']  Total Time=28.15478014945984
+	  Backtracks=342  Solved=False  AvgBacktrackTime=0.0823239
+
+[('NKD', 'NKT', 'ArcConsistency'), 'MRV', 'None']  Total Time=28.26208472251892
+	  Backtracks=330  Solved=False  AvgBacktrackTime=0.0856427
+
+[('NKT', 'ArcConsistency', 'NKD'), 'MRV', 'None']  Total Time=32.21288871765137
+	  Backtracks=362  Solved=False  AvgBacktrackTime=0.0889859
+
+[('ArcConsistency', 'NKT', 'NKD'), 'MRV', 'None']  Total Time=37.38044857978821
+	  Backtracks=359  Solved=False  AvgBacktrackTime=0.104124
+
+[('NKT', 'NKD', 'ForwardChecking'), 'MRV', 'None']  Total Time=37.58044195175171
+	  Backtracks=367  Solved=False  AvgBacktrackTime=0.102399
+
+[('NKT', 'NKD', 'ArcConsistency', 'ForwardChecking'), 'MRV', 'None']  Total Time=38.89905118942261
+	  Backtracks=300  Solved=False  AvgBacktrackTime=0.129664
+
+[('ArcConsistency', 'NKD', 'NKT'), 'MRV', 'None']  Total Time=39.317607402801514
+	  Backtracks=383  Solved=False  AvgBacktrackTime=0.102657
+
+
