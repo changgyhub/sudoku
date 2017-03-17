@@ -176,9 +176,9 @@ def test():
         1   |    'H'     | 300/600
     -------------------------------
     """
-    numTest = 20       # number of tests for each configuration
-    difficulty = 'E'  # E - easy, M - medium, H - high
-    timeout = 30     # set timeout to exit, will display 'infs'
+    numTest = 1       # number of tests for each configuration
+    difficulty = 'H'  # E - easy, M - medium, H - high
+    timeout = 600     # set timeout to exit, will display 'infs'
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     outfile = open('log/P' + difficulty + '.txt', 'w+')
@@ -187,7 +187,8 @@ def test():
     outfile.write(headline+'\n')
     ph5_comb = [21, 27, 93, 75, 81, 87, 69, 159, 387, 63, 147, 141, 381, 351, 339, 363, 345, 333, 15, 153, 22, 327, 375, 279, 321, 369, 129]
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
-        for name in [x for x in files if x.startswith('P' + difficulty)]:
+        # for name in [x for x in files if x.startswith('P' + difficulty)]:
+            name = "PH5.txt"
             combid = 0
             logline = name
             outfile.write(logline+'\n')
