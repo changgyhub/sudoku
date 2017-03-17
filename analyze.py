@@ -92,8 +92,6 @@ class combinationIndiv:
         self.mcount = 0
         self.hsum = 0
         self.hcount = 0
-        self.disable = False
-
     def getcombStr(self):
         ss = str()
         for i in self.combName[0]:
@@ -111,7 +109,6 @@ class combinationIndiv:
     def add(self,data):
         time = 0
         if data.total_time == Decimal('Infinity'):
-            self.disable = True
             time = getTimeOut(data.filename)
         else:
             time = data.total_time
@@ -205,12 +202,12 @@ def main():
                 for vindex,varh in enumerate(Varlist):
                     if varh in perfor.combination:
                         vlist[vindex].add(perfor)
-                    else:
+                    elif 'None' == perfor.combination[1]:
                         vlist[vindex].nonlist.append(perfor)
                 for lindex,valh in enumerate(Vallist):
                     if valh in perfor.combination:
                         lcvlist[lindex].add(perfor)
-                    else:
+                    elif 'None' == perfor.combination[2]:
                         lcvlist[lindex].nonlist.append(perfor)
 
     #nonlist
@@ -234,38 +231,38 @@ def main():
 
 
 
-    for com in vlist:
-        line_chart = pygal.Line()
-        line_chart.title = com.name+' VS Without '+com.name
-        line_chart.x_labels = difficulty_data
-        for index,item in enumerate(com.nonlist):
-            time = Decimal(item.total_time)
-            if item.total_time == Decimal('Infinity'):
-                time = getTimeOut(item.filename)
-            nonsum[item.difficulty_index()] += time;
-            noncount[item.difficulty_index()] += 1
-        print(com.easyavg())
-        line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
-        line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
-        line_chart.render_to_png('report/VS'+com.name+'.png')
-        nonsum = [0 for x in range(3)]
-        noncount = [0 for x in range(3)]
+    # for com in vlist:
+    #     line_chart = pygal.Line(y_title='Runtime')
+    #     line_chart.title = com.name+' VS Without '+com.name
+    #     line_chart.x_labels = difficulty_data
+    #     for index,item in enumerate(com.nonlist):
+    #         time = Decimal(item.total_time)
+    #         if item.total_time == Decimal('Infinity'):
+    #             time = getTimeOut(item.filename)
+    #         nonsum[item.difficulty_index()] += time;
+    #         noncount[item.difficulty_index()] += 1
+    #     print(com.easyavg())
+    #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
+    #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+    #     line_chart.render_to_png('report/VS'+com.name+'.png')
+    #     nonsum = [0 for x in range(3)]
+    #     noncount = [0 for x in range(3)]
 
-    for com in lcvlist:
-        line_chart = pygal.Line()
-        line_chart.title = com.name+' VS Without '+com.name
-        line_chart.x_labels = difficulty_data
-        for index,item in enumerate(com.nonlist):
-            time = Decimal(item.total_time)
-            if item.total_time == Decimal('Infinity'):
-                time = getTimeOut(item.filename)
-            nonsum[item.difficulty_index()] += time;
-            noncount[item.difficulty_index()] += 1
-        line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
-        line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
-        line_chart.render_to_png('report/VS'+com.name+'.png')
-        nonsum = [0 for x in range(3)]
-        noncount = [0 for x in range(3)]
+    # for com in lcvlist:
+    #     line_chart = pygal.Line(y_title='Runtime')
+    #     line_chart.title = com.name+' VS Without '+com.name
+    #     line_chart.x_labels = difficulty_data
+    #     for index,item in enumerate(com.nonlist):
+    #         time = Decimal(item.total_time)
+    #         if item.total_time == Decimal('Infinity'):
+    #             time = getTimeOut(item.filename)
+    #         nonsum[item.difficulty_index()] += time;
+    #         noncount[item.difficulty_index()] += 1
+    #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
+    #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+    #     line_chart.render_to_png('report/VS'+com.name+'.png')
+    #     nonsum = [0 for x in range(3)]
+    #     noncount = [0 for x in range(3)]
 
 
     # for com in clist:
@@ -273,9 +270,8 @@ def main():
     #     line_chart.title = com.name
     #     line_chart.x_labels = difficulty_data
     #     for item in com.list:
-    #         if not item.disable:
-    #             if item.combName[0][0] == com.name:
-    #                 line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
+    #         if item.combName[0][0] == com.name:
+    #             line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
     #     line_chart.render_to_png('report/'+com.name+'.png')
     #     line_chart.title = com.name+' VS none'+com.name
         
@@ -312,34 +308,34 @@ def main():
     #     output.write('\n')
     # output.close()
 
-    # top40_list = [[] for x in range(15)]
-    # pout = open('report/analyze_problem.txt','w')
-    # for i in range(15):
-    #     pout.write(plist[i][0].filename+'\n')
-    #     successes = 0
-    #     backtracks_sum = 0
-    #     for j,item in enumerate(plist[i]):
-    #         backtracks_sum += int(item.backtracks)
-    #         if item.total_time != Decimal('Infinity'):
-    #             successes += 1
-    #     sucrate = Decimal(successes)/Decimal(390)
-    #     pout.write("Success Rate="+str(sucrate)+'\n')
-    #     avgBacktracks = Decimal(backtracks_sum) / Decimal(390)
-    #     pout.write("Average Backtracks="+str(avgBacktracks)+'\n\n')
+    top40_list = [[] for x in range(15)]
+    pout = open('report/analyze_problem.txt','w')
+    for i in range(15):
+        pout.write(plist[i][0].filename+'\n')
+        successes = 0
+        backtracks_sum = 0
+        for j,item in enumerate(plist[i]):
+            backtracks_sum += int(item.backtracks)
+            if item.total_time != Decimal('Infinity'):
+                successes += 1
+        sucrate = Decimal(successes)/Decimal(390)
+        pout.write("Success Rate="+str(sucrate)+'\n')
+        avgBacktracks = Decimal(backtracks_sum) / Decimal(390)
+        pout.write("Average Backtracks="+str(avgBacktracks)+'\n\n')
 
-    #     pout.write("Top 80 Solutions:\n")
+        pout.write("Top 5 Solutions:\n")
 
-    #     for k in range(80):
-    #         item = plist[i][k]
-    #         id = item.combid
-    #         issolved = item.total_time != Decimal('Infinity')
-    #         if issolved:
-    #             top40_list[i].append(item)
-    #         pout.write(str(combinations[id-1])+' '+str(id)+'  Total Time='+str(item.total_time)+
-    #             '  Backtracks='+str(item.backtracks)+'  AvgBacktrackTime='+
-    #             str(item.backtrack_avgtime)+'\n\n')
-    #     pout.write('\n')
-    # pout.close()
+        for k in range(5):
+            item = plist[i][k]
+            id = item.combid
+            issolved = item.total_time != Decimal('Infinity')
+            if issolved:
+                top40_list[i].append(item)
+            pout.write(str(combinations[id-1])+' '+str(id)+'  Total Time='+str(item.total_time)+
+                '  Backtracks='+str(item.backtracks)+'  AvgBacktrackTime='+
+                str(item.backtrack_avgtime)+'\n\n')
+        pout.write('\n')
+    pout.close()
 
     # for i in range(15):
     #     plist[i].sort(key=lambda perfor: perfor.total_time)
