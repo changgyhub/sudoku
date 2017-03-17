@@ -7,10 +7,26 @@ import time
 from itertools import permutations
 from decimal import *
 
+
+
+
+class performance:
+
+    def __init__(self,fn,com,back,ass,tt):
+        self.filename = fn
+        self.combid = int(com)
+        self.backtracks = int(back)
+        self.assignments = int(ass)
+        self.total_time = Decimal(tt)
+        self.backtrack_avgtime = Decimal(0)
+        if self.backtracks != 0:
+            self.backtrack_avgtime = Decimal(tt)/Decimal(back)
+
+
 def main():
+    getcontext().prec = 6
     combinations = []
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
-    headline = 'id numBacktracks numAssignments avgtime'
     combid = 0
     timeHeap = []
     for consisNum in range(16):
@@ -38,8 +54,8 @@ def main():
             for j in range(390):
                 lresult = file.readline().split()
                 combinationid = int(lresult[0])
-                perfor = (filename,combinationid,lresult[1],lresult[2],
-                    Decimal(lresult[3]))
+                perfor = (performance(filename,combinationid,lresult[1],lresult[2],
+                    lresult[3]))
                 combPerformance[combinationid-1].append(perfor)
                 plist[diffIndex*5+filenamenum-1].append(perfor)
 
@@ -49,18 +65,13 @@ def main():
 
     output = open('report/analyze_combination.txt','w')
     for i in range(390):
-        id = combPerformance[i][0][1]
+        id = combPerformance[i][0].combid
         output.write(str(id)+' '+str(combinations[id-1])+'\n')
         for iindex,item in enumerate(combPerformance[i]):
-            issolved = item[4] != Decimal('Infinity')
-            getcontext().prec = 6
-            backtracks = Decimal(item[2])
-            avgTimePerBacktrack = 0
-            if backtracks != 0:
-                avgTimePerBacktrack = Decimal(item[4])/Decimal(backtracks)
-            output.write(item[0]+'  Backtracks='+str(item[2])+
+            issolved = item.total_time != Decimal('Infinity')
+            output.write(item.filename+'  Backtracks='+str(item.backtracks)+
                 '  Solved='+str(issolved)+'  AvgBacktrackTime='+
-                str(avgTimePerBacktrack)+'\n')
+                str(item.backtrack_avgtime)+'\n')
             if (iindex+1) %5==0:
                 output.write('\n')
         output.write('\n')
@@ -68,13 +79,13 @@ def main():
 
     pout = open('report/analyze_problem.txt','w')
     for i in range(15):
-        pout.write(plist[i][0][0]+'\n')
+        pout.write(plist[i][0].filename+'\n')
         successes = 0
         backtracks_sum = 0
         for j,item in enumerate(plist[i]):
-            if item[4] != Decimal('Infinity'):
+            if item.total_time != Decimal('Infinity'):
                 successes += 1
-                backtracks_sum += int(item[2])
+                backtracks_sum += int(item.backtracks)
         sucrate = Decimal(successes)/Decimal(390)
         pout.write("Success Rate="+str(sucrate)+'\n')
         avgBacktracks = Decimal(backtracks_sum) / Decimal(390)
@@ -82,15 +93,11 @@ def main():
         pout.write("Top Ten Solutions:\n")
         for k in range(10):
             item = plist[i][k]
-            id = item[1]
-            backtracks = Decimal(item[2])
-            avgTimePerBacktrack = 0
-            if backtracks != 0:
-                avgTimePerBacktrack = Decimal(item[4])/Decimal(backtracks)
-            pout.write(str(combinations[id-1])+'  Total Time='+str(item[4])+
-                '\n\t  Backtracks='+str(item[2])+
+            id = item.combid
+            pout.write(str(combinations[id-1])+'  Total Time='+str(item.total_time)+
+                '\n\t  Backtracks='+str(item.backtracks)+
                 '  Solved='+str(issolved)+'  AvgBacktrackTime='+
-                str(avgTimePerBacktrack)+'\n\n')
+                str(item.backtrack_avgtime)+'\n\n')
         pout.write('\n')
     pout.close()
 
