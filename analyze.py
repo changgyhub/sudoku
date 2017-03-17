@@ -1,5 +1,8 @@
-import os
-import sys
+"""Analyze the result."""
+
+
+# import os
+# import sys
 from itertools import permutations
 from decimal import *
 from functools import *
@@ -12,16 +15,15 @@ def getTimeOut(filename):
         elif filename[1] == 'M':
             return 120
         else:
-            if filename[2] in ['1','2']:
+            if filename[2] in ['1', '2']:
                 return 600
             else:
                 return 1200
 
 
-
 class performance:
 
-    def __init__(self,fn,comid,com,back,ass,tt):
+    def __init__(self, fn, comid, com, back, ass, tt):
         self.filename = fn
         self.combid = int(comid)
         self.combination = com
@@ -40,8 +42,9 @@ class performance:
         else:
             return 2
 
+
 class combination:
-    def __init__(self,name):
+    def __init__(self, name):
         self.name = name
         self.list = []
         self.nonlist = []
@@ -52,9 +55,7 @@ class combination:
         self.hsum = 0
         self.hcount = 0
 
-    def add(self,data):
-        combindev = None
-
+    def add(self, data):
         for item in self.list:
             if item.combid == data.combid:
                 item.add(data)
@@ -66,6 +67,7 @@ class combination:
             sum += item.easyavg()
             count += 1
         return sum/count
+
     def mediumavg(self):
         sum = Decimal(0)
         count = 0
@@ -73,6 +75,7 @@ class combination:
             sum += item.mediumavg()
             count += 1
         return sum/count
+
     def hardavg(self):
         sum = 0
         count = 0
@@ -81,8 +84,9 @@ class combination:
             count += 1
         return sum/count
 
+
 class combinationIndiv:
-    def __init__(self,combid,combName):
+    def __init__(self, combid, combName):
         self.combid = combid
         self.combName = combName
         self.list = []
@@ -98,17 +102,17 @@ class combinationIndiv:
         ss = str()
         for i in self.combName[0]:
             if i == 'ForwardChecking':
-                ss+='FC '
+                ss += 'FC '
             elif i == 'ArcConsistency':
-                ss+='AC '
+                ss += 'AC '
             else:
-                ss+=i+' '
-        for i in range(1,2):
+                ss += i+' '
+        for i in range(1, 2):
             if self.combName[i] != 'None':
-                ss+= self.combName[i]+' '
-        return ss 
+                ss += self.combName[i]+' '
+        return ss
 
-    def add(self,data):
+    def add(self, data):
         time = 0
         if data.total_time == Decimal('Infinity'):
             self.disable = True
@@ -128,23 +132,22 @@ class combinationIndiv:
 
     def easyavg(self):
         return Decimal(self.esum / self.ecount)
+
     def mediumavg(self):
         return Decimal(self.msum / self.mcount)
+
     def hardavg(self):
         return Decimal(self.hsum / self.hcount)
 
 
-
-difficulty_data = ['PE','PM','PH']
+difficulty_data = ['PE', 'PM', 'PH']
 comb_list = []
+
 
 def main():
 
-    
-
     getcontext().prec = 4
     combinations = []
-
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     Varlist = ['MRV', 'DH']
@@ -160,32 +163,33 @@ def main():
         for consisChkPermute in permutations(consisChk):
             for VarH in ['None', 'MRV', 'DH']:
                 for ValH in ['None', 'LCV']:
-                    combinations.append([consisChkPermute,VarH,ValH])
+                    combinations.append([consisChkPermute, VarH, ValH])
 
-    plist = [[] for x in range(15)] #15 different test files PE1 -- PH5
-    dlist = [[] for x in range(3)] #3 different difficulties, holding all list of performances
-    combPerformance = [combinationIndiv(xi,x) for xi,x in enumerate(combinations) ] #performance for each combination
+    plist = [[] for x in range(15)]  # 15 different test files PE1 -- PH5
+    # dlist = [[] for x in range(3)]   # 3 different difficulties
+    combPerformance = [combinationIndiv(xi, x)
+                       for xi, x in enumerate(combinations)]  # performance
 
-    clist = [combination(x) for x in consisList] #'ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'
+    clist = [combination(x) for x in consisList]
     for item in combPerformance:
         for citem in clist:
             if citem.name in item.combName[0]:
                 citem.list.append(item)
 
-    vlist = [combination(x)  for x in Varlist] #mrv or dh
+    vlist = [combination(x) for x in Varlist]  # mrv or dh
     for item in combPerformance:
         for citem in vlist:
             if citem.name in item.combName:
                 citem.list.append(item)
 
-    lcvlist = [combination(x)  for x in Vallist] #lcv
+    lcvlist = [combination(x) for x in Vallist]  # lcv
     for item in combPerformance:
         for citem in lcvlist:
             if citem.name in item.combName:
                 citem.list.append(item)
 
     for diffIndex, difficultyname in enumerate(difficulty_data):
-        file = open('log/'+difficultyname+'.txt','r')
+        file = open('log/'+difficultyname+'.txt', 'r')
         next(file)
         for i in range(5):
             filename = file.readline().split('\n')[0]
@@ -193,27 +197,28 @@ def main():
             for j in range(390):
                 lresult = file.readline().split()
                 combinationid = int(lresult[0])
-                perfor = (performance(filename,combinationid,combinations[combinationid-1],lresult[1],lresult[2],
-                    lresult[3]))
+                perfor = (performance(filename,
+                          combinationid, combinations[combinationid-1],
+                          lresult[1], lresult[2], lresult[3]))
                 combPerformance[combinationid-1].add(perfor)
                 plist[diffIndex*5+filenamenum-1].append(perfor)
-                for cindex,consisCheck in enumerate(consisList):
+                for cindex, consisCheck in enumerate(consisList):
                     if consisCheck in perfor.combination[0]:
                         clist[cindex].add(perfor)
                     else:
                         clist[cindex].nonlist.append(perfor)
-                for vindex,varh in enumerate(Varlist):
+                for vindex, varh in enumerate(Varlist):
                     if varh in perfor.combination:
                         vlist[vindex].add(perfor)
                     else:
                         vlist[vindex].nonlist.append(perfor)
-                for lindex,valh in enumerate(Vallist):
+                for lindex, valh in enumerate(Vallist):
                     if valh in perfor.combination:
                         lcvlist[lindex].add(perfor)
                     else:
                         lcvlist[lindex].nonlist.append(perfor)
 
-    #nonlist
+    # nonlist
     nonsum = [0 for x in range(3)]
     noncount = [0 for x in range(3)]
     # for com in clist:
@@ -227,26 +232,29 @@ def main():
     #         nonsum[item.difficulty_index()] += time;
     #         noncount[item.difficulty_index()] += 1
     #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
-    #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+    #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],
+    #                                         nonsum[1]/noncount[1],
+    #                                         nonsum[2]/noncount[2]])
     #     line_chart.render_to_png('report/VS'+com.name+'.png')
     #     nonsum = [0 for x in range(3)]
     #     noncount = [0 for x in range(3)]
-
-
 
     for com in vlist:
         line_chart = pygal.Line()
         line_chart.title = com.name+' VS Without '+com.name
         line_chart.x_labels = difficulty_data
-        for index,item in enumerate(com.nonlist):
+        for index, item in enumerate(com.nonlist):
             time = Decimal(item.total_time)
             if item.total_time == Decimal('Infinity'):
                 time = getTimeOut(item.filename)
-            nonsum[item.difficulty_index()] += time;
+            nonsum[item.difficulty_index()] += time
             noncount[item.difficulty_index()] += 1
         print(com.easyavg())
-        line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
-        line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+        line_chart.add(com.name, [com.easyavg(),
+                                  com.mediumavg(), com.hardavg()])
+        line_chart.add('Without '+com.name, [nonsum[0]/noncount[0],
+                                             nonsum[1]/noncount[1],
+                                             nonsum[2]/noncount[2]])
         line_chart.render_to_png('report/VS'+com.name+'.png')
         nonsum = [0 for x in range(3)]
         noncount = [0 for x in range(3)]
@@ -255,18 +263,21 @@ def main():
         line_chart = pygal.Line()
         line_chart.title = com.name+' VS Without '+com.name
         line_chart.x_labels = difficulty_data
-        for index,item in enumerate(com.nonlist):
+        for index, item in enumerate(com.nonlist):
             time = Decimal(item.total_time)
             if item.total_time == Decimal('Infinity'):
                 time = getTimeOut(item.filename)
-            nonsum[item.difficulty_index()] += time;
+            nonsum[item.difficulty_index()] += time
             noncount[item.difficulty_index()] += 1
-        line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
-        line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+        line_chart.add(com.name, [com.easyavg(),
+                                  com.mediumavg(),
+                                  com.hardavg()])
+        line_chart.add('Without '+com.name, [nonsum[0]/noncount[0],
+                                             nonsum[1]/noncount[1],
+                                             nonsum[2]/noncount[2]])
         line_chart.render_to_png('report/VS'+com.name+'.png')
         nonsum = [0 for x in range(3)]
         noncount = [0 for x in range(3)]
-
 
     # for com in clist:
     #     line_chart = pygal.Line()
@@ -278,10 +289,6 @@ def main():
     #                 line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
     #     line_chart.render_to_png('report/'+com.name+'.png')
     #     line_chart.title = com.name+' VS none'+com.name
-        
-
-
-
 
     # output = open('report/analyze_combination.txt','w')
     # for i in range(390):
@@ -298,9 +305,11 @@ def main():
     #         sumBacktracks += item.backtracks
     #         sumAssignments += item.assignments
     #         sumtime += item.total_time
-    #         output.write(item.filename+' Time='+str(item.total_time)+'s Backtracks='+str(item.backtracks)+
-    #             ' Assignments='+str(item.assignments)+' Solved='+str(issolved)+'  AvgBacktrackTime='+
-    #             str(item.backtrack_avgtime)+'\n')
+    #         output.write(item.filename+' Time='+str(item.total_time)+
+    #                      's Backtracks='+str(item.backtracks)+
+    #                      ' Assignments='+str(item.assignments)+
+    #                      ' Solved='+str(issolved)+'  AvgBacktrackTime='+
+    #                      str(item.backtrack_avgtime)+'\n')
     #         if (iindex+1) %5==0:
     #             output.write("\nSolution:"+str(sumSolutions)+"/5\n:")
     #             output.write("Avg runtime: "+str(sumtime/5)+
@@ -335,7 +344,8 @@ def main():
     #         issolved = item.total_time != Decimal('Infinity')
     #         if issolved:
     #             top40_list[i].append(item)
-    #         pout.write(str(combinations[id-1])+' '+str(id)+'  Total Time='+str(item.total_time)+
+    #         pout.write(str(combinations[id-1])+' '+
+    #             str(id)+'  Total Time='+str(item.total_time)+
     #             '  Backtracks='+str(item.backtracks)+'  AvgBacktrackTime='+
     #             str(item.backtrack_avgtime)+'\n\n')
     #     pout.write('\n')
@@ -357,11 +367,10 @@ def main():
     # line_chart.x_labels = difficulty_data
     # for item in combPerformance:
     #     if item.combid in result:
-    #         line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
+    #         line_chart.add(item.getcombStr(),[item.easyavg(),
+    #                        item.mediumavg(),item.hardavg()])
     # line_chart.render_to_png('report/Top Solutions.png')
 
-
-    
 
 if __name__ == '__main__':
     main()

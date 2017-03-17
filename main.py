@@ -176,19 +176,17 @@ def test():
         1   |    'H'     | 300/600
     -------------------------------
     """
-    numTest = 1       # number of tests for each configuration
-    difficulty = 'H'  # E - easy, M - medium, H - high
-    timeout = 600     # set timeout to exit, will display 'infs'
+    numTest = 20       # number of tests for each configuration
+    difficulty = 'E'  # E - easy, M - medium, H - high
+    timeout = 30     # set timeout to exit, will display 'infs'
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     outfile = open('log/P' + difficulty + '.txt', 'w+')
     headline = 'id numBacktracks numAssignments avgtime'
     print('\n'+headline)
     outfile.write(headline+'\n')
-    ph5_comb = [21, 27, 93, 75, 81, 87, 69, 159, 387, 63, 147, 141, 381, 351, 339, 363, 345, 333, 15, 153, 22, 327, 375, 279, 321, 369, 129]
     for root, dirs, files in os.walk("ExampleSudokuFiles/"):
-        # for name in [x for x in files if x.startswith('P' + difficulty)]:
-            name = "PH5.txt"
+        for name in [x for x in files if x.startswith('P' + difficulty)]:
             combid = 0
             logline = name
             outfile.write(logline+'\n')
@@ -208,33 +206,32 @@ def test():
                     for VarH in ['None', 'MRV', 'DH']:
                         for ValH in ['None', 'LCV']:
                             combid += 1
-                            if combid in ph5_comb:
-                                avgtime = 0
-                                for i in range(numTest):
-                                    solver = btsolver.BTSolver(data)
-                                    for consis in consisChkPermute:
-                                        solver.setConsistencyChecks(
-                                             btsolver.ConsistencyCheck[consis])
-                                    solver.setVariableSelectionHeuristic(
-                                        btsolver.VariableSelectionHeuristic[VarH])
-                                    solver.setValueSelectionHeuristic(
-                                        btsolver.ValueSelectionHeuristic[ValH])
-                                    signal.signal(signal.SIGALRM, signal_handler)
-                                    signal.alarm(timeout)
-                                    try:
-                                        avgtime += float(solver.solve())
-                                        signal.alarm(0)  # cancel alarm
-                                    except Exception:
-                                        avgtime = float('inf')
-                                        break
-                                    if i == numTest - 1:
-                                        avgtime /= numTest
-                                status = str(combid) + ' ' +\
-                                    str(solver.numBacktracks) + ' ' +\
-                                    str(solver.numAssignments) + ' ' +\
-                                    str(avgtime)
-                                print(status)
-                                heappush(timeHeap, (avgtime, status))           
+                            avgtime = 0
+                            for i in range(numTest):
+                                solver = btsolver.BTSolver(data)
+                                for consis in consisChkPermute:
+                                    solver.setConsistencyChecks(
+                                         btsolver.ConsistencyCheck[consis])
+                                solver.setVariableSelectionHeuristic(
+                                    btsolver.VariableSelectionHeuristic[VarH])
+                                solver.setValueSelectionHeuristic(
+                                    btsolver.ValueSelectionHeuristic[ValH])
+                                signal.signal(signal.SIGALRM, signal_handler)
+                                signal.alarm(timeout)
+                                try:
+                                    avgtime += float(solver.solve())
+                                    signal.alarm(0)  # cancel alarm
+                                except Exception:
+                                    avgtime = float('inf')
+                                    break
+                                if i == numTest - 1:
+                                    avgtime /= numTest
+                            status = str(combid) + ' ' +\
+                                str(solver.numBacktracks) + ' ' +\
+                                str(solver.numAssignments) + ' ' +\
+                                str(avgtime)
+                            print(status)
+                            heappush(timeHeap, (avgtime, status))
             print('Ordered Result:')
             while timeHeap:
                 avgtime, status = heappop(timeHeap)
