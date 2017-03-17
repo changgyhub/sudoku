@@ -177,8 +177,8 @@ def test():
     -------------------------------
     """
     numTest = 20       # number of tests for each configuration
-    difficulty = 'E'  # E - easy, M - medium, H - high
-    timeout = 30     # set timeout to exit, will display 'infs'
+    difficulty = 'E'   # E - easy, M - medium, H - high
+    timeout = 30       # set timeout to exit, will display 'infs'
 
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     outfile = open('log/P' + difficulty + '.txt', 'w+')
