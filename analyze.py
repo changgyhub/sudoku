@@ -54,6 +54,7 @@ class combination:
 
     def add(self,data):
         combindev = None
+
         for item in self.list:
             if item.combid == data.combid:
                 item.add(data)
@@ -166,14 +167,22 @@ def main():
     combPerformance = [combinationIndiv(xi,x) for xi,x in enumerate(combinations) ] #performance for each combination
 
     clist = [combination(x) for x in consisList] #'ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'
-
     for item in combPerformance:
         for citem in clist:
             if citem.name in item.combName[0]:
                 citem.list.append(item)
 
     vlist = [combination(x)  for x in Varlist] #mrv or dh
+    for item in combPerformance:
+        for citem in vlist:
+            if citem.name in item.combName:
+                citem.list.append(item)
+
     lcvlist = [combination(x)  for x in Vallist] #lcv
+    for item in combPerformance:
+        for citem in lcvlist:
+            if citem.name in item.combName:
+                citem.list.append(item)
 
     for diffIndex, difficultyname in enumerate(difficulty_data):
         file = open('log/'+difficultyname+'.txt','r')
@@ -207,7 +216,42 @@ def main():
     #nonlist
     nonsum = [0 for x in range(3)]
     noncount = [0 for x in range(3)]
-    for com in clist:
+    # for com in clist:
+    #     line_chart = pygal.Line()
+    #     line_chart.title = com.name+' VS Without '+com.name
+    #     line_chart.x_labels = difficulty_data
+    #     for index,item in enumerate(com.nonlist):
+    #         time = Decimal(item.total_time)
+    #         if item.total_time == Decimal('Infinity'):
+    #             time = getTimeOut(item.filename)
+    #         nonsum[item.difficulty_index()] += time;
+    #         noncount[item.difficulty_index()] += 1
+    #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
+    #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+    #     line_chart.render_to_png('report/VS'+com.name+'.png')
+    #     nonsum = [0 for x in range(3)]
+    #     noncount = [0 for x in range(3)]
+
+
+
+    for com in vlist:
+        line_chart = pygal.Line()
+        line_chart.title = com.name+' VS Without '+com.name
+        line_chart.x_labels = difficulty_data
+        for index,item in enumerate(com.nonlist):
+            time = Decimal(item.total_time)
+            if item.total_time == Decimal('Infinity'):
+                time = getTimeOut(item.filename)
+            nonsum[item.difficulty_index()] += time;
+            noncount[item.difficulty_index()] += 1
+        print(com.easyavg())
+        line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
+        line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+        line_chart.render_to_png('report/VS'+com.name+'.png')
+        nonsum = [0 for x in range(3)]
+        noncount = [0 for x in range(3)]
+
+    for com in lcvlist:
         line_chart = pygal.Line()
         line_chart.title = com.name+' VS Without '+com.name
         line_chart.x_labels = difficulty_data
