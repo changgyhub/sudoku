@@ -29,7 +29,7 @@ class performance:
         self.assignments = int(ass)
         self.total_time = Decimal(tt)
         self.backtrack_avgtime = Decimal(0)
-        if self.backtracks != 0:
+        if self.backtracks != 0 and self.total_time != Decimal('Infinity'):
             self.backtrack_avgtime = Decimal(tt)/Decimal(back)
 
     def difficulty_index(self):
@@ -54,7 +54,6 @@ class combination:
 
     def add(self,data):
         combindev = None
-
         for item in self.list:
             if item.combid == data.combid:
                 item.add(data)
@@ -107,11 +106,11 @@ class combinationIndiv:
         return ss 
 
     def add(self,data):
-        time = 0
-        if data.total_time == Decimal('Infinity'):
-            time = getTimeOut(data.filename)
-        else:
-            time = data.total_time
+        time = data.backtrack_avgtime
+        # if data.total_time == Decimal('Infinity'):
+        #     time = getTimeOut(data.filename)
+        # else:
+        #     time = data.total_time
         if data.filename[1] == 'E':
             self.esum += time
             self.ecount += 1
@@ -121,6 +120,8 @@ class combinationIndiv:
         elif data.filename[1] == 'H':
             self.hsum += time
             self.hcount += 1
+        if((data.combid ) != self.combid):
+            print(data.filename,data.combid,self.combid,type(data.combid),type(self.combid))
         self.list.append(data)
 
     def easyavg(self):
@@ -146,6 +147,7 @@ def main():
     consisList = ['ForwardChecking', 'ArcConsistency', 'NKD', 'NKT']
     Varlist = ['MRV', 'DH']
     Vallist = ['LCV']
+    comb_count = 0
     for consisNum in range(16):
         consisChk = []
         consisBits = "{0:04b}".format(consisNum)
@@ -157,11 +159,12 @@ def main():
         for consisChkPermute in permutations(consisChk):
             for VarH in ['None', 'MRV', 'DH']:
                 for ValH in ['None', 'LCV']:
+                    comb_count += 1
                     combinations.append([consisChkPermute,VarH,ValH])
 
     plist = [[] for x in range(15)] #15 different test files PE1 -- PH5
     dlist = [[] for x in range(3)] #3 different difficulties, holding all list of performances
-    combPerformance = [combinationIndiv(xi,x) for xi,x in enumerate(combinations) ] #performance for each combination
+    combPerformance = [combinationIndiv(xi+1,x) for xi,x in enumerate(combinations) ] #performance for each combination
     varlist_heuristics = [['MRV','None'],['MRV','LCV'],['DH','LCV'],['DH','None'],['None','LCV']]
     
 
@@ -200,30 +203,31 @@ def main():
             for j in range(390):
                 lresult = file.readline().split()
                 combinationid = int(lresult[0])
-                perfor = (performance(filename,combinationid,combinations[combinationid-1],lresult[1],lresult[2],
+                perfor = (performance(filename,combinationid,
+                    combinations[combinationid-1],
+                    lresult[1],
+                    lresult[2],
                     lresult[3]))
                 combPerformance[combinationid-1].add(perfor)
+
                 plist[diffIndex*5+filenamenum-1].append(perfor)
-                for cindex,consisCheck in enumerate(consisList):
-                    if consisCheck in perfor.combination[0]:
-                        clist[cindex].add(perfor)
-                    else:
-                        clist[cindex].nonlist.append(perfor)
+                
+                # for cindex,consisCheck in enumerate(consisList):
+                #     if consisCheck in perfor.combination[0]:
+                #         clist[cindex].add(perfor)
+                
                 # for vindex,varh in enumerate(Varlist):
                 #     if varh in perfor.combination:
                 #         vlist[vindex].add(perfor)
-                #     elif 'None' == perfor.combination[1]:
-                #         vlist[vindex].nonlist.append(perfor)
+
                 # for lindex,valh in enumerate(Vallist):
                 #     if valh in perfor.combination:
                 #         lcvlist[lindex].add(perfor)
-                #     elif 'None' == perfor.combination[2]:
-                #         lcvlist[lindex].nonlist.append(perfor)
+
                 # for hindex,varh in enumerate(heuristics):
                 #     if perfor.combination[1] == varh.name[0] and perfor.combination[2] == varh.name[1]:
                 #         varh.add(perfor)
-                #     else:
-                #         varh.nonlist.append(perfor)
+
 
     #nonlist
     nonsum = [0 for x in range(3)]
@@ -281,16 +285,16 @@ def main():
     #     nonsum = [0 for x in range(3)]
     #     noncount = [0 for x in range(3)]
 
-    for com in clist:
-        line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Runtime')
-        line_chart.title = com.name
-        line_chart.x_labels = difficulty_data
-        for item in com.list:
-            if item.combName[0][0] == com.name:
-                line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
-        line_chart.render_to_file('report/'+com.name+'.svg')
-        nonsum = [0 for x in range(3)]
-        noncount = [0 for x in range(3)]
+    # for com in clist:
+    #     line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Runtime')
+    #     line_chart.title = com.name
+    #     line_chart.x_labels = difficulty_data
+    #     for item in com.list:
+    #         if item.combName[0][0] == com.name:
+    #             line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
+    #     line_chart.render_to_file('report/'+com.name+'.svg')
+    #     nonsum = [0 for x in range(3)]
+    #     noncount = [0 for x in range(3)]
 
 
 
@@ -323,6 +327,7 @@ def main():
     #     sumtime = Decimal(0)
     #     for iindex,item in enumerate(combPerformance[i].list):
     #         issolved = item.total_time != Decimal('Infinity')
+    #         output.write(str(item.combid))
     #         if issolved:
     #             sumSolutions += 1
     #         sumBacktracks += item.backtracks
@@ -342,35 +347,35 @@ def main():
     #     output.write('\n')
     # output.close()
 
-    # top40_list = [[] for x in range(15)]
-    # succrate_list = [0 for x in range(15)]
-    # pout = open('report/analyze_problem.txt','w')
-    # for i in range(15):
-    #     pout.write(plist[i][0].filename+'\n')
-    #     successes = 0
-    #     backtracks_sum = 0
-    #     for j,item in enumerate(plist[i]):
-    #         backtracks_sum += int(item.backtracks)
-    #         if item.total_time != Decimal('Infinity'):
-    #             successes += 1
-    #     sucrate = Decimal(successes)/Decimal(390)
-    #     pout.write("Success Rate="+str(sucrate)+'\n')
-    #     avgBacktracks = Decimal(backtracks_sum) / Decimal(390)
-    #     pout.write("Average Backtracks="+str(avgBacktracks)+'\n\n')
+    top40_list = [[] for x in range(15)]
+    succrate_list = [0 for x in range(15)]
+    pout = open('report/analyze_problem2.txt','w')
+    for i in range(15):
+        successes = 0
+        backtracks_sum = 0
+        pout.write(plist[i][0].filename+'\n')
+        for j,item in enumerate(plist[i]):
+            backtracks_sum += int(item.backtracks)
+            if item.total_time != Decimal('Infinity'):
+                successes += 1
+        sucrate = Decimal(successes)/Decimal(390)
+        pout.write("Success Rate="+str(sucrate)+'\n')
+        avgBacktracks = Decimal(backtracks_sum) / Decimal(390)
+        pout.write("Average Backtracks="+str(avgBacktracks)+'\n\n')
 
-    #     pout.write("Top 5 Solutions:\n")
+        # pout.write("Top 5 Solutions:\n")
 
-    #     for k in range(5):
-    #         item = plist[i][k]
-    #         id = item.combid
-    #         issolved = item.total_time != Decimal('Infinity')
-    #         if issolved:
-    #             top40_list[i].append(item)
-    #         pout.write(str(combinations[id-1])+' '+str(id)+'  Total Time='+str(item.total_time)+
-    #             '  Backtracks='+str(item.backtracks)+'  AvgBacktrackTime='+
-    #             str(item.backtrack_avgtime)+'\n\n')
-    #     pout.write('\n')
-    # pout.close()
+        # for k in range(5):
+        #     item = plist[i][k]
+        #     id = item.combid
+        #     issolved = item.total_time != Decimal('Infinity')
+        #     if issolved:
+        #         top40_list[i].append(item)
+        #     pout.write(str(combinations[id-1])+' '+str(id)+'  Total Time='+str(item.total_time)+
+        #         '  Backtracks='+str(item.backtracks)+'  AvgBacktrackTime='+
+        #         str(item.backtrack_avgtime)+'\n\n')
+        # pout.write('\n')
+    pout.close()
 
 
 
@@ -385,14 +390,13 @@ def main():
     # #     print(result)
     # #     print()
     # result = reduce(set.intersection, map(set, best_combs))
-    # print(result)
-    # line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Runtime')
-    # line_chart.title = "Top Solutions"
+    # line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Avg Backtracks/Time')
+    # line_chart.title = "Top Solution Backtracks/Time"
     # line_chart.x_labels = difficulty_data
     # for item in combPerformance:
     #     if item.combid in result:
     #         line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
-    # line_chart.render_to_file('report/Top Solutions.svg')
+    # line_chart.render_to_file('report/Top Solutions Backtracks Time.svg')
 
 
 if __name__ == '__main__':
