@@ -162,6 +162,8 @@ def main():
     plist = [[] for x in range(15)] #15 different test files PE1 -- PH5
     dlist = [[] for x in range(3)] #3 different difficulties, holding all list of performances
     combPerformance = [combinationIndiv(xi,x) for xi,x in enumerate(combinations) ] #performance for each combination
+    varlist_heuristics = [['MRV','None'],['MRV','LCV'],['DH','LCV'],['DH','None'],['None','LCV']]
+    
 
     clist = [combination(x) for x in consisList] #'ForwardChecking', 'ArcConsistency', 'NKD', 'NKT'
     for item in combPerformance:
@@ -181,9 +183,16 @@ def main():
     #         if citem.name in item.combName:
     #             citem.list.append(item)
 
+    # heuristics = [combination(x) for xi,x in enumerate(varlist_heuristics) ]
+    # for item in combPerformance:
+    #     for hitem in heuristics:
+    #         if hitem.name[0] == item.combName[1] and hitem.name[1] == item.combName[2]:
+    #             hitem.list.append(item)
+
+
     for diffIndex, difficultyname in enumerate(difficulty_data):
         file = open('log/'+difficultyname+'.txt','r')
-        print(file.readline())
+        next(file)
 
         for i in range(5):
             filename = file.readline().split('\n')[0]
@@ -210,10 +219,18 @@ def main():
                 #         lcvlist[lindex].add(perfor)
                 #     elif 'None' == perfor.combination[2]:
                 #         lcvlist[lindex].nonlist.append(perfor)
+                # for hindex,varh in enumerate(heuristics):
+                #     if perfor.combination[1] == varh.name[0] and perfor.combination[2] == varh.name[1]:
+                #         varh.add(perfor)
+                #     else:
+                #         varh.nonlist.append(perfor)
 
     #nonlist
     nonsum = [0 for x in range(3)]
     noncount = [0 for x in range(3)]
+
+
+
     # for com in clist:
     #     line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, )
     #     line_chart.title = com.name+' VS Without '+com.name
@@ -226,10 +243,9 @@ def main():
     #         noncount[item.difficulty_index()] += 1
     #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
     #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
-    #     line_chart.render_to_png('report/VS'+com.name+'.png')
+    #     line_chart.render_to_file('report/VS'+com.name+'.svg')
     #     nonsum = [0 for x in range(3)]
     #     noncount = [0 for x in range(3)]
-
 
 
     # for com in vlist:
@@ -245,7 +261,7 @@ def main():
     #     print(com.easyavg())
     #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
     #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
-    #     line_chart.render_to_png('report/VS'+com.name+'.png')
+    #     line_chart.render_to_file('report/VS'+com.name+'.svg')
     #     nonsum = [0 for x in range(3)]
     #     noncount = [0 for x in range(3)]
 
@@ -261,10 +277,9 @@ def main():
     #         noncount[item.difficulty_index()] += 1
     #     line_chart.add(com.name,[com.easyavg(),com.mediumavg(),com.hardavg()])
     #     line_chart.add('Without '+com.name,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
-    #     line_chart.render_to_png('report/VS'+com.name+'.png')
+    #     line_chart.render_to_file('report/VS'+com.name+'.svg')
     #     nonsum = [0 for x in range(3)]
     #     noncount = [0 for x in range(3)]
-
 
     for com in clist:
         line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Runtime')
@@ -273,9 +288,28 @@ def main():
         for item in com.list:
             if item.combName[0][0] == com.name:
                 line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
-        line_chart.render_to_png('report/'+com.name+'.png')
-        
+        line_chart.render_to_file('report/'+com.name+'.svg')
+        nonsum = [0 for x in range(3)]
+        noncount = [0 for x in range(3)]
 
+
+
+    # line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Runtime')
+    # line_chart.title = "Heuristics Comparison"
+    # line_chart.x_labels = difficulty_data
+    # for com in heuristics:
+    #     nnname = com.name[0]+' '+com.name[1]
+    #     for item in com.nonlist:
+    #         time = Decimal(item.total_time)
+    #         if item.total_time == Decimal('Infinity'):
+    #             time = getTimeOut(item.filename)
+    #         nonsum[item.difficulty_index()] += time
+    #         noncount[item.difficulty_index()] += 1
+    #     line_chart.add(nnname,[com.easyavg(),com.mediumavg(),com.hardavg()])
+    #     line_chart.add('Without '+nnname,[nonsum[0]/noncount[0],nonsum[1]/noncount[1],nonsum[2]/noncount[2]])
+    #     nonsum[item.difficulty_index()] += time
+    #     noncount[item.difficulty_index()] += 1
+    # line_chart.render_to_file('report/Heuristics_Comparison.svg')
 
 
 
@@ -326,7 +360,7 @@ def main():
 
     #     pout.write("Top 5 Solutions:\n")
 
-    #     for k in range(80):
+    #     for k in range(5):
     #         item = plist[i][k]
     #         id = item.combid
     #         issolved = item.total_time != Decimal('Infinity')
@@ -351,13 +385,14 @@ def main():
     # #     print(result)
     # #     print()
     # result = reduce(set.intersection, map(set, best_combs))
+    # print(result)
     # line_chart = pygal.Line(legend_at_bottom=True, legend_at_bottom_columns=2, y_title='Runtime')
     # line_chart.title = "Top Solutions"
     # line_chart.x_labels = difficulty_data
     # for item in combPerformance:
     #     if item.combid in result:
     #         line_chart.add(item.getcombStr(),[item.easyavg(),item.mediumavg(),item.hardavg()])
-    # line_chart.render_to_png('report/Top Solutions.png')
+    # line_chart.render_to_file('report/Top Solutions.svg')
 
 
 if __name__ == '__main__':
