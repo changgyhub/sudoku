@@ -1,12 +1,12 @@
 # Sudoku
 A scalable sudoku solver with templates for all constraint satisfaction problems.
 
-### Author
+## Author
 [Chang Gao](http://www.linkedin.com/in/irsisyphus "linkedin")<br>
 [Bruce Tan](http://halfer53.github.io/ "homepage")<br>
 [Rimoun Ghaly](https://www.linkedin.com/in/rimoun-ghaly-41287b107/ "linkedin")<br>
 
-### Usage
+## Usage
 ```Bash
 python main.py <input> <output> <timeout> <tokens>
 ```
@@ -23,7 +23,7 @@ python main.py <input> <output> <timeout> <tokens>
  * `MRV, DH`: Variable selection heuristic to use. `MRV` for Minimum Remaining Values, and `DH` for Degree Heuristic. We only support one heuristic at the same time.
  * `LCV`: Value selection heuristic to use. `LCV` for Least Constraining Value.
 
-### Generate a new Sudoku puzzle
+## Generate a new Sudoku puzzle
 ```Bash
 python problem_generator.py <input> <output>
 ```
@@ -38,12 +38,12 @@ M N P Q
 
 EXAMPLE: ```25 9 3 3```
 
-### Default Testing
+## Default Testing
 For default test on all solver options, you can simply type
 ```Bash
 python main.py
 ```
 You may customize your test in main.test()
 
-### Note
+## Note
 Do not copy contents of this repo for course assignments. You should take the responsibility for any form of plagiarism.
