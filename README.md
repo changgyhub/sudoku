@@ -46,4 +46,5 @@ python main.py
 You may customize your test in main.test()
 
 ## Note
-Do not copy contents of this repo for course assignments. You should take the responsibility for any form of plagiarism.
+ * Modified based on [rimoung/PythonSudoku](https://github.com/rimoung/PythonSudoku).
+ * Do not copy contents of this repo for course assignments. You should take the responsibility for any form of plagiarism.
